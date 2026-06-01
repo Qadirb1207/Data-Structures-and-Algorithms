@@ -65,10 +65,9 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 ```text
 │
 ├── Arrays/
-│   │
+│   └── Notes.md
 │   ├── 1D Arrays/
-│   │   ├── Notes.md
-│   │   ├── Problems/
+│   │   │   ├── Problems/
 │   │   │   ├── LargestElement.java
 │   │   │   ├── SecondLargest.java
 │   │   │   ├── ReverseArray.java
@@ -82,7 +81,7 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 │   │       └── InsertionSort.java
 │   │
 │   └── 2D Arrays/
-│       ├── Notes.md
+│       
 │       ├── Problems/
 │       │   ├── MatrixTranspose.java
 │       │   ├── SpiralMatrix.java
