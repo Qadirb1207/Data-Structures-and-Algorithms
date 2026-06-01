@@ -63,22 +63,85 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 ## 📂 Repository Structure
 
 ```text
-├── 01-Arrays
-├── 02-Searching
-├── 03-Sorting
-├── 04-Strings
-├── 05-Recursion
-├── 06-LinkedList
-├── 07-Stack
-├── 08-Queue
-├── 09-Hashing
-├── 10-Trees
-├── 11-Heaps
-├── 12-Graphs
-├── 13-DynamicProgramming
-├── LeetCode
-├── HackerRank
-└── Notes
+│
+├── Arrays/
+│   │
+│   ├── 1D Arrays/
+│   │   ├── Notes.md
+│   │   ├── Problems/
+│   │   │   ├── LargestElement.java
+│   │   │   ├── SecondLargest.java
+│   │   │   ├── ReverseArray.java
+│   │   │   └── ...
+│   │   │
+│   │   └── Algorithms/
+│   │       ├── LinearSearch.java
+│   │       ├── BinarySearch.java
+│   │       ├── BubbleSort.java
+│   │       ├── SelectionSort.java
+│   │       └── InsertionSort.java
+│   │
+│   └── 2D Arrays/
+│       ├── Notes.md
+│       ├── Problems/
+│       │   ├── MatrixTranspose.java
+│       │   ├── SpiralMatrix.java
+│       │   └── ...
+│       │
+│       └── Algorithms/
+│           └── BinarySearch2D.java
+│
+├── ArrayList/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Strings/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Recursion/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Linked List/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Stack/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Queue/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Hashing/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Trees/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Heap/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+├── Graphs/
+│   ├── Notes.md
+│   ├── Problems/
+│   └── Algorithms/
+│
+└── README.md
 ```
 
 ---
