@@ -74,6 +74,7 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 │   │   │   └── ...
 │   │   │
 │   │   └── Algorithms/
+|   |       ├── Notes.md
 │   │       ├── LinearSearch.java
 │   │       ├── BinarySearch.java
 │   │       ├── BubbleSort.java
