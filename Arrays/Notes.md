@@ -13,6 +13,9 @@ Now let's dive into one of the most important and basic data structures known as
 ## Array
 
 ---
+1. [One Dimensional Arrays (1D Arrays)](#what-is-an-Array?)
+2. [Two Dimensional Arrays (2D Arrays)](#Two-Dimensional-Arrays-2D-Arrays)
+---
 
 ### What is an Array?
 
