@@ -215,8 +215,9 @@ public class TakingArrayAsInput{
 
 ---
 
-
 Now we will move to Two-Dimensional Arrays.
+
+
 
 ---
 
@@ -318,3 +319,12 @@ public class AccessingArrayElements{
 ---
 
 
+SHOULD BE LAST
+
+**Common Mistakes:**
+
+- Most beginners to Java who came from C++ background or even naive beginners use `int arr[5]` for creating an array of size 5 but that's a mistake.
+- Many beginners use `arr.length()` instead of `arr.length`. `.length()` is method for `Strings` in Java which will be a differenct topic, while `.length` is an attribute of every array in Java.
+- Many beginners initialize a 2D array like this
+          `int[][] arr = new int[][5];`
+  which is a wrong way of doing this as rows are mandatory to be defined when initializing but columns are not.
