@@ -19,7 +19,7 @@ Now let's dive into one of the most important and basic data structures known as
 
 ### What is an Array?
 
-An array is a collection of homogenous (i.e. of the same data type) items or objects stored in the contiguous memory locations. Each item stored in an array is called an element. Each element in an array can be identified by its index or subscript. Index of an array starts from `0` and goes up to `size of array - 1`.
+An array is a collection of homogenous (i.e. of the same data type) items or objects stored in the contiguous memory locations. Each item stored in an array is called an element. Each element in an array can be identified by its index or subscript. The index of an array starts from `0` and goes up to `size of array - 1`.
 
 ---
 
@@ -42,7 +42,7 @@ public class ArrayDeclaration{
 
 **Array Initialization**
 
-An array of size 5 can be initialized as given below. while initializing the array size is not mendatory.
+An array of size 5 can be initialized as given below. While initializing the array size is not mandatory.
 
 **Example:**
 
@@ -57,7 +57,7 @@ public class ArrayInitialization{
 
 ---
 
-**Length of an Array:** In Java, all the user defined arrays are the objects of the class `Arrays` and `Arrays` class has a `public final length` attribute which determines the length of the arrays and it can be accessed in this way for array named as nums: `**nums.length**`
+**Length of an Array:** In Java, arrays are objects. Every array has a built-in length attribute that stores the number of elements in the array. For example, if an array is named nums, its size can be obtained using **`nums.length`**.
 
 
 #### Accessing Array Elements
@@ -160,7 +160,7 @@ public class AccessingArrayElements{
 
 **Using Arrays.toString() method**
 
-Arrays.toString() method is a built in java method present in java.util package. It takes an array as input and returns formatted String in the format given in the Ouput of the following program. Printing the elements of an array using `Arrays.toString(int[] arr)` method.
+Arrays.toString() method is a built in java method present in java.util package. It takes an array as input and returns a formatted String in the format given in the Output of the following program. Printing the elements of an array using `Arrays.toString(int[] arr)` method.
 
 ***Example:***
 ```java
@@ -185,7 +185,7 @@ public class AccessingArrayElements{
 
 #### Taking Array Input from the User
 
-An array can be taken input from user in only one way which is using a for loop.
+Array elements are commonly taken as input using a loop because each element must be entered individually.
 
 ---
 
@@ -224,7 +224,7 @@ Now we will move to Two-Dimensional Arrays.
 
 ---
 
-A Two-Dimensional (2D) Array is an array of arrays. Think of it like a matrix having rows and columns, but since in Mathematics a matrix has a fixed number of rows and columns and the same is in C++, but there is a different case in Java. The 2D array may or may not have fixed number of columns but it has a fixed number of rows.
+A Two-Dimensional (2D) Array is an array of arrays. Think of it like a matrix having rows and columns, but since in Mathematics a matrix has a fixed number of rows and columns and the same is in C++, but there is a different case in Java. A 2D array may or may not have fixed number of columns but it has a fixed number of rows.
 
 ---
 
@@ -272,7 +272,7 @@ Elements of a two-dimensional array can be accessed in three different ways:
 
 - Using `indices` of the elements
 - Using `nested for loops`
-- Using `nested for each loops`
+- Using `nested for-each loops`
   
 ---
 
