@@ -50,7 +50,7 @@ public class ArrayInitialization{
 
 ---
 
-### Accessing Array Elements
+#### Accessing Array Elements
 
 ---
 
@@ -59,9 +59,13 @@ Elements of an array can be accessed in four ways
 - Using indices of an array.
 - Using a `for` loop
 - Using a `for each (A shorthand for loop)` loop
-- Using Arrays.toString() method
+- Using `Arrays.toString()` method
 
 **Using Indices of an array**
+
+Printing the array elements using indices of an array.
+
+***Example:***
 
 ```java
 public class ArrayInitialization{
@@ -77,7 +81,7 @@ public class ArrayInitialization{
 ```
 ---
 
-**Output:**
+***Output:**
 
 ```text
   12
@@ -90,6 +94,9 @@ public class ArrayInitialization{
 
 **Using for loop**
 
+Printing the elements of an array using a `for` loop.
+
+***Example***
 
 ```java
 public class ArrayInitialization{
@@ -104,7 +111,7 @@ public class ArrayInitialization{
 
 ---
 
-**Output:**
+***Output:***
 
 ```text
   12    34    22    98    100
@@ -113,6 +120,8 @@ public class ArrayInitialization{
 ---
 
 **Using for-each loop** 
+
+Printing the elements of an array using the enhanced for loop also known as `for-each loop`.
 
 ```java
 public class ArrayInitialization{
@@ -127,7 +136,7 @@ public class ArrayInitialization{
 
 ---
 
-**Output:**
+***Output:***
 
 ```text
   12    34    22    98    100
@@ -137,7 +146,9 @@ public class ArrayInitialization{
 
 **Using Arrays.toString() method**
 
+Arrays.toString() method is a built in java method present in java.util package. It takes an array as input and returns formatted String in the format given in the Ouput of the following program. Printing the elements of an array using `Arrays.toString(int[] arr)` method.
 
+***Example:***
 ```java
 import java.util.Arrays;
 public class ArrayInitialization{
@@ -150,7 +161,7 @@ public class ArrayInitialization{
 
 ---
 
-**Output:**
+***Output:***
 
 ```text
   [12, 34, 22, 98, 100]
@@ -158,7 +169,7 @@ public class ArrayInitialization{
 
 ---
 
-### Taking Array input from the user
+#### Taking Array input from the user
 
 An array can be taken input from user in only one way which is using a for loop.
 
