@@ -291,12 +291,12 @@ public class AccessingArrayElements{
     System.out.println();
     System.out.print(arr[1][0]+"\t");
     System.out.print(arr[1][1]+"\t");
-    System.out.printl(arr[1][2]+"\t");
+    System.out.print(arr[1][2]+"\t");
     System.out.println();
-    System.out.println(arr[2][0]+"\t");
-    System.out.println(arr[2][1]+"\t");
-    System.out.println(arr[2][2]+"\t");
-    System.out.println();
+    System.out.print(arr[2][0]+"\t");
+    System.out.print(arr[2][1]+"\t");
+    System.out.print(arr[2][2]+"\t");
+    System.out.print();
   }
 }
 ```
@@ -304,9 +304,9 @@ public class AccessingArrayElements{
 ***Output:***
 
 ```text
-  12   34  3
-  3    8   9
-  10   11  1
+  12	34	3	
+  3	8	9	
+  10	11	1
 
 ```
 
