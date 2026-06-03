@@ -296,7 +296,7 @@ public class AccessingArrayElements{
     System.out.print(arr[2][0]+"\t");
     System.out.print(arr[2][1]+"\t");
     System.out.print(arr[2][2]+"\t");
-    System.out.print();
+    System.out.println();
   }
 }
 ```
