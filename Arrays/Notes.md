@@ -81,7 +81,7 @@ public class ArrayInitialization{
 ```
 ---
 
-***Output:**
+***Output:***
 
 ```text
   12
