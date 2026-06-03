@@ -44,7 +44,7 @@ An array of size 5 can be initialized as given below. while initializing the arr
 ```java
 public class ArrayInitialization{
   public static void main(String[] args){
-    int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
+    int[] arr = {12, 34, 22, 98, 100}; //Initialization of array of size 5
   }
 }
 ```
@@ -74,7 +74,7 @@ Printing the array elements using indices of an array.
 ```java
 public class AccessingArrayElements{
   public static void main(String[] args){
-    int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
+    int[] arr = {12, 34, 22, 98, 100}; //Initialization of array of size 5
     System.out.println(arr[0]);
     System.out.println(arr[1]);
     System.out.println(arr[2]);
@@ -107,7 +107,7 @@ Printing the elements of an array using a `for` loop.
 ```java
 public class AccessingArrayElements{
   public static void main(String[] args){
-    int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
+    int[] arr = {12, 34, 22, 98, 100}; //Initialization of array of size 5
     for(int i = 0; i < arr.length; i++){
         System.out.print(arr[i]+"\t");
     }
@@ -132,7 +132,7 @@ Printing the elements of an array using the enhanced for loop also known as `for
 ```java
 public class AccessingArrayElements{
   public static void main(String[] args){
-    int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
+    int[] arr = {12, 34, 22, 98, 100}; //Initialization of array of size 5
     for(int i: arr){
         System.out.print(i+"\t");
     }
@@ -159,7 +159,7 @@ Arrays.toString() method is a built in java method present in java.util package.
 import java.util.Arrays;
 public class AccessingArrayElements{
   public static void main(String[] args){
-    int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
+    int[] arr = {12, 34, 22, 98, 100}; //Initialization of array of size 5
     System.out.println(Arrays.toString(arr));
   }
 }
@@ -199,6 +199,8 @@ public class TakingArrayAsInput{
       System.out.print("Enter the element no "+(i+1)+" = ");
       arr[i] = sc.nextInt();  
     }
+  //finally closing the Scanner
+    sc.close();
   }
 }
 ```
