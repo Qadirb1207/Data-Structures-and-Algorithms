@@ -281,9 +281,9 @@ A Two-Dimensional Array can be printed using the indices of that array as follow
 public class AccessingArrayElements{
   public static void main(String[] args){
     int[][] arr = {
-              {12, 34, 3},
-              {3, 8, 9},
-              {10, 11, 1}
+              {12, 34, 32},
+              {33, 83, 93},
+              {10, 11, 14}
               }; //initialization of a 3x3 array 
     System.out.print(arr[0][0]+"\t");
     System.out.print(arr[0][1]+"\t");
@@ -304,9 +304,9 @@ public class AccessingArrayElements{
 ***Output:***
 
 ```text
-  12	34	3	
-  3	8	9	
-  10	11	1
+  12	34	32	
+  33	83	93	
+  10	11	14
 
 ```
 
