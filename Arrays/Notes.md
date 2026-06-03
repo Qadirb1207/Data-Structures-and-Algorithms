@@ -323,8 +323,6 @@ SHOULD BE LAST
 
 **Common Mistakes:**
 
-- Most beginners to Java who came from C++ background or even naive beginners use `int arr[5]` for creating an array of size 5 but that's a mistake.
-- Many beginners use `arr.length()` instead of `arr.length`. `.length()` is method for `Strings` in Java which will be a differenct topic, while `.length` is an attribute of every array in Java.
-- Many beginners initialize a 2D array like this
-          `int[][] arr = new int[][5];`
-  which is a wrong way of doing this as rows are mandatory to be defined when initializing but columns are not.
+- Many beginners who come to Java from C++ try to declare an array as `int arr[5]`. This syntax is valid in C++, but not in Java. In Java, the correct syntax is `int[] arr = new int[5];`.
+- Many beginners use `arr.length()` instead of `arr.length`. Arrays use the `length` attribute, while Strings use the `length()` method.
+- Many beginners try to initialize a 2D array as `int[][] arr = new int[][5];`. This is invalid because when creating a 2D array in Java, the number of rows must be specified first. The columns may be omitted if a jagged array is intended.
