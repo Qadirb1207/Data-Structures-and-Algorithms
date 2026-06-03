@@ -18,11 +18,13 @@ Now let's dive into one of the most important and basic data structures known as
 
 An array is a collection of homogenous (i.e. of the same data type) items or objects stored in the contiguous memory locations. Each item stored in an array is called its element or member. Each element in an array can be identified by its index or subscript. Index of an array starts from `0` and goes up to `size of array - 1`.
 
+---
+
 **Array Declaration**
 
 An array of size 5 can be declared as follows:
 
-**Example:**
+***Example:***
 
 ```java
 public class ArrayDeclaration{
@@ -61,6 +63,8 @@ Elements of an array can be accessed in four ways
 - Using a `for each (A shorthand for loop)` loop
 - Using `Arrays.toString()` method
 
+---
+
 **Using Indices of an array**
 
 Printing the array elements using indices of an array.
@@ -68,7 +72,7 @@ Printing the array elements using indices of an array.
 ***Example:***
 
 ```java
-public class ArrayInitialization{
+public class AccessingArrayElements{
   public static void main(String[] args){
     int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
     System.out.println(arr[0]);
@@ -79,6 +83,7 @@ public class ArrayInitialization{
   }
 }
 ```
+
 ---
 
 ***Output:***
@@ -90,6 +95,7 @@ public class ArrayInitialization{
   98
   100
 ```
+
 ---
 
 **Using for loop**
@@ -99,7 +105,7 @@ Printing the elements of an array using a `for` loop.
 ***Example***
 
 ```java
-public class ArrayInitialization{
+public class AccessingArrayElements{
   public static void main(String[] args){
     int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
     for(int i = 0; i < arr.length; i++){
@@ -124,7 +130,7 @@ public class ArrayInitialization{
 Printing the elements of an array using the enhanced for loop also known as `for-each loop`.
 
 ```java
-public class ArrayInitialization{
+public class AccessingArrayElements{
   public static void main(String[] args){
     int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
     for(int i: arr){
@@ -151,7 +157,7 @@ Arrays.toString() method is a built in java method present in java.util package.
 ***Example:***
 ```java
 import java.util.Arrays;
-public class ArrayInitialization{
+public class AccessingArrayElements{
   public static void main(String[] args){
     int[] arr = {12, 34, 22, 98, 100}; //declaration of array of size 5
     System.out.println(Arrays.toString(arr));
@@ -179,7 +185,7 @@ An array can be taken input from user in only one way which is using a for loop.
 
 ```java
 import java.util.Scanner;
-public class ArrayInitialization{
+public class TakingArrayAsInput{
   public static void main(String[] args){
     Scanner sc = new Scanner(System.in); //creating an object of the Scanner class
   //taking size of the array as input from the user
@@ -198,3 +204,107 @@ public class ArrayInitialization{
 ```
 
 ---
+
+
+Now we will move to Two-Dimensional Arrays.
+
+---
+
+## Two Dimensional Arrays (2D Arrays)
+
+---
+
+A Two-Dimensional (2D) Array is an array of arrays. Think of it like a matrix having rows and columns, but since in Mathematics a matrix have a fixed number of rows and columns and the same is in C++, but there is a different case. The 2D array may or may not have fixed number of columns but it has a fixed number of rows.
+
+---
+
+**2D Array Declaration**
+
+A 2D array of size 3 can be declared as follows:
+
+***Example:***
+
+As a 2D array can have 1 or more arrays inside it having different sizes so this type of array is called `Jagged/Uneven Array` in Java. In Java, while declaring a 2D Array **its rows must mandatorily be difined**.
+
+```java
+public class ArrayDeclaration{
+  public static void main(String[] args){
+    int[][] arr = new int[3][]; //declaration of 2D Array of size 3, means it can have 3 arrays of different sizes in it
+  }
+}
+```
+---
+
+**2D Array Initialization**
+
+A two-dimensional array can be initialized as follows: 
+
+***Example:***
+
+```java
+public class ArrayDeclaration{
+  public static void main(String[] args){
+    int[][] arr = {
+              {12, 34, 3},
+              {3, 8, 9},
+              {10, 11, 1}
+              }; //initialization of a 3x3 array 
+  }
+}
+```
+---
+
+### Accessing Elements of a 2D Array
+
+---
+
+Elements of a two-dimensional array can be accessed in three different ways:
+
+- Using `indices` of the elements
+- Using `nested for loops`
+- Using `nested for each loops`
+  
+---
+
+**Using Indices of a 2D Array**
+
+A Two-Dimensional Array can be printed using the indices of that array as follows:
+
+***Example:***
+
+```java
+public class AccessingArrayElements{
+  public static void main(String[] args){
+    int[][] arr = {
+              {12, 34, 3},
+              {3, 8, 9},
+              {10, 11, 1}
+              }; //initialization of a 3x3 array 
+    System.out.print(arr[0][0]+"\t");
+    System.out.print(arr[0][1]+"\t");
+    System.out.print(arr[0][2]+"\t");
+    System.out.println();
+    System.out.print(arr[1][0]+"\t");
+    System.out.print(arr[1][1]+"\t");
+    System.out.printl(arr[1][2]+"\t");
+    System.out.println();
+    System.out.println(arr[2][0]+"\t");
+    System.out.println(arr[2][1]+"\t");
+    System.out.println(arr[2][2]+"\t");
+    System.out.println();
+  }
+}
+```
+
+***Output:***
+
+```text
+  12   34  3
+  3    8   9
+  10   11  1
+
+```
+
+---
+
+
