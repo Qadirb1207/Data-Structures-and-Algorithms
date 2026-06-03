@@ -216,7 +216,7 @@ Now we will move to Two-Dimensional Arrays.
 
 ---
 
-A Two-Dimensional (2D) Array is an array of arrays. Think of it like a matrix having rows and columns, but since in Mathematics a matrix have a fixed number of rows and columns and the same is in C++, but there is a different case. The 2D array may or may not have fixed number of columns but it has a fixed number of rows.
+A Two-Dimensional (2D) Array is an array of arrays. Think of it like a matrix having rows and columns, but since in Mathematics a matrix have a fixed number of rows and columns and the same is in C++, but there is a different case in Java. The 2D array may or may not have fixed number of columns but it has a fixed number of rows.
 
 ---
 
