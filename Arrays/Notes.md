@@ -3,7 +3,7 @@
 
 ---
 
-A data structure is an arrangement of data in a computer's memory (or sometimes on a disk). Some data structures include Arrays, ArraysLists, LinkedLists, Stacks, Queues, HashMaps etc
+A data structure is an arrangement of data in a computer's memory (or sometimes on a disk). Some data structures include Arrays, ArrayLists, LinkedLists, Stacks, Queues, HashMaps etc
 
 ## Algorithm
 
@@ -19,7 +19,7 @@ Now let's dive into one of the most important and basic data structures known as
 
 ### What is an Array?
 
-An array is a collection of homogenous (i.e. of the same data type) items or objects stored in the contiguous memory locations. Each item stored in an array is called its element or member. Each element in an array can be identified by its index or subscript. Index of an array starts from `0` and goes up to `size of array - 1`.
+An array is a collection of homogenous (i.e. of the same data type) items or objects stored in the contiguous memory locations. Each item stored in an array is called an element. Each element in an array can be identified by its index or subscript. Index of an array starts from `0` and goes up to `size of array - 1`.
 
 ---
 
@@ -36,6 +36,8 @@ public class ArrayDeclaration{
   }
 }
 ```
+**Note:** All the elements of the array, declared as above, are initialized to default values, such as 0 for integers and null for Strings.
+
 ---
 
 **Array Initialization**
@@ -51,15 +53,18 @@ public class ArrayInitialization{
   }
 }
 ```
-*NOTE:*  As the array size is not mendatory Java will get the size from number of elements given in the array.
+*NOTE:*  As the array size is not mandatory, Java determines the size from the number of elements provided.
 
 ---
+
+**Length of an Array:** In Java, all the user defined arrays are the objects of the class `Arrays` and `Arrays` class has a `public final length` attribute which determines the length of the arrays and it can be accessed in this way for array named as nums: `**nums.length**`
+
 
 #### Accessing Array Elements
 
 ---
 
-Elements of an array can be accessed in four ways
+Array elements can be accessed in the following ways:
 
 - Using indices of an array.
 - Using a `for` loop
@@ -70,7 +75,7 @@ Elements of an array can be accessed in four ways
 
 **Using Indices of an array**
 
-Printing the array elements using indices of an array.
+Printing the array elements using array indices.
 
 ***Example:***
 
@@ -178,7 +183,7 @@ public class AccessingArrayElements{
 
 ---
 
-#### Taking Array input from the user
+#### Taking Array Input from the User
 
 An array can be taken input from user in only one way which is using a for loop.
 
@@ -219,7 +224,7 @@ Now we will move to Two-Dimensional Arrays.
 
 ---
 
-A Two-Dimensional (2D) Array is an array of arrays. Think of it like a matrix having rows and columns, but since in Mathematics a matrix have a fixed number of rows and columns and the same is in C++, but there is a different case in Java. The 2D array may or may not have fixed number of columns but it has a fixed number of rows.
+A Two-Dimensional (2D) Array is an array of arrays. Think of it like a matrix having rows and columns, but since in Mathematics a matrix has a fixed number of rows and columns and the same is in C++, but there is a different case in Java. The 2D array may or may not have fixed number of columns but it has a fixed number of rows.
 
 ---
 
@@ -229,12 +234,12 @@ A 2D array of size 3 can be declared as follows:
 
 ***Example:***
 
-As a 2D array can have 1 or more arrays inside it having different sizes so this type of array is called `Jagged/Uneven Array` in Java. In Java, while declaring a 2D Array **its rows must mandatorily be difined**.
+As a 2D array can have 1 or more arrays inside it having different sizes so this type of array is called `Jagged/Uneven Array` in Java. In Java, while declaring a 2D Array **its rows must be defined**.
 
 ```java
 public class ArrayDeclaration{
   public static void main(String[] args){
-    int[][] arr = new int[3][]; //declaration of 2D Array of size 3, means it can have 3 arrays of different sizes in it
+    int[][] arr = new int[3][]; //declaration of a 2D array with 3 rows; it can contain 3 arrays
   }
 }
 ```
