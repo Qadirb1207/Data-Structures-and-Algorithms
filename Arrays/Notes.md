@@ -8,6 +8,7 @@ Now let's dive into one of the most important and basic data structures known as
 An array is a collection of homogenous (i.e. of the same data type) items or objects stored in the contiguous memory locations. Each item stored in an array is called its element or member. Each element in an array can be identified by its index or subscript. Index of an array starts from `0` and goes up to `size of array - 1`.
 
 **Array Declaration**
+
 An array of size 5 can be declared as follows:
 
 **Example:**
