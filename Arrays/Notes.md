@@ -318,11 +318,82 @@ public class AccessingArrayElements{
 
 ---
 
+**Using `nested for loop`**
 
-SHOULD BE LAST
+A 2D array can easily be printed using loops like given in the following example.
+
+***Example:***
+
+```java
+public class AccessingArrayElements{
+  public static void main(String[] args){
+    int[][] arr = {
+              {12, 34, 32},
+              {33, 83, 93},
+              {10, 11, 14}
+              }; //initialization of a 3x3 array 
+    for(int i = 0; i < arr.length; i++){//here arr.length gives the number of rows
+      for(int j = 0; j < arr[i].length; j++){//here arr[i].length gives the number of columns in ith row
+        System.out.print(arr[i][j]+"\t");
+      }
+      System.out.println();
+    }
+  }
+}
+```
+
+***Output:***
+
+```text
+  12	34	32	
+  33	83	93	
+  10	11	14
+
+```
+
+---
+
+**Using `nested for-each loop`**
+
+The same array can be printed using another easy method which is through `nested for-each loop`.
+
+***Example:***
+
+```java
+public class AccessingArrayElements{
+  public static void main(String[] args){
+    int[][] arr = {
+              {12, 34, 32},
+              {33, 83, 93},
+              {10, 11, 14}
+              }; //initialization of a 3x3 array 
+    for(int[] a: arr){//here arr.length gives the number of rows
+      for(int num: a){//here arr[i].length gives the number of columns in ith row
+        System.out.print(num+"\t");
+      }
+      System.out.println();
+    }
+  }
+}
+```
+
+***Output:***
+
+```text
+  12	34	32	
+  33	83	93	
+  10	11	14
+
+```
+
+---
+
+
+
 
 **Common Mistakes:**
 
 - Many beginners who come to Java from C++ try to declare an array as `int arr[5]`. This syntax is valid in C++, but not in Java. In Java, the correct syntax is `int[] arr = new int[5];`.
 - Many beginners use `arr.length()` instead of `arr.length`. Arrays use the `length` attribute, while Strings use the `length()` method.
 - Many beginners try to initialize a 2D array as `int[][] arr = new int[][5];`. This is invalid because when creating a 2D array in Java, the number of rows must be specified first. The columns may be omitted if a jagged array is intended.
+- Many beginners create an array like this `int[] arr = new int[5];`, which is a correct syntax in java, but they print like `System.out.println(arr[5]);` which is a runtime error called `ArrayIndexOutOfBoundsException`, as the array index starts from 0 and goes upto `arr.length-1`.
