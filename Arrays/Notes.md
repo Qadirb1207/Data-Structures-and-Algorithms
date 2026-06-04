@@ -73,7 +73,7 @@ Array elements can be accessed in the following ways:
 
 ---
 
-**Using Indices of an array**
+**Using `Indices` of an array**
 
 Printing the array elements using array indices.
 
@@ -106,7 +106,7 @@ public class AccessingArrayElements{
 
 ---
 
-**Using for loop**
+**Using `for loop`**
 
 Printing the elements of an array using a `for` loop.
 
@@ -133,7 +133,7 @@ public class AccessingArrayElements{
 
 ---
 
-**Using for-each loop** 
+**Using `for-each loop`** 
 
 Printing the elements of an array using the enhanced for loop also known as `for-each loop`.
 
@@ -158,7 +158,7 @@ public class AccessingArrayElements{
 
 ---
 
-**Using Arrays.toString() method**
+**Using `Arrays.toString()` method**
 
 Arrays.toString() method is a built in java method present in java.util package. It takes an array as input and returns a formatted String in the format given in the Output of the following program. Printing the elements of an array using `Arrays.toString(int[] arr)` method.
 
@@ -277,7 +277,7 @@ Elements of a two-dimensional array can be accessed in three different ways:
   
 ---
 
-**Using Indices of a 2D Array**
+**Using `Indices` of a 2D Array**
 
 A Two-Dimensional Array can be printed using the indices of that array as follows:
 
