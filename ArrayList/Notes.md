@@ -43,4 +43,54 @@ array lists you will be free from the worry of size reduction.
 
 ---
 
+### Creating an ArrayList
+
+**Importing ArrayList**
+
+As we discussed earlier, that ArrayList is a part of Java Collection Framework so for creating an ArrayList we need to import it first in our program using the `import`
+statement. 
+
+***Example:***
+```java
+import java.util.ArrayList;
+```
+
+
+**Declaring An ArrayList**
+
+Like arrays, ArrayLists can be declared as well as initialized, so for declaring an ArrayList we use this syntax `ArrayList<DataType> name;`. Note that here DataType should not be int, char, boolean or any primitive data type instead we use the Wrapper Classes which are **`Integer`** for `int` **`Boolean`** for `boolean` and **`Character`** for chars, since String is not a primitive data type in Java so it must be used as it is.
+
+
+***Example:***
+```java
+import java.util.ArrayList;
+
+public class ArrayListDeclaration{
+  public static void main(String[] args){
+    ArrayList<Integer> myList; //declaring an integer ArrayList
+    ArrayList<Boolean> myBoolList; //declaring a Boolean ArrayList
+    ArrayList<String> myStringList; //declaring  an String ArrayList
+    ArrayList<Character> myCharList; //declaring a Character ArrayList
+  }
+}
+```
+
+
+**Initializing an ArrayList**
+
+ArrayLists can be initialized as given below:
+
+***Example:***
+```java
+import java.util.ArrayList;
+
+public class ArrayListDeclaration{
+  public static void main(String[] args){
+    ArrayList<Integer> myList = new ArrayList<>(); //Initializing an integer ArrayList
+    ArrayList<Boolean> myBoolList  = new ArrayList<>(); //Initializing a Boolean ArrayList
+    ArrayList<String> myStringList  = new ArrayList<>(); //Initializing  an String ArrayList
+    ArrayList<Character> myCharList  = new ArrayList<>(5); //Initializing a Character ArrayList of initial size 5 it can be extended when more characters are added
+  }
+}
+```
 
