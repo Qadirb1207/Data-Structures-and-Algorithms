@@ -422,7 +422,9 @@ public class AccessingArrayElements{
 # Author Details
 
 **Name:**  Qadir Bakhsh
+
 **Contact Email:**  [qadirb3492@gmail.com](#qadirb3492@gmail.com)
+
 **LinkedIn Profile:**  [Qadir Bakhsh] (#https://www.linkedin.com/in/qadir-bakhsh)
 
 ---
