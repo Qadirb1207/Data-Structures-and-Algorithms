@@ -425,7 +425,7 @@ public class AccessingArrayElements{
 
 **Contact Email:**  [qadirb3492@gmail.com](#qadirb3492@gmail.com)
 
-**LinkedIn Profile:**  [Qadir Bakhsh] (#https://www.linkedin.com/in/qadir-bakhsh)
+**LinkedIn Profile:**  [Qadir Bakhsh](#https://www.linkedin.com/in/qadir-bakhsh)
 
 ---
 
