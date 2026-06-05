@@ -15,6 +15,7 @@ Now let's dive into one of the most important and basic data structures known as
 ---
 1. [One Dimensional Arrays (1D Arrays)](#what-is-an-Array?)
 2. [Two Dimensional Arrays (2D Arrays)](#Two-Dimensional-Arrays-2D-Arrays)
+3. [Author Details](#Author-Details)
 ---
 
 ### What is an Array?
@@ -388,8 +389,43 @@ public class AccessingArrayElements{
 
 ---
 
+#### Taking Array Input from the User
 
+2D array elements are often taken input from the user using `nested for loops` as each element is entered individually.
 
+***Example:***
+
+```java
+import java.util.Scanner;
+public class AccessingArrayElements{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the rows of the matrix = ");
+    int rows = sc.nextInt();
+    System.out.print("Enter the columns of the matrix = ");
+    int cols = sc.nextInt();
+
+    int[][] matrix = new int[rows][cols];
+
+    for(int i = 0; i < matrix.length; i++){
+      for(int j = 0; j < matrix[i].length; j++){
+        System.out.print("Enter the Element for the row "+(i+1)+" and column "+(j+1)+" = ");
+        arr[i][j] = sc.nextInt();
+      }
+    }
+  }
+}
+```
+
+---
+
+# Author Details
+
+**Name:**  Qadir Bakhsh
+**Contact Email:**  [qadirb3492@gmail.com](#qadirb3492@gmail.com)
+**LinkedIn Profile:**  [Qadir Bakhsh] (#https://www.linkedin.com/in/qadir-bakhsh)
+
+---
 
 **Common Mistakes:**
 
