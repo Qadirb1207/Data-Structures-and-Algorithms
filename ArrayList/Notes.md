@@ -18,7 +18,7 @@ other elements to it, you can do it without having to worry about its size, it w
 example your memory ran out or you created such a large sized ArrayList that Java does not support. Let's understand it through a real
 life example: 
 Suppose their is a hotel in your city having only 50 rooms, and all are full and you want a room, definitely the hotel manager cannot provide you
-a room as all rooms, in the hotel, are full. But your friends tells you I know another hotel which grows its size as customers increase.
+a room as all rooms, in the hotel, are full. But your friend tells you I know another hotel which grows its size as customers increase.
 You may be wondered how is this possible that a hotel increases its capacity, this may or may not be true in the real life, but its 100% 
 possible in Java through ArrayLists.
 So when you are creating a program which stores students information or any other such application
