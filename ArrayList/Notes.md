@@ -124,7 +124,8 @@ ArrayLists in Java have some awesome and useful characteristics, here we will de
 
 In normal arrays, we have to decide the size beforehand, like this: 
 
-```java int[] arr = new int[5];```
+```java 
+int[] arr = new int[5];```
 
 Now if we want to store the 6th element, we are stuck.
 
