@@ -94,3 +94,112 @@ public class ArrayListDeclaration{
 }
 ```
 
+---
+
+### Characteristics of An ArrayLists
+
+ArrayLists in Java have some awesome and useful characteristics, here we will define them.
+
+**1. Dynamic (Resizable) size**
+
+In normal arrays, we have to decide the size beforehand, like this: 
+
+```java int[] arr = new int[5];```
+
+Now if we want to store the 6th element, we are stuck.
+
+But in ArrayList, we don't need to worry about the size. Whenever the current array is full, Java automatically creates a larger behind the 
+scenes and copy the old elements into it.
+***In simple words:*** ArrayLists grow automatically when needed.
+
+
+**2. Indexed Data Structure**
+
+If you have an ArrayLists like the following:
+
+```text
+index: 0  1  2  3  4
+value: A  B  C  D  E
+```
+
+Now you want to access `D`, you don't need to traverse all the previous elements in order to get the required one, but instead you can use the 
+built-in `.get()` method like this:
+
+```java
+value.get(2)
+```
+
+This will give you `D`. 
+
+***In simple words:*** We can access ArrayLists elements through their indices, like those in the arrays.
+
+
+**3. Maintains Insertion Order**
+
+ArrayList stores the elements in the same order they were inserted. Suppose you add:
+
+```text
+10
+21
+22
+20
+```
+
+ArrayList will store them like this:
+
+```text
+[10, 21, 22, 20]
+```
+
+While accessing, you will get the elements in the same order you inserted.
+
+
+**4. Allows Duplicates Elements**
+
+ArrayLists don't care about the duplicates elements because their indices are different.
+Suppose you have an ArrayList:
+
+```text
+[10, 20, 32, 20]
+```
+
+This perfectly valid, because the first `20` at index `1`, is different from the the second `20` at index `3`, even though the numbers are the same
+their indices differ.
+
+***In simple words:*** Same value can be stored again and again
+
+
+**5. Allows Null Values**
+
+ArrayLists can store the `null` values. Suppose you created an ArrayList and added some values in it like this: 
+
+```java
+  ArrayList<String> names = new ArrayList<>(3);
+  names.add("Abrar")
+  names.add("Qadir");
+```
+
+Since, the initial size of the ArrayList is 3 but you added only 2 values, the value at the index `3` is `null`, which is perfectly valid in Java.
+
+***In simple words:*** An ArrayList position can be empty and contain `null`.
+
+
+**6. Stores objects (Not primitives Directly)**
+
+In Java, ArrayLists work with objects, so the following line will through an error, if added, in your code:
+
+```java
+  ArrayList<int> nums = new ArrayList<>();
+```
+
+To solve this error, you need to replace the `int` with its wrapper class `Integer`, like the following line: ( For more on wrapper classes [Click Here](#Declaring-an-ArrayList)).
+
+```java
+  ArrayList<Integer> nums = new ArrayList<>();
+```
+*Note:* Java automatically converts between primitives and wrapper classes when needed.
+
+***In simple words:*** ArrayLists store objects, so the primitives must be wrapped in their wrapper classes.
+
+---
+
