@@ -103,7 +103,7 @@ public class ArrayListDeclaration{
 ---
 
 
-### Characteristics of An ArrayLists
+### Characteristics of An ArrayList
 
 ArrayLists in Java have some awesome and useful characteristics, here we will define them.
 
