@@ -14,7 +14,8 @@ Suppose you created an array of size 5 like this `int[] arr = new int[5]`, now y
 would have a need to add the 6th element to it, you definitely cannot do this when you have created an array. Java solves this 
 problem through providing the ArrayLists. ArrayLists grow as you add more elements automatically, and shrink automatically as 
 you remove elements from it. Suppose you create an ArrayList today and add 10 elements to it, tomorrow you want to add 10
-other elements to it, you can do it without having to worry about its size, its will never fill. Let's understand it through a real
+other elements to it, you can do it without having to worry about its size, it will never fill. However there are limits for it too, for
+example your memory ran out or you created such a large sized ArrayList that Java does not support. Let's understand it through a real
 life example: 
 Suppose their is a hotel in your city having only 50 rooms, and all are full and you want a room, definitely hotel manager cannot provide
 a room as all rooms in the hotel are full. But your friends tells you I know another hotel which grows its size as customer increase.
