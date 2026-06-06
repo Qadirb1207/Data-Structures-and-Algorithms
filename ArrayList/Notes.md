@@ -1,3 +1,15 @@
+---
+# Outline
+
+1. [ArrayLists Definition](#ArrayLists)
+2. [Why do we need ArrayLists](#Why-do-we-need-ArrayLists)
+3. [Difference b/w Array and ArrayList](#Difference-between-Array-and-ArrayList)
+4. [Creating an ArrayList](#Creating-an-ArrayList)
+5. [Characteristics of an ArrayList](#Characteristics-of-an-ArrayList)
+
+
+---
+
 # ArrayLists
 
 ArrayList is a resizable array data structure provided by Java that stores elements in the contiguous memory locations 
