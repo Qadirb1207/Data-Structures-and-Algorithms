@@ -13,7 +13,7 @@ Unlike arrays, its size does not need to be fixed at creation time.
 Suppose you created an array of size 5 like this `int[] arr = new int[5]`, now you can only add 5 elements to it, what if you 
 would have a need to add the 6th element to it, you definitely cannot do this when you have created an array. Java solves this 
 problem through providing the ArrayLists. ArrayLists grow as you add more elements automatically, and shrink automatically as 
-you remove elements from it. Suppose you create an ArrayList and today you added 10 elements to it, tomorrow you want to add 10
+you remove elements from it. Suppose you create an ArrayList today and add 10 elements to it, tomorrow you want to add 10
 other elements to it, you can do it without having to worry about its size, its will never fill. Let's understand it through a real
 life example: 
 Suppose their is a hotel in your city having only 50 rooms, and all are full and you want a room, definitely hotel manager cannot provide
