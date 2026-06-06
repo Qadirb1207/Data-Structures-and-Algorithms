@@ -11,7 +11,7 @@ Unlike arrays, its size does not need to be fixed at creation time.
 ### Why do we need ArrayLists?
 
 Suppose you created an array of size 5 like this `int[] arr = new int[5]`, now you can only add 5 elements to it, what if you 
-would havea need to add the 6th element to it, you definitely cannot do this when you have created an array. Java solves this 
+would have a need to add the 6th element to it, you definitely cannot do this when you have created an array. Java solves this 
 prooblem through providing the ArrayLists. ArrayLists grow as you add more elements automatically, and shrink automatically as 
 you remove elements from it. Suppose you create an ArrayList and today you added 10 elements to it, tomorrow you want to add 10
 other elements to it, you can do it without having to worry about its size, its will never fill. Let's understand it through a real
