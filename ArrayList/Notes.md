@@ -202,7 +202,7 @@ In Java, ArrayLists work with objects, so the following line will through an err
   ArrayList<int> nums = new ArrayList<>();
 ```
 
-To solve this error, you need to replace the `int` with its wrapper class `Integer`, like the following line: ( For more on wrapper classes [Click Here](#Declaring-an-ArrayList)).
+To solve this error, you need to replace the `int` with its wrapper class `Integer`, like the following line: ( For more on wrapper classes [Click Here](#Creating-an-ArrayList/Declaring-an-ArrayList)).
 
 ```java
   ArrayList<Integer> nums = new ArrayList<>();
