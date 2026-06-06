@@ -1,7 +1,7 @@
 ---
 # Outline
 
-1. [ArrayLists Definition](#ArrayLists)
+1. [ArrayList Definition](#ArrayLists)
 2. [Why do we need ArrayLists](#Why-do-we-need-ArrayLists)
 3. [Difference b/w Array and ArrayList](#Difference-between-Array-and-ArrayList)
 4. [Creating an ArrayList](#Creating-an-ArrayList)
