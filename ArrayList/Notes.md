@@ -7,6 +7,7 @@ Unlike arrays, its size does not need to be fixed at creation time.
 
 ---
 
+
 ### Why do we need ArrayLists?
 
 Suppose you created an array of size 5 like this `int[] arr = new int[5]`, now you can only add 5 elements to it, what if you 
@@ -25,6 +26,7 @@ array lists you will be free from the worry of size reduction.
 
 ---
 
+
 ### Difference between Array and ArrayList
 
 | Feature | Array | ArrayList |
@@ -42,6 +44,7 @@ array lists you will be free from the worry of size reduction.
 | Performance | Faster | Slightly slower due to resizing overhead |
 
 ---
+
 
 ### Creating an ArrayList
 
@@ -96,9 +99,11 @@ public class ArrayListDeclaration{
 
 ---
 
+
 ### Characteristics of An ArrayLists
 
 ArrayLists in Java have some awesome and useful characteristics, here we will define them.
+
 
 **1. Dynamic (Resizable) size**
 
@@ -108,9 +113,11 @@ In normal arrays, we have to decide the size beforehand, like this:
 
 Now if we want to store the 6th element, we are stuck.
 
-But in ArrayList, we don't need to worry about the size. Whenever the current array is full, Java automatically creates a larger behind the 
+But in ArrayList, we don't need to worry about the size. Whenever the current array is full, Java automatically creates a larger one behind the 
 scenes and copy the old elements into it.
+
 ***In simple words:*** ArrayLists grow automatically when needed.
+
 
 
 **2. Indexed Data Structure**
