@@ -59,6 +59,8 @@ statement.
 import java.util.ArrayList;
 ```
 
+***Note:*** The `import` statement should be the first statement if there is no `package` statement in your program, if there is a `package` statement then the `import` statement should be the second.
+
 
 **Declaring An ArrayList**
 
