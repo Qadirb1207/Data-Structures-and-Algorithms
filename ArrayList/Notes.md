@@ -88,7 +88,7 @@ import java.util.ArrayList;
 
 **Declaring An ArrayList**
 
-Like arrays, ArrayLists can be declared as well as initialized, so for declaring an ArrayList we use this syntax `ArrayList<DataType> name;`. Note that here DataType should not be int, char, boolean or any primitive data type instead we use the Wrapper Classes which are **`Integer`** for `int` **`Boolean`** for `boolean` and **`Character`** for `char`, since String is not a primitive data type in Java so it must be used as it is.
+Like arrays, ArrayLists can be declared as well as initialized, so for declaring an ArrayList we use this syntax `ArrayList<DataType> name;`. Note that here DataType should not be int, char, boolean or any primitive data type instead we use the Wrapper Classes which are **`Integer`** for `int`, **`Boolean`** for `boolean` and **`Character`** for `char`, since String is not a primitive data type in Java so it must be used as it is.
 
 
 ***Example:***
