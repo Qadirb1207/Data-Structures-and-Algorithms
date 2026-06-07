@@ -124,7 +124,7 @@ public class ArrayListDeclaration{
 }
 ```
 
-*Note:* `<>` is called **Diamond Operator** and it is used with the DataType of ArrayLists and LinkedLists.
+*Note:* `<>` is called the **Diamond Operator**. It is used with Java Generics to allow the compiler to infer the data type automatically, so we do not need to repeat the type on the right-hand side.
 
 
 ---
