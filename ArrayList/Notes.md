@@ -7,6 +7,7 @@
 4. [Creating an ArrayList](#Creating-an-ArrayList)
 5. [Characteristics of an ArrayList](#Characteristics-of-an-ArrayList)
 6. [Common Operations on ArrayLists](#Common-Operations-on-ArrayLists)
+7. [Common Built-in Methods of ArrayList](#Common-Built-in-Methods-of-ArrayList)
 
 
 ---
@@ -260,7 +261,7 @@ public class TakingArrayListAsInput{
 ```
 
 
-**Printing an ArrayList**
+**2. Printing an ArrayList**
 
 An ArrayList can be printed through four different ways:
 
@@ -275,7 +276,7 @@ You can print an ArrayList through its indices using `.get()` method. For more k
 
 *****Example:*****
 
-Modifying the previous input program for to add printing logic.
+Modifying the previous input program to add printing logic.
 
 ```java
 //importing the ArrayList and Scanner (e.g for input) first
@@ -305,7 +306,7 @@ public class TakingArrayListAsInput{
 }
 ```
 
-*Note: * There is a problem in this method which is *What if we don't know the size of the ArrayList?* Or *What if the ArrayList is too large?* To solve these issues you should go for the next methods in this section
+*Note:* There is a problem in this method which is *What if we don't know the size of the ArrayList?* Or *What if the ArrayList is too large?* To solve these issues you should go for the next methods in this section
 
 ***Using simple `System.out.println()` method***
 
@@ -439,4 +440,495 @@ Suppose you give the size `4` and the three numbers `0`, `2`,`3`, `5`. Then the 
    2
    3
    5
+```
+
+
+### Common Built-in Methods of ArrayList
+
+ArrayList provides many ready-made methods so you don't have to manually implement basic operations like `add`, `remove`, `search` etc.
+
+Here are 12 useful methods you should know:
+
+***1. Adding Elements at the End of an ArrayList***
+
+To add, an element at the last of the ArrayList you can use overloaded method `.add(E element)`. Like this: 
+
+
+*****Example:*****
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class AddingElementInArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(10);
+    myList.add(18);
+    myList.add(19);
+  }
+}
+```
+
+***2. Adding Elements at Specific Index***
+
+To add an element at a specific index, you can use the same `.add(int index, E element)` method. Like this: 
+
+
+*****Example:*****
+
+Modifying the previous example to add elements at indices `1` and `2`.
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class AddingElementInArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(10);
+    myList.add(18);
+    myList.add(19);
+
+  //adding elements at specific indices
+    myList.add(1, 2);
+    myList.add(2, 4);
+  }
+}
+```
+
+***3. Getting Elements of an ArrayList***
+
+You can use `.get(int index)` method to the element at the specified `index`.
+
+
+*****Example:*****
+
+Modifying the previous example to print first three elements and printing them.
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class GettingAndPrintingElementsOfArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(10);
+    myList.add(18);
+    myList.add(19);
+
+  //adding elements at specific indices
+    myList.add(1, 2);
+    myList.add(2, 4);
+
+  //using .get(int index) method to get elements of an ArrayList
+    System.out.println(myList.get(0));
+    System.out.println(myList.get(1));
+    System.out.println(myList.get(2));
+  }
+}
+```
+
+*****Output*****
+```text
+  10
+  2
+  4
+```
+
+***4. Updating an Element of an ArrayList***
+
+You can use `.set(int index, E element)` to update the previous value at the specified `index`. 
+
+
+*****Example:*****
+
+Modifying the previous example to update the values
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class UpdatingElementsOfAnArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(10);
+    myList.add(18);
+    myList.add(19);
+
+  //adding elements at specific indices
+    myList.add(1, 2);
+    myList.add(2, 4);
+
+  //using .get(int index) method to get elements of an ArrayList
+    System.out.println("Before updating values: ");
+    System.out.print(myList.get(0)+" "+myList.get(1)+" "+myList.get(2)+"\n");
+
+    //updating values
+    myList.set(0, 34);
+    myList.set(1, 23);
+    myList.set(2, 32);
+
+    System.out.println("After updating values: ");
+    System.out.print(myList.get(0)+" "+myList.get(1)+" "+myList.get(2)+"\n");
+  }
+}
+```
+
+*****Output*****
+```text
+  Before updating values: 
+  10 2 4
+  After updating values:
+  34 23 32  
+```
+
+***5. Removing an Element from an ArrayList***
+
+You can remove an element from an ArrayList using `.remove(int index)` method.
+
+
+*****Example:*****
+
+Modifying the previous example to remove elements
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class RemovingElementsFromAnArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(10);
+    myList.add(18);
+    myList.add(19);
+
+  //adding elements at specific indices
+    myList.add(1, 2);
+    myList.add(2, 4);
+
+  //using .get(int index) method to get elements of an ArrayList
+    System.out.println("Before removing values: ");
+    System.out.print(myList);
+
+    myList.remove(0);
+    myList.remove(1);
+    System.out.println("After removing values: ");
+    System.out.println(myList);   
+  }
+}
+```
+
+*****Output*****
+```text
+  Before removing values: 
+  [10, 2, 4, 18, 19]
+  After removing values:
+  [2, 18, 19]  
+```
+
+***6. Removing First Occurence Of a Value***
+
+You can use the method `.remove(Object O)` to remove the first occurence of a value from an ArrayList.
+
+*****Example:*****
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class RemovingElementsFromAnArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+
+
+  //using .get(int index) method to get elements of an ArrayList
+    System.out.println("Before removing values: ");
+    System.out.print(myList);
+
+    //removing first occurence of zero
+    remove(Integer.valueOf(0));
+    System.out.println("After removing values: ");
+    System.out.println(myList);   
+  }
+}
+```
+
+*****Output*****
+```text
+  Before removing values: 
+  [1, 0, 1, 1, 0, 1, 1, 0, 1]
+  After removing values:
+  [1, 1, 1, 0, 1, 1, 0, 1]  
+```
+
+***7. Length of an ArrayList***
+
+You can find the length of an ArrayList using `.size()` method.
+
+*****Example:*****
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class FindingLengthOfAnArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+
+    System.out.println("Length of the ArrayList is: "+myList.size());
+  }
+}
+```
+
+*****Output*****
+```text
+  Length of the ArrayList is: 9
+```
+
+***8. Searching an Element in an ArrayList***
+
+You can use `.contains(Object O)` method to check whether an element (i.e O in this case) exists in the ArrayList or not. This method return `true` if the elements 
+exist and `false` if it doesn't exist.
+
+*****Example:*****
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class SearchingInAnArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+
+    System.out.println(myList.contains(2));
+    System.out.println(myList.contains(1));
+  }
+}
+```
+
+*****Output*****
+```text
+  false
+  true
+```
+
+***9. Checking Emptiness of an ArrayList***
+
+You can check whether an ArrayList is empty or not using `.isEmpty()` method. This methods returns `true` if the ArrayList is empty and `false` otherwise.
+
+*****Example:*****
+
+```java
+//importing the ArrayList first
+import java.util.ArrayList;
+
+public class CheckingEmptinessOfAnArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+
+    System.out.println(myList.isEmpty());
+    System.out.println(!myList.isEmpty());
+  }
+}
+```
+
+*****Output*****
+```text
+  false
+  true
+```
+
+***10. Converting an ArrayList to an Array***
+
+You can convert an ArrayList to an Array using `.toArray()` method. This method returns an array.
+
+*****Example:*****
+
+```java
+//importing the ArrayList and Arrays first
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ConversionFromArrayListToAnArray{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+
+    //converting to an Array
+    int[] arr = myList.toArray();
+
+    System.out.println(Arrays.toString());
+  }
+}
+```
+
+*****Output*****
+```text
+  [1, 0, 1, 1, 0, 1, 1, 0, 1]
+```
+
+***11. Sorting an ArrayList***
+
+You can sort an ArrayList using `.sort(list)` method from `java.util.Collections` class.
+
+```java
+//importing the ArrayList and Collections first
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class SortingAnArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+
+    System.out.println("Before Sorting: ");
+    System.out.println(myList);
+
+    Collections.sort(myList);
+    System.out.println("After Sorting: ");
+    System.out.println(myList);
+  
+    
+  }
+}
+```
+
+*****Output*****
+```text
+    Before Sorting: 
+    [1, 0, 1, 1, 0, 1, 1, 0, 1]
+    After Sorting:
+    [0, 0, 0, 1, 1, 1, 1, 1, 1]
+```
+
+***12. Reversing An ArrayList***
+
+You can reverse an ArrayList using `.reverse(list)` method from `java.util.Collections` class.
+
+```java
+//importing the ArrayList and Collections first
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ReversingAnArrayList{
+  public static void main(String[] args){
+    //creating an arraylist
+    ArrayList <Integer> myList = new ArrayList<>();
+
+    //adding elements at last
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+    myList.add(1);
+    myList.add(0);
+    myList.add(1);
+
+    System.out.println("Before reversing: ");
+    System.out.println(myList);
+
+    Collections.reverse(myList);
+
+    System.out.println("After reversing: ");
+    System.out.println(myList);
+  
+    
+  }
+}
+```
+
+*****Output*****
+```text
+    Before reversing: 
+    [1, 0, 1, 1, 0, 1, 1, 0, 1]
+    After reversing: 
+    [1, 0, 1, 1, 0, 1, 1, 0, 1]
 ```
