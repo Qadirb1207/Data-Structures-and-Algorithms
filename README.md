@@ -61,20 +61,21 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 ---
 
 ## 📂 Repository Structure
-
 ```text
+
 │
 ├── Arrays/
-│   └── Notes.md
+│   ├── Notes.md
+│   │
 │   ├── 1D Arrays/
-│   │   │   ├── Problems/
+│   │   ├── Problems/
 │   │   │   ├── LargestElement.java
 │   │   │   ├── SecondLargest.java
 │   │   │   ├── ReverseArray.java
 │   │   │   └── ...
 │   │   │
 │   │   └── Algorithms/
-|   |       ├── Notes.md
+│   │       ├── Notes.md
 │   │       ├── LinearSearch.java
 │   │       ├── BinarySearch.java
 │   │       ├── BubbleSort.java
@@ -82,7 +83,6 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 │   │       └── InsertionSort.java
 │   │
 │   └── 2D Arrays/
-│       
 │       ├── Problems/
 │       │   ├── MatrixTranspose.java
 │       │   ├── SpiralMatrix.java
@@ -91,10 +91,32 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 │       └── Algorithms/
 │           └── BinarySearch2D.java
 │
-├── ArrayList/
+├── ArrayLists/
 │   ├── Notes.md
-│   ├── Problems/
-│   └── Algorithms/
+│   │
+│   ├── 1D ArrayLists/
+│   │   ├── Problems/
+│   │   │   ├── FindMaximum.java
+│   │   │   ├── PairSum.java
+│   │   │   ├── MoveZeros.java
+│   │   │   └── ...
+│   │   │
+│   │   └── Algorithms/
+│   │       ├── Notes.md
+│   │       ├── BinarySearchArrayList.java
+│   │       ├── BubbleSortArrayList.java
+│   │       └── ...
+│   │
+│   └── 2D ArrayLists/
+│       ├── Problems/
+│       │   ├── FindMaximum.java
+│       │   ├── RowSum.java
+│       │   ├── FlattenArrayList.java
+│       │   └── ...
+│       │
+│       └── Algorithms/
+│           ├── Notes.md
+│           └── MatrixTraversal.java
 │
 ├── Strings/
 │   ├── Notes.md
@@ -106,17 +128,17 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 │   ├── Problems/
 │   └── Algorithms/
 │
-├── Linked List/
+├── Linked Lists/
 │   ├── Notes.md
 │   ├── Problems/
 │   └── Algorithms/
 │
-├── Stack/
+├── Stacks/
 │   ├── Notes.md
 │   ├── Problems/
 │   └── Algorithms/
 │
-├── Queue/
+├── Queues/
 │   ├── Notes.md
 │   ├── Problems/
 │   └── Algorithms/
@@ -176,7 +198,9 @@ I aim to:
 
 ## 🔥 Current Progress
 
-- [ ] Arrays
+- [x] Arrays
+- [x] ArrayLists
+- [ ] Time & Space Complexity
 - [ ] Searching
 - [ ] Sorting
 - [ ] Strings
