@@ -9,6 +9,11 @@
 6. [Common Operations on ArrayLists](#Common-Operations-on-ArrayLists)
 7. [Common Built-in Methods of ArrayList](#Common-Built-in-Methods-of-ArrayList)
 8. [Internal Working of an ArrayList](#Internal-Working-of-an-ArrayList)
+9. [Nested ArrayLists](#Nested-ArrayLists)
+      a. [Characteristics of a Nested ArrayList](#Characteristics-of-a-Nested-ArrayList)
+      b. [Creating a Nested ArrayList](#Creating-a-Nested-ArrayList)
+      c. [Adding Elements to A Nested ArrayList](#Adding-Elements-to-a-Nested-ArrayList)
+      d. [Accessing Elements of A Nested ArrayList](#Accessing-Elements-of-a-Nested-ArrayList)
 
 
 ---
@@ -442,6 +447,8 @@ Suppose you give the size `4` and the three numbers `0`, `2`,`3`, `5`. Then the 
    3
    5
 ```
+
+---
 
 
 ### Common Built-in Methods of ArrayList
@@ -946,6 +953,8 @@ public class ReversingAnArrayList{
     [1, 0, 1, 1, 0, 1, 1, 0, 1]
 ```
 
+---
+
 
 ### Internal Working of an ArrayList
 
@@ -1060,3 +1069,161 @@ Java removes the element at index `2`. Now there is an empty gap. To fill this g
 ```
 
 *****In simple words:***** Elements are shifted left after deletion to keep the ArrayList continuous.
+
+---
+
+
+# Nested ArrayLists
+
+A Nested ArrayList is an ArrayList whose elements are themselves ArrayLists.
+In short, you can say An ArrayList of ArrayLists.
+
+Structure
+```text
+  [
+    [12, 23, 34],
+    [10, 28, 37],
+    [1, 23, 100]
+  ]
+```
+
+Outer ArrayList stores rows whereas inner stores elements of each row.
+
+---
+
+
+### Characteristics of a Nested ArrayList
+
+A Nested ArrayList has:
+
+- Dynamic number of rows.
+- Dynamic number of columns.
+- Each row with different size.
+- Each columns with different size.
+- Its elements are accessed using two indices
+- They are more flexible then 2D Arrays as they are not flexible.
+
+---
+
+
+### Creating a Nested ArrayList
+
+A Nested ArrayList can be created like this:
+
+```java
+import java.util.ArrayList;
+public class CreatingNestedArrayList{
+  public static void main(String[] args){
+    //creating a nested arraylist
+    ArrayList<ArrayList<Integer>> myNestedArrayList = new ArrayList<>();
+  }
+}
+```
+
+The rows of a nested ArrayList can be created like this: 
+```java
+import java.util.ArrayList;
+public class CreatingRowsOfNestedArrayList{
+  public static void main(String[] args){
+    //creating a nested arraylist
+    ArrayList<ArrayList<Integer>> myNestedArrayList = new ArrayList<>();
+    //creating rows of the above nested ArrayList
+    int rows = 5;
+    for(int i = 0; i < rows; i++){
+      myNestedArrayList.add(new ArrayList<>());
+    }
+  }
+}
+```
+
+---
+
+### Adding Elements to a Nested ArrayList
+
+Elements in a nested ArrayList can be added in the following ways:
+
+- Through User Input
+- Manually
+
+***Through User Input***
+
+Elements can be added through user input in the following way using `Scanner` class.
+
+```java
+import java.util.Scanner;
+import java.util.ArrayList;
+public class AddingElementsToANestedArrayList{
+  public static void main(String[] args){
+    //creating a Scanner Object
+    Scanner sc = new Scanner(System.in);
+    //taking rows and columns input from the user
+    System.out.print("Enter the number of rows of ArrayList = ");
+    int rows = sc.nextInt();
+    System.out.print("Enter the number of columns of ArrayList = ");
+    int cols = sc.nextInt();
+
+    //creating a nested arraylist
+    ArrayList <ArrayList<Integer>> myList = new ArrayList<>();
+
+    //adding rows
+    for(int i = 0; i < rows; i++){
+      myList.add(new ArrayList<>());
+    }
+
+    //taking elements from user
+    for(int i = 0; i < rows; i++){
+      for(int j = 0; j < cols; j++){
+        myList.get(i).add(sc.nextInt());
+      }
+    }
+  }
+}
+```
+
+***Adding Elements Manually***
+
+Elements can be added manually without taking input from user as follows: 
+
+
+```java
+import java.util.ArrayList;
+public class AddingElementsToANestedArrayList{
+  public static void main(String[] args){
+    //manually setting values of rows and cols
+    int rows = 3;
+    int cols = 3;
+
+    //creating a nested arraylist
+    ArrayList <ArrayList<Integer>> myList = new ArrayList<>();
+
+    //adding rows
+    for(int i = 0; i < rows; i++){
+      myList.add(new ArrayList<>());
+    }
+
+    //taking elements from user
+    for(int i = 0; i < rows; i++){
+      for(int j = 0; j < cols; j++){
+      //manually adding elements
+        myList.get(i).add(j);
+      }
+    }
+  }
+}
+```
+
+
+---
+
+
+### Accessing Elements of a Nested ArrayList
+
+Elements of a nested ArrayList are accessed in the following ways:
+
+- Using their `Indices`
+- Using `nested for` loops
+- Using `nested for-each` loops
+
+***Using their `Indices`***
+
+A nested ArrayList elements can be accessed by their indices like this:
