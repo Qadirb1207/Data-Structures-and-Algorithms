@@ -6,6 +6,7 @@
 3. [Difference b/w Array and ArrayList](#Difference-between-Array-and-ArrayList)
 4. [Creating an ArrayList](#Creating-an-ArrayList)
 5. [Characteristics of an ArrayList](#Characteristics-of-an-ArrayList)
+6. [Common Operations on ArrayLists](#Common-Operations-on-ArrayLists)
 
 
 ---
@@ -227,3 +228,215 @@ To solve this error, you need to replace the `int` with its wrapper class `Integ
 
 ---
 
+
+### Common Operations on ArrayLists
+
+**1. Taking an ArrayList as Input from the User**
+
+Like arrays, the ArrayLists can also be taken input from the users using `for` loops.
+
+***Example:***
+
+```java
+//importing the ArrayList and Scanner (e.g for input) first
+import java.util.ArrayList;
+import java.util.Scanner;
+public class TakingArrayListAsInput{
+  public static void main(String[] args){
+    //creating an Scanner Object
+    Scanner sc = new Scanner(System.in);
+    //creating an arraylist
+    ArrayList<Integer> myList = new ArrayList<>();
+    //taking the size of the ArrayList as input from the user
+    System.out.print("Enter the size of the arraylist = ");
+    int size = sc.nextInt();
+
+    //taking input from user
+    for(int i = 0; i < size; i++){
+      list.add(sc.nextInt());//for .add() method scroll down to study it
+    }
+  }
+}
+```
+
+
+**Printing an ArrayList**
+
+An ArrayList can be printed through four different ways:
+
+- Using its `Indices`
+- Using simple `System.out.println()` method
+- Using a `for-each` loop
+- Using a `for` loop
+
+***Using `Indices` of the ArrayList***
+
+You can print an ArrayList through its indices using `.get()` method. For more knowledge about `.get()` method scroll down to study.
+
+*****Example:*****
+
+Modifying the previous input program for to add printing logic.
+
+```java
+//importing the ArrayList and Scanner (e.g for input) first
+import java.util.ArrayList;
+import java.util.Scanner;
+public class TakingArrayListAsInput{
+  public static void main(String[] args){
+    //creating an Scanner Object
+    Scanner sc = new Scanner(System.in);
+    //creating an arraylist
+    ArrayList<Integer> myList = new ArrayList<>();
+    //taking the size of the ArrayList as input from the user
+    System.out.print("Enter the size of the arraylist = ");
+    int size = sc.nextInt();
+
+    //taking input from user
+    for(int i = 0; i < size; i++){
+      list.add(sc.nextInt());//for .add() method scroll down to study it
+    }
+
+    //printing the ArrayList
+    System.out.println(myList.get(0));
+    System.out.println(myList.get(1));
+    System.out.println(myList.get(2));
+    System.out.println(myList.get(3));
+  }
+}
+```
+
+*Note: * There is a problem in this method which is *What if we don't know the size of the ArrayList?* Or *What if the ArrayList is too large?* To solve these issues you should go for the next methods in this section
+
+***Using simple `System.out.println()` method***
+
+Rather than writing `System.out.println()` again and again, you can simply write it once and pass the ArrayList reference for printing.
+
+*****Example:*****
+
+Modifying the previous input program for to add printing logic.
+
+```java
+//importing the ArrayList and Scanner (e.g for input) first
+import java.util.ArrayList;
+import java.util.Scanner;
+public class TakingArrayListAsInput{
+  public static void main(String[] args){
+    //creating an Scanner Object
+    Scanner sc = new Scanner(System.in);
+    //creating an arraylist
+    ArrayList<Integer> myList = new ArrayList<>();
+    //taking the size of the ArrayList as input from the user
+    System.out.print("Enter the size of the arraylist = ");
+    int size = sc.nextInt();
+
+    //taking input from user
+    for(int i = 0; i < size; i++){
+      list.add(sc.nextInt());//for .add() method scroll down to study it
+    }
+
+    //printing the ArrayList
+    System.out.println(myList);
+  }
+}
+```
+
+***Output:***
+
+Suppose you give the size `3` and the three numbers `5`, `9`, and `23`. Then the output of the above program will be: 
+
+```text
+  [5, 9. 23]
+```
+
+**Using a `for-each` loop**
+
+Another convienent method printing an ArrayList is using a `for-each` loop.
+
+*****Example:*****
+
+Modifying the previous input program for to add printing logic.
+
+```java
+//importing the ArrayList and Scanner (e.g for input) first
+import java.util.ArrayList;
+import java.util.Scanner;
+public class TakingArrayListAsInput{
+  public static void main(String[] args){
+    //creating an Scanner Object
+    Scanner sc = new Scanner(System.in);
+    //creating an arraylist
+    ArrayList<Integer> myList = new ArrayList<>();
+    //taking the size of the ArrayList as input from the user
+    System.out.print("Enter the size of the arraylist = ");
+    int size = sc.nextInt();
+
+    //taking input from user
+    for(int i = 0; i < size; i++){
+      list.add(sc.nextInt());//for .add() method scroll down to study it
+    }
+
+    //printing the ArrayList
+    for(Integer num: myList){
+      System.out.println(num);
+    }
+  }
+}
+```
+
+***Output:***
+
+Suppose you give the size `5` and the three numbers `10`, `12`,`30`, `54`, and `99`. Then the output of the above program will be: 
+
+```text
+   10
+   12
+   30
+   54
+   99
+```
+
+**Using a `for` loop**
+
+There is also another convienent way to print the same ArrayList which is using a `for` loop.
+
+*****Example:*****
+
+Modifying the previous input program for to add printing logic.
+
+```java
+//importing the ArrayList and Scanner (e.g for input) first
+import java.util.ArrayList;
+import java.util.Scanner;
+public class TakingArrayListAsInput{
+  public static void main(String[] args){
+    //creating an Scanner Object
+    Scanner sc = new Scanner(System.in);
+    //creating an arraylist
+    ArrayList<Integer> myList = new ArrayList<>();
+    //taking the size of the ArrayList as input from the user
+    System.out.print("Enter the size of the arraylist = ");
+    int size = sc.nextInt();
+
+    //taking input from user
+    for(int i = 0; i < size; i++){
+      list.add(sc.nextInt());//for .add() method scroll down to study it
+    }
+
+    //printing the ArrayList
+    for(int i = 0; i < myList.size(); i++){ //for .size() method scroll down to study it...
+      System.out.println(myList.get(i));
+    }
+  }
+}
+```
+
+***Output:***
+
+Suppose you give the size `4` and the three numbers `0`, `2`,`3`, `5`. Then the output of the above program will be: 
+
+```text
+   0
+   2
+   3
+   5
+```
