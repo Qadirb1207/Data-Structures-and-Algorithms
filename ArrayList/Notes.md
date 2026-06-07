@@ -124,6 +124,9 @@ public class ArrayListDeclaration{
 }
 ```
 
+*Note:* `<>` is called **Diamond Operator** and it is used with the DataType of ArrayLists and LinkedLists.
+
+
 ---
 
 
