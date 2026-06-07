@@ -449,9 +449,10 @@ ArrayList provides many ready-made methods so you don't have to manually impleme
 
 Here are 12 useful methods you should know:
 
+
 ***1. Adding Elements at the End of an ArrayList***
 
-To add, an element at the last of the ArrayList you can use overloaded method `.add(E element)`. Like this: 
+To add, an element at the last of an ArrayList you can use overloaded method `.add(E element)`. Like this: 
 
 
 *****Example:*****
@@ -472,6 +473,7 @@ public class AddingElementInArrayList{
   }
 }
 ```
+
 
 ***2. Adding Elements at Specific Index***
 
@@ -502,6 +504,7 @@ public class AddingElementInArrayList{
   }
 }
 ```
+
 
 ***3. Getting Elements of an ArrayList***
 
@@ -544,6 +547,7 @@ public class GettingAndPrintingElementsOfArrayList{
   2
   4
 ```
+
 
 ***4. Updating an Element of an ArrayList***
 
@@ -595,6 +599,7 @@ public class UpdatingElementsOfAnArrayList{
   34 23 32  
 ```
 
+
 ***5. Removing an Element from an ArrayList***
 
 You can remove an element from an ArrayList using `.remove(int index)` method.
@@ -641,6 +646,7 @@ public class RemovingElementsFromAnArrayList{
   After removing values:
   [2, 18, 19]  
 ```
+
 
 ***6. Removing First Occurence Of a Value***
 
@@ -689,6 +695,7 @@ public class RemovingElementsFromAnArrayList{
   [1, 1, 1, 0, 1, 1, 0, 1]  
 ```
 
+
 ***7. Length of an ArrayList***
 
 You can find the length of an ArrayList using `.size()` method.
@@ -724,6 +731,7 @@ public class FindingLengthOfAnArrayList{
 ```text
   Length of the ArrayList is: 9
 ```
+
 
 ***8. Searching an Element in an ArrayList***
 
@@ -764,6 +772,7 @@ public class SearchingInAnArrayList{
   true
 ```
 
+
 ***9. Checking Emptiness of an ArrayList***
 
 You can check whether an ArrayList is empty or not using `.isEmpty()` method. This methods returns `true` if the ArrayList is empty and `false` otherwise.
@@ -801,6 +810,7 @@ public class CheckingEmptinessOfAnArrayList{
   false
   true
 ```
+
 
 ***10. Converting an ArrayList to an Array***
 
@@ -841,6 +851,7 @@ public class ConversionFromArrayListToAnArray{
 ```text
   [1, 0, 1, 1, 0, 1, 1, 0, 1]
 ```
+
 
 ***11. Sorting an ArrayList***
 
@@ -886,6 +897,7 @@ public class SortingAnArrayList{
     After Sorting:
     [0, 0, 0, 1, 1, 1, 1, 1, 1]
 ```
+
 
 ***12. Reversing An ArrayList***
 
