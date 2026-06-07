@@ -8,6 +8,7 @@
 5. [Characteristics of an ArrayList](#Characteristics-of-an-ArrayList)
 6. [Common Operations on ArrayLists](#Common-Operations-on-ArrayLists)
 7. [Common Built-in Methods of ArrayList](#Common-Built-in-Methods-of-ArrayList)
+8. [Internal Working of an ArrayList](#Internal-Working-of-an-ArrayList)
 
 
 ---
@@ -944,3 +945,118 @@ public class ReversingAnArrayList{
     After reversing: 
     [1, 0, 1, 1, 0, 1, 1, 0, 1]
 ```
+
+
+### Internal Working of an ArrayList
+
+Java uses an array behind the scenes when you create an ArrayList like this:
+```java
+  ArrayList<Integer> list = new ArrayList<>()
+```
+It will be useful to use ArrayList for you, if you have some knowledge of internal working of it.
+Here is the complete process of behind the scenes:
+
+***1. How Elements are Stored***
+
+Elements in an ArrayList are stored in contiguous memory locations just like a normal array. 
+
+Example: 
+```text
+Index: 0  1  2  3
+Value: 1  2  9  10
+```
+Because elements are stored continuously, Java can directly access any element using its index.
+
+That's why:
+
+```java
+  list.get(2)
+```
+is very fast.
+
+***2. Automatic Resizing***
+
+Unlike arrays, you don't need to specify the size beforehand. When the internal array is full and you try to add an element like this:
+
+```java
+  list.add(50)
+```
+
+Java automatically:
+
+- Creates a larger array
+- Copies all existing elements into the new array
+- Adds the new elements into it
+- Discards the old array
+
+This process is called *`Resizing`*.
+
+*****In simple words:*****  ArrayList grows automatically whenever more space is needed.
+
+***3. Insertion Process***
+
+When adding an element at the end like this:
+
+```java 
+`list.add(79);
+```
+
+The element is simply added in the next available position.
+
+*****Example:*****
+```text
+Before:
+[10, 20, 30]
+
+After:
+[10, 20, 30, 79]
+```
+
+***4. Insertion in the Middle***
+
+Suppose you have:
+
+```text
+  [12, 32, 11, 10]
+```
+
+Now you want to add another element in the middle like this:
+
+```java 
+list.add(2, 79);
+```
+
+Java cannot overwrite the existing element.
+Instead it shifts all the elements from index `2` onward one position right.
+
+```text
+  Before:
+  [12, 32, 11, 10]
+
+  After:
+  [12, 32, 79, 11, 10]
+```
+
+*****In simple words:*****
+ Elements are shifted to make the space for the new element.
+
+
+***5. Deletion Process***
+
+When you remove an element like this:
+
+```java
+  list.remove(2)
+```
+
+Java removes the element at index `2`. Now there is an empty gap. To fill this gap, all elements after the index `2` are shifted 1 step to the left.
+
+```text
+  Before:
+  [12, 32, 11, 10]
+
+  After:
+  [12, 79, 11, 10]
+```
+
+*****In simple words:***** Elements are shifted left after deletion to keep the ArrayList continuous.
