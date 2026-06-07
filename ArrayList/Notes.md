@@ -211,11 +211,12 @@ ArrayLists can store the `null` values. Suppose you created an ArrayList and add
 
 ```java
   ArrayList<String> names = new ArrayList<>(3);
-  names.add("Abrar")
+  names.add("Abrar");
   names.add("Qadir");
+  names.add(null);
 ```
 
-Since, the initial size of the ArrayList is 3 but you added only 2 values, the value at the index `3` is `null`, which is perfectly valid in Java.
+Since, you added only 2 values, the value at the index `3` is `null`, which is perfectly valid in Java.
 
 ***In simple words:*** An ArrayList position can be empty and contain `null`.
 
