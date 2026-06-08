@@ -63,6 +63,7 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 ## 📂 Repository Structure
 ```text
 
+Data-Structures-and-Algorithms/
 │
 ├── Arrays/
 │   ├── Notes.md
@@ -96,27 +97,25 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 │   │
 │   ├── 1D ArrayLists/
 │   │   ├── Problems/
-│   │   │   ├── FindMaximum.java
-│   │   │   ├── PairSum.java
-│   │   │   ├── MoveZeros.java
-│   │   │   └── ...
-│   │   │
-│   │   └── Algorithms/
-│   │       ├── Notes.md
-│   │       ├── BinarySearchArrayList.java
-│   │       ├── BubbleSortArrayList.java
-│   │       └── ...
+│   │   ├── Algorithms/
+│   │   └── ...
 │   │
 │   └── 2D ArrayLists/
 │       ├── Problems/
-│       │   ├── FindMaximum.java
-│       │   ├── RowSum.java
-│       │   ├── FlattenArrayList.java
-│       │   └── ...
-│       │
-│       └── Algorithms/
-│           ├── Notes.md
-│           └── MatrixTraversal.java
+│       ├── Algorithms/
+│       └── ...
+│
+├── Time & Space Complexity/
+│   ├── Notes.md
+│   │
+│   ├── Examples/
+│   │   ├── O(1).java
+│   │   ├── O(log n).java
+│   │   ├── O(n).java
+│   │   ├── O(n log n).java
+│   │   └── O(n²).java
+│   │
+│   └── Practice Questions/
 │
 ├── Strings/
 │   ├── Notes.md
