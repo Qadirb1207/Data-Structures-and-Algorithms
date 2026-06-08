@@ -10,9 +10,13 @@
 7. [Common Built-in Methods of ArrayList](#Common-Built-in-Methods-of-ArrayList)
 8. [Internal Working of an ArrayList](#Internal-Working-of-an-ArrayList)
 9. [Nested ArrayLists](#Nested-ArrayLists)
+    
     a. [Characteristics of a Nested ArrayList](#Characteristics-of-a-Nested-ArrayList)
+   
     b. [Creating a Nested ArrayList](#Creating-a-Nested-ArrayList)
+   
     c. [Adding Elements to A Nested ArrayList](#Adding-Elements-to-a-Nested-ArrayList)
+   
     d. [Accessing Elements of A Nested ArrayList](#Accessing-Elements-of-a-Nested-ArrayList)
 
 
