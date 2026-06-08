@@ -1389,11 +1389,14 @@ public class AccessingElementsToANestedArrayList{
 
 ## Author Details
 
-**Name:** Qadir Bakhsh
+**Name:**  Qadir Bakhsh
 
-**Email:** [qadirb3492@gmail.com](qadirb3492@gmail.com)
+**Contact Email:**  [qadirb3492@gmail.com](#qadirb3492@gmail.com)
 
-**LinkedIn:** [Qadir Bakhsh](https://www.linkedin.com/in/qadir-bakhsh/)
+**LinkedIn Profile:**  [Qadir Bakhsh on LinkedIn](https://www.linkedin.com/in/qadir-bakhsh)
+
+**GitHub Profile:** [Qadir on GitHub](https://github.com/Qadirb1207/)
+
 
 
 ---
