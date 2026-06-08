@@ -19,6 +19,8 @@
    
     d. [Accessing Elements of A Nested ArrayList](#Accessing-Elements-of-a-Nested-ArrayList)
 
+10. [Author Details](#Author-Details)
+
 
 ---
 
