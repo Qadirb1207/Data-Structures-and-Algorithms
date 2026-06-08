@@ -1373,3 +1373,24 @@ public class AccessingElementsToANestedArrayList{
 ```
 
 ---
+
+
+### Internal Working 
+
+- The outer ArrayList stores references to inner ArrayLists.
+- Each Inner ArrayList has its own dynamic array.
+- Rows can grow or shrink independently.
+- Adding or removing elements may cause resizing inside the effected row.
+
+
+---
+
+## Author Details
+
+**Name:** Qadir Bakhsh
+**Email:** [qadirb3492@gmail.com](qadirb3492@gmail.com)
+**LinkedIn:** [Qadir Bakhsh](https://www.linkedin.com/in/qadir-bakhsh/)
+
+---
+
+**THANKS FOR READING!! DON'T FORGET TO FOLLOW!** 
