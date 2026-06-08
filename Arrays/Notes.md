@@ -437,3 +437,9 @@ public class AccessingArrayElements{
 - Many beginners use `arr.length()` instead of `arr.length`. Arrays use the `length` attribute, while Strings use the `length()` method.
 - Many beginners try to initialize a 2D array as `int[][] arr = new int[][5];`. This is invalid because when creating a 2D array in Java, the number of rows must be specified first. The columns may be omitted if a jagged array is intended.
 - Many beginners create an array like this `int[] arr = new int[5];`, which is a correct syntax in java, but they print like `System.out.println(arr[5]);` which is a runtime error called `ArrayIndexOutOfBoundsException`, as the array index starts from 0 and goes upto `arr.length-1`.
+
+
+---
+
+**THANKS FOR READING!! DON'T FORGET TO FOLLOW ME!** 
+
