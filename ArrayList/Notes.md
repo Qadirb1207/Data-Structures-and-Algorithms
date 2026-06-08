@@ -1209,7 +1209,7 @@ public class AddingElementsToANestedArrayList{
       myList.add(new ArrayList<>());
     }
 
-    //taking elements from user
+    
     for(int i = 0; i < rows; i++){
       for(int j = 0; j < cols; j++){
       //manually adding elements
@@ -1235,3 +1235,141 @@ Elements of a nested ArrayList are accessed in the following ways:
 ***Using their `Indices`***
 
 A nested ArrayList elements can be accessed by their indices like this:
+
+*****Example:*****
+
+```java
+import java.util.ArrayList;
+public class AccessingElementsToANestedArrayList{
+  public static void main(String[] args){
+    //manually setting values of rows and cols
+    int rows = 3;
+    int cols = 3;
+
+    //creating a nested arraylist
+    ArrayList <ArrayList<Integer>> myList = new ArrayList<>();
+
+    //adding rows
+    for(int i = 0; i < rows; i++){
+      myList.add(new ArrayList<>());
+    }
+
+    for(int i = 0; i < rows; i++){
+      for(int j = 0; j < cols; j++){
+      //manually adding elements
+        myList.get(i).add(j);
+      }
+    }
+
+    System.out.println(myList.get(0).get(0));
+    System.out.println(myList.get(0).get(1));
+    System.out.println(myList.get(0).get(2));
+    
+  }
+}
+```
+
+*****Output*****
+```text
+    1
+    2
+    3
+```
+
+
+***Using `nested for` loops***
+
+Elements of a nested ArrayList can be printed using `nested for` loops like this:
+
+*****Example:*****
+
+```java
+import java.util.ArrayList;
+public class AccessingElementsToANestedArrayList{
+  public static void main(String[] args){
+    //manually setting values of rows and cols
+    int rows = 3;
+    int cols = 3;
+
+    //creating a nested arraylist
+    ArrayList <ArrayList<Integer>> myList = new ArrayList<>();
+
+    //adding rows
+    for(int i = 0; i < rows; i++){
+      myList.add(new ArrayList<>());
+    }
+
+    for(int i = 0; i < rows; i++){
+      for(int j = 0; j < cols; j++){
+      //manually adding elements
+        myList.get(i).add(j);
+      }
+    }
+
+   for(int i = 0; i < myList.size(); i++){
+        for(int j = 0; j < myList.get(i).size(); j++){
+            System.out.print(myList.get(i).get(j)+"  ");
+        }
+        System.out.println();
+    }
+    
+  }
+}
+```
+
+*****Output*****
+```text
+    0  1  2
+    0  1  2
+    0  1  2
+```
+
+
+***Using `nested for-each` loops***
+
+Elements of a nested ArrayList can be printed using `nested for-each` loops, like this:
+
+*****Example:*****
+
+```java
+import java.util.ArrayList;
+public class AccessingElementsToANestedArrayList{
+  public static void main(String[] args){
+    //manually setting values of rows and cols
+    int rows = 3;
+    int cols = 3;
+
+    //creating a nested arraylist
+    ArrayList <ArrayList<Integer>> myList = new ArrayList<>();
+
+    //adding rows
+    for(int i = 0; i < rows; i++){
+      myList.add(new ArrayList<>());
+    }
+
+    for(int i = 0; i < rows; i++){
+      for(int j = 0; j < cols; j++){
+      //manually adding elements
+        myList.get(i).add(j);
+      }
+    }
+
+   for(ArrayList<Integer> list: myList){
+        for(Integer i: list){
+            System.out.print(i+"  ");
+        }
+        System.out.println();
+    }
+    
+  }
+}
+```
+
+*****Output*****
+```text
+    0  1  2
+    0  1  2
+    0  1  2
+```
+
+---
