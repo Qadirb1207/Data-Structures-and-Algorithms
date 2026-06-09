@@ -44,5 +44,34 @@ The Time Complexity of the above given program is has a Time Complexity of `O(n)
 
 ---
 
+## Space Complexity
 
+Space Complexity measures the extra space used by an algorithm.
 
+***Example:***
+
+```java
+import java.util.Scanner;
+public class SpaceComplexity{
+  static int[] createRangeArray(int n){
+    int[] arr = new int[n];
+    for(int i = 0; i < n; i++){
+      arri] = i*2;
+    }
+  return arr;
+  }
+
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int[] array = createRangeArray(n);
+    for(int i = 0; i < array.length; i++){
+      System.out.println(array[i]);
+    }
+  }
+}
+```
+
+***Explanation:***
+
+The Space Complexity depends directyly on `n`. If `n` scales up, the space (i.e memory RAM) required to hold that array scaled up indentically.
