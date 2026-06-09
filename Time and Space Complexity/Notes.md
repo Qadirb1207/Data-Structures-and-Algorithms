@@ -211,3 +211,22 @@ like this:
   => O(n) * O(n)
   => O(n²)
 ```
+
+---
+
+## Author Details
+
+**Name:**  Qadir Bakhsh
+
+**Contact Email:**  [qadirb3492@gmail.com](#qadirb3492@gmail.com)
+
+**LinkedIn Profile:**  [Qadir Bakhsh on LinkedIn](https://www.linkedin.com/in/qadir-bakhsh)
+
+**GitHub Profile:** [Qadir on GitHub](https://github.com/Qadirb1207/)
+
+---
+
+
+**THANKS FOR READING!! DON'T FORGET TO FOLLOW ME!** 
+
+
