@@ -3,7 +3,7 @@
 
 ## Outline
 1. [Introduction](#Introduction)
-2. [Time Complexity](#Time-Complexity)
+2. [Time Complexity](#What-is-Time-Complexity)
 
 
 ---
