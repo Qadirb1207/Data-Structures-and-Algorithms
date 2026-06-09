@@ -219,7 +219,7 @@ like this:
 
 ## Author Details
 
-**Name:**  𝐐𝐚𝐝𝐢𝐫 𝐁𝐚𝐤𝐡𝐬𝐡
+**Name:**  *𝐐𝐚𝐝𝐢𝐫 𝐁𝐚𝐤𝐡𝐬𝐡*
 
 **Contact Email:**  [qadirb3492@gmail.com](#qadirb3492@gmail.com)
 
