@@ -7,6 +7,7 @@
 4. [Big O Notation](#Big-O-Notation)
    
     a. [Common Complexities](#Common-Complexities)
+   
     b. [Rules for Finding Time Complexity](#Rules-for-Finding-Time-Complexity)
 
 
