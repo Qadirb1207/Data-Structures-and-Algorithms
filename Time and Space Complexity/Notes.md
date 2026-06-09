@@ -5,6 +5,7 @@
 1. [Introduction](#Introduction)
 2. [Time Complexity](#Time-Complexity)
 3. [Space Complexity](#Space-Complexity)
+4. [Big O Notation](#Big-O-Notation)
 
 
 ---
@@ -102,9 +103,10 @@ Because:
  
 ### Common Complexities
 
+
 **1. 0(1)**
 
-The number of operation and memory slots allocations remains constant regardless of the input size.
+The number of operation and memory slots allocations remains constant regardless of the input size. This is also called **Constant Time Complexity**.
 
 ***Example:***
 ```java
@@ -113,5 +115,99 @@ The number of operation and memory slots allocations remains constant regardless
 
 For a 1000 sized array, there is only 1 operation, for 10000 sized array there is only 1 operation, so for any number of input the number of operations remain the same.
 
+
 **2. O(n)**
 
+The number of operations grows directly with input size. This is also called **Linear Time Complexity**.
+
+***Example:***
+
+```java
+for(int i = 0; i < n; i++){
+  System.out.println(i);
+}
+```
+
+This Time complexity is used in **Linear Search**.
+
+
+**O(log n)**
+
+The problem size is reduced by a constant factor every step.
+This complexity is used in **Binary Search**. This is also called **Logarithmic Time Complexity**.
+
+
+**O(n²)**
+
+This type of Complexity occurs usually due to nested loops. This complexity is used in sorting algorithms like **Bubble Sort**, **Insertion Sort**, and **Selection Sort**.
+This is also called **Quadratic Time Complexity**.
+
+
+### Rules for finding Time complexity
+
+
+**1. Ignore Constants**
+
+In Big O Notation, constants are often ignored like:
+
+```java
+for(int i = 0; i < 5*n; i++){
+  System.out.println(i);
+}
+```
+
+Even though the loops runs till `5 times n` the complexity is `O(n)` instead of `O(5n)` because of this rule, if an algorithm's time complexity
+is `O(n/2)` it will be considered as `O(n)` because of this rule.
+
+
+**2. Consider the Fastest Growing Term**
+
+If an algorithm's time complexity is
+
+```text
+  n²+n+100
+```
+The complexity will be `O(n²)`, because of this rule.
+
+**3. Sequential Loops Add**
+
+When two loops run sequentially like this:
+
+```java
+for(int i = 0; i < n; i++){
+  System.out.println(i);
+}
+
+for(int i = 0; i < n; i++){
+  System.out.println(i*3);
+}
+```
+
+Then to find the complexity of this type of algorithm, we will add the complexities of both of the loops.
+like this:
+```text
+  => O(n) + O(n)
+  => O(2n)
+  By the Rule 1
+  => O(n)
+```
+
+**4. Nested Loops Multiply**
+
+When two loops run such that one is inside another like this:
+
+```java
+for(int i = 0; i < n; i++){
+  for(int j = 0; j < n; j++){
+    System.out.println(i+j);
+  }
+}
+```
+
+Then to find the complexity of this type of algorithm, we will multiply the complexities of both of the loops.
+like this:
+
+```text
+  => O(n) * O(n)
+  => O(n²)
+```
