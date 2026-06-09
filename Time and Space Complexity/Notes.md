@@ -1,4 +1,3 @@
-
 # Time and Space Complexity
 
 ## Outline
@@ -6,6 +5,9 @@
 2. [Time Complexity](#Time-Complexity)
 3. [Space Complexity](#Space-Complexity)
 4. [Big O Notation](#Big-O-Notation)
+   
+    a. [Common Complexities](#Common-Complexities)
+    b. [Rules for Finding Time Complexity](#Rules-for-Finding-Time-Complexity)
 
 
 ---
@@ -143,7 +145,7 @@ This type of Complexity occurs usually due to nested loops. This complexity is u
 This is also called **Quadratic Time Complexity**.
 
 
-### Rules for finding Time complexity
+### Rules for Finding Time Complexity 
 
 
 **1. Ignore Constants**
