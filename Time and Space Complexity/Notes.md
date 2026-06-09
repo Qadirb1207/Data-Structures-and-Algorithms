@@ -3,7 +3,8 @@
 
 ## Outline
 1. [Introduction](#Introduction)
-2. [Time Complexity](#What-is-Time-Complexity)
+2. [Time Complexity](#Time-Complexity)
+3. [Space Complexity](#Space-Complexity)
 
 
 ---
@@ -16,7 +17,7 @@ Time Complexity and Space Complexity help us to analyze how an algorithm behaves
 
 ---
 
-## What is Time Complexity?
+## Time Complexity?
 
 Time Complexity measures how the number of operation performed by an algorithm grows as the input size increases.
 It does not measures actual execution time, because one program can run fast on a new computer but it can run slow on an old computer as compared to the new one.
