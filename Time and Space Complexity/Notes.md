@@ -76,3 +76,42 @@ public class SpaceComplexity{
 ***Explanation:***
 
 The Space Complexity depends directyly on `n`. If `n` scales up, the space (i.e memory RAM) required to hold that array scaled up indentically.
+
+---
+
+## Big O Notation
+
+Big O Notation is used to represent the worst-case growth of an algorithm. It focuses on how the algorithm scales up
+as the input size becomes very large. In the above give examples in Time and Space Complexity, both the Time and Space Complexity are `O(n)`.
+Because: 
+
+```text
+   for n = 10, 10 operations are performed in first program, 10 memory slots are allocated for the array.
+   for n = 100, 100 operations are performed in the first program, 100 memory are slots allocated for the array.
+   for n = 1000, 1000 operations are performed in the first program, 1000 memory are lots allocated for the array.
+   for n = 10000, 10000 operations are performed in the first program, 10000 memory slots are allocated for the array.
+   .
+   .
+   .
+   .
+   so on
+```
+
+ So the growth is directly proportional to `n`. Therefore `O(n)`.
+
+ 
+### Common Complexities
+
+**1. 0(1)**
+
+The number of operation and memory slots allocations remains constant regardless of the input size.
+
+***Example:***
+```java
+  arr[5]
+```
+
+For a 1000 sized array, there is only 1 operation, for 10000 sized array there is only 1 operation, so for any number of input the number of operations remain the same.
+
+**2. O(n)**
+
