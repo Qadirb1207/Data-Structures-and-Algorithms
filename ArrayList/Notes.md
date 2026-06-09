@@ -1,4 +1,3 @@
----
 # Outline
 
 1. [ArrayList Definition](#ArrayLists)
