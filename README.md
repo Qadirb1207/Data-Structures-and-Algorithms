@@ -199,7 +199,7 @@ I aim to:
 
 - [x] Arrays
 - [x] ArrayLists
-- [ ] Time & Space Complexity
+- [x] Time & Space Complexity
 - [ ] Searching
 - [ ] Sorting
 - [ ] Strings
