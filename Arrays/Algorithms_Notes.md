@@ -1,3 +1,15 @@
+# Outline
+1. [Introduction](#Algorithm)
+2. [Searching Algorithms](#Searching-Algorithms)
+   
+   a. [Linear Search](#Linear-Search-Algorithm)
+
+
+
+---
+
+
+
 # Algorithm
 
 An algorithm is a sequence of finite steps that leads to a solution. Now here we will discuss some of the most important searching and sorting algorithms, these algorithms work same on both arrays and ArrayLists.
