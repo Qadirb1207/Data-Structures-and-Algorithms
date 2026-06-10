@@ -66,7 +66,8 @@ My goal is to build strong problem-solving skills and gain a deep understanding 
 Data-Structures-and-Algorithms/
 │
 ├── Arrays/
-│   ├── Notes.md
+│   ├── Array_Notes.md
+│   ├── Algorithms_Notes.md
 │   │
 │   ├── 1D Arrays/
 │   │   ├── Problems/
@@ -76,7 +77,6 @@ Data-Structures-and-Algorithms/
 │   │   │   └── ...
 │   │   │
 │   │   └── Algorithms/
-│   │       ├── Notes.md
 │   │       ├── LinearSearch.java
 │   │       ├── BinarySearch.java
 │   │       ├── BubbleSort.java
