@@ -1,3 +1,5 @@
+*Note:- These notes cover the fundamentals of Time and Space Complexity required for Searching and Sorting. Advance d topics will be added later Insha Allah.*
+
 # Time and Space Complexity
 
 ## Outline
