@@ -32,6 +32,40 @@ For implementing Linear Search on any array, ArrayList or String follow these st
 
 **Best Case Time Complexity**
 
-The best case in Linear Search is that the targetted element is present at very first index, in that case the Time Complexity of the Linear Search will be constant or `O(1)`. For more knowledge on Time Complexity [Click Here]()
+The best case in Linear Search is that the targetted element is present at very first index of the array, ArrayList, or String, in that case the Time Complexity of the Linear Search will be constant or `O(1)`. For more knowledge on Time Complexity [Click Here](https://github.com/Qadirb1207/Data-Structures-and-Algorithms/blob/main/Time%20and%20Space%20Complexity/Notes.md).
 
+
+**Worst Case Time Complexity**
+
+The worst case in Linear Search is that the targetted element is not present in the array, ArrayList, or String, in that case the Time Complexity of the Linear Search will be Linear or `O(n)`. 
+
+
+### Space Complexity of Linear Search
+
+The Space Complexity of Linear Search is constant because it always uses a constant of memory. So, the Space Complexity of the Linear Search will be `O(1)`.
+
+
+### Advantages of Linear Search
+
+Following are the advantages of Linear Search
+
+- Simple to understand and implement.
+- Works on both sorted as well as unsorted arrays and ArrayLists.
+- No preprocessing is required (i.e No need to sort the array before implementing Linear Search).
+
+### Disadvantages of Linear Search
+
+Following are the disadvantages of Linear Search
+
+- Slow for large datasets.
+- Less efficient than Binary Search
+
+
+### Applications of Linear Search
+
+Some of the applications of Linear Search include:
+
+- Small datasets.
+- Unsorted arrays.
+- When simplicity is more important than efficiency.
 
