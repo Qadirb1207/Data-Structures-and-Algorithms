@@ -120,7 +120,26 @@ when loop ends
    return -1 //means the element is not present
 ```
 
-**Important Note:** For Binary Search to work, the array must be sorted in ascending or descending order.  Binary Search may not work as expected on an unsorted array.
+**Important Notes:** 
+- For Binary Search to work, the array must be sorted in ascending or descending order.  Binary Search may not work as expected on an unsorted array.
+- As described above, the formula for `mid` of the array is `(start + end)/2`, but for larger datasets `(start+end)` can be so large that it might exceed the range of an integer in Java, to avoid this an optimized formula is derived from this original formula which is:
+
+``` text
+   mid = start+(end-start)/2
+```
+
+Here is the derivation of the above formula from the original formula:
+
+```text
+   => mid = (start+end)/2
+   Adding and subtracting start from the numerator
+   => mid = (start+end+start-start)/2
+   => mid = (2*start+end-start)/2
+   Distributing the 2 in denominator
+   => mid = 2*start/2+(end-start)/2
+   Here is the optimized formula
+   => mid = start + (end-start)/2
+```
 
 
 
