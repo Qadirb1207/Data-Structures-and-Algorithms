@@ -98,9 +98,12 @@ To apply a Binary Search Algorithm on any array follow these steps:
 - Get the element to be searched let's called it the *key*.
 - Do the following as long as `start <= end`
   
-        - Find the mid of the array using this formula: `mid = (start+end)/2`.
+         Find the mid of the array using this formula: `mid = (start+end)/2`.
   
-        - check the element at `mid`, if its greater than the `key` (i.e element to be searched) then discard the second half of the array by updating end to `mid - 1`, if its less than the `key` then discard the first half by setting the start to `mid + 1`, else if the element at `mid` is equal to the `key`, you've found the element.
+         check the element at `mid`, if its greater than the `key` (i.e element to be searched)
+   then discard the second half of the array by updating end to `mid - 1`,
+  if its less than the `key` then discard the first half by setting the start to `mid + 1`,
+  else if the element at `mid` is equal to the `key`, you've found the element.
 
   
 
