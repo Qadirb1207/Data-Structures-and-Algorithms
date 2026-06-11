@@ -4,7 +4,7 @@
    
    a. [Linear Search](#Linear-Search-Algorithm)
 
-
+   b. [Binary Search](#Binary-Search-Algorithm)
 
 ---
 
@@ -97,15 +97,28 @@ To apply a Binary Search Algorithm on any array follow these steps:
 - Given a sorted array, initialize two pointer start and end (or left and right) as you want, and initialize start as `0` and end as `arr.length - 1`.
 - Get the element to be searched let's called it the *key*.
 - Do the following as long as `start <= end`
-  
-         Find the mid of the array using this formula: `mid = (start+end)/2`.
-  
-         check the element at `mid`, if its greater than the `key` (i.e element to be searched)
-   then discard the second half of the array by updating end to `mid - 1`,
-  if its less than the `key` then discard the first half by setting the start to `mid + 1`,
-  else if the element at `mid` is equal to the `key`, you've found the element.
+- Find the mid of the array using this formula: `mid = (start+end)/2`. 
+  - check the element at `mid`, if its greater than the `key` (i.e element to be searched), then discard the second half of the array by updating end to `mid - 1`.
+  - if its less than the `key` then discard the first half by setting the start to `mid + 1`,
+  - else if the element at `mid` is equal to the `key`, you've found the element.
 
-  
+
+#### Psuedocode for Binary Search Algorithm
+
+```text
+   key is the element to be searched
+ start = 0 and end = arr.length - 1
+   while(start <= end):
+      mid = (start+end)/2
+      if arr[mid] == key:
+         return mid
+      else if arr[mid] > key
+         end = mid - 1
+      else
+         start = mid + 1
+when loop ends
+   return -1 //means the element is not present
+```
 
 
 ---
