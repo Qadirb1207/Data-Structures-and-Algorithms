@@ -9,10 +9,10 @@
 ---
 
 
-
 # Algorithm
 
 An algorithm is a sequence of finite steps that leads to a solution. Now here we will discuss some of the most important searching and sorting algorithms, these algorithms work same on both arrays and ArrayLists.
+
 
 ## 1. Searching Algorithms
 
@@ -20,9 +20,11 @@ Searching algorithms are used to find an element from an array or ArrayList. Her
 
 ---
 
+
 ### Linear Search Algorithm
 
 This is one of the most simplest searching algorithm which uses an iterative method (i.e checking every element one by one) to find an element from an array or ArrayList.
+
 
 ##### Steps for Linear Search
 
@@ -33,6 +35,7 @@ For implementing Linear Search on any array, ArrayList or String follow these st
 - If both are equal, return target's index
 - return -1 otherwise.
 
+
 **Pseudocode for Linear Search**
 
 ```text
@@ -41,6 +44,7 @@ For implementing Linear Search on any array, ArrayList or String follow these st
       return index
   return -1
 ```
+
 
 #### Time Complexity of Linear Search
 
@@ -67,6 +71,7 @@ Following are the advantages of Linear Search
 - Works on both sorted as well as unsorted arrays and ArrayLists.
 - No preprocessing is required (i.e No need to sort the array before implementing Linear Search).
 
+
 #### Disadvantages of Linear Search
 
 Following are the disadvantages of Linear Search
@@ -85,10 +90,12 @@ Some of the applications of Linear Search include:
 
 ---
 
+
 ### Binary Search Algorithm
 
 Binary Search Algorithm is used to find an element in a sorted array by repeatedly dividing the search interval in half. It is more efficient
 than the previous Linear Search Algorithm for large sorted datasets. 
+
 
 #### Steps for Binary Search Algorithm
 
@@ -120,6 +127,7 @@ when loop ends
    return -1 //means the element is not present
 ```
 
+
 **Important Notes:** 
 - For Binary Search to work, the array must be sorted in ascending or descending order.  Binary Search may not work as expected on an unsorted array.
 - As described above, the formula for `mid` of the array is `(start + end)/2`, but for larger datasets `(start+end)` can be so large that it might exceed the range of an integer in Java, to avoid this an optimized formula is derived from this original formula which is:
@@ -142,7 +150,72 @@ Here is the derivation of the above formula from the original formula:
 ```
 
 
+#### Time Complexity
 
+**Best Case:**
+
+The best case is that the element is found in only step, in that case the Time Complexity of Binary Search is `O(1)` or constant, because it does not depend on 
+the size of the input, whether input has 10 elements or 10 million elements if the targetted element is present at `middle` the Time Complexity is `O(1)`.
+
+**Worst Case:**
+
+The worst case is that the targetted element is not found in the array or ArrayList, in that case the Time Complexity is `O(log n)` or Logarithmic Time Complexity, because the Binary Search repeatedly divides the array or ArrayList in the halves. It actually not mathematical `log₁₀` but instead it is `log₂`, since the Big O Notation ignores constants. To learn more about Big O Notation, [Click Here]().
+
+
+#### Space Complexity 
+
+Space complexity of Binary Search is constant or `O(1)`, because only a few extra variables are used such as `start`, `end`, and `mid`, like in [steps](#Steps-for-Binary-Search-Algorithm).
+
+
+#### Dry Run of Binary Search
+
+Lets have a look at how the Binary Search actually works behind the scenes. 
+Suppose you have an array or ArrayList like the one below, and the target is the element you want to search in the array:
+
+```text
+   Array = [12, 32, 45, 56, 67]
+   Target = 56
+```
+
+How it works:
+```text
+start = 0   end = 4
+start <= end true
+mid = 2
+arr[mid] = 45
+45 ≠ target
+45 > target -> false
+45 < target -> true
+   now the new search space is [56, 67]
+where start = mid + 1 = 3 and end is remains the same
+
+start <= end
+mid = (3+(4-3)/2) = 3+0 = 3
+arr[mid] = arr[3] = 56
+
+arr[mid] = target -> true
+
+Hurrah!! Element Found!!!
+```
+
+
+#### Applications of Binary Search
+
+The following are the applications of Binary Search
+
+- Searching in a **Sorted** Array.
+- Database Indexing
+- Finding Floor and Ceiling
+- Find the first and last occurence
+
+
+#### Common Mistakes
+
+Many beginners do these mistakes and think why Binary Search is not working avoid these mistakes to make the Binary Search work perfectly for you
+
+- Using Binary Search on an unsorted array
+- Using (start + end)/2 on a very large array (it can crash the program)
+- Updating start and end incorrectly
 
 
 ---
