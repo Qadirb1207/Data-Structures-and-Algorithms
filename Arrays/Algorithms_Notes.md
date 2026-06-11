@@ -120,6 +120,11 @@ when loop ends
    return -1 //means the element is not present
 ```
 
+**Important Note:** For Binary Search to work, the array must be sorted in ascending or descending order.  Binary Search may not work as expected on an unsorted array.
+
+
+
+
 
 ---
 
