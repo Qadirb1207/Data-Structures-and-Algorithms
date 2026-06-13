@@ -199,6 +199,58 @@ Hurrah!! Element Found!!!
 ```
 
 
+### Order Agnostic Binary Search
+
+Order Agnostic Binary Search is optimized Binary Search Algorithm which can be implemented on both 
+ascending order and descending order sorted array, here is a simple example of it.
+
+```java
+public class OrderAgnosticBinarySearch{
+   public static void main(String[] args){
+      int[] arr = {12, 10, 9, 8, 7, 6};
+      int key = 9;
+      System.out.println(orderAgnosticBS(arr,key));
+
+      int[] arr1 = {1, 3, 9, 10, 12, 29};
+      int key2 = 1;
+      System.out.println(orderAgnosticBS(arr1,key2));
+   }
+
+   private static int orderAgnosticBS(int[] arr, int key){
+      int start = 0, end = arr.length-1;
+      boolean isAsc = arr[start] < arr[end]; /*we will check first and last
+element because maybe the array is like [3, 3, 3, 4], now this is also
+an ascending order sorted array*/
+      while(start <= end){
+         int mid = start+(end-start)/2;
+
+         if(arr[mid] == key){
+            return mid;
+         }
+   //one of the following will run at a time so the OABS will work the same as Simple BS
+         if(isAsc){
+            if(target > arr[mid]){
+               start = mid+1;
+            }else{
+               end = mid-1;
+            }
+         }else{
+            if(target > arr[mid]){
+               end = mid-1;
+            }else{
+               start = mid+1;
+            }
+         }
+      }
+   }
+}
+```
+
+***Output:***
+```text
+   2
+   0
+```
 #### Applications of Binary Search
 
 The following are the applications of Binary Search
