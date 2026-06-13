@@ -209,15 +209,26 @@ public class OrderAgnosticBinarySearch{
    public static void main(String[] args){
       int[] arr = {12, 10, 9, 8, 7, 6};
       int key = 9;
-      System.out.println(orderAgnosticBS(arr,key));
+      int targetFoundAt = orderAgnosticBS(arr,key);
+      if(targetFoundAt > -1){
+         System.out.println(key+" is present at index no: "+targetFoundAt);
+      }else{
+         System.out.println("Element is not present");
+      }
 
       int[] arr1 = {1, 3, 9, 10, 12, 29};
-      int key2 = 1;
-      System.out.println(orderAgnosticBS(arr1,key2));
+      int key2 = 100;
+      int presentAt = orderAgnosticBS(arr1,key2);
+      if(presentAt > -1){
+         System.out.println(key+" is present at index no: "+presentAt);
+      }else{
+         System.out.println("Element is not present");
+      }
    }
 
    private static int orderAgnosticBS(int[] arr, int key){
       int start = 0, end = arr.length-1;
+      int index = -1;
       boolean isAsc = arr[start] < arr[end]; /*we will check first and last
 element because maybe the array is like [3, 3, 3, 4], now this is also
 an ascending order sorted array*/
@@ -225,31 +236,33 @@ an ascending order sorted array*/
          int mid = start+(end-start)/2;
 
          if(arr[mid] == key){
-            return mid;
+            index = mid;
+            break;
          }
    //one of the following will run at a time so the OABS will work the same as Simple BS
          if(isAsc){
-            if(target > arr[mid]){
+            if(key > arr[mid]){
                start = mid+1;
             }else{
                end = mid-1;
             }
          }else{
-            if(target > arr[mid]){
+            if(key > arr[mid]){
                end = mid-1;
             }else{
                start = mid+1;
             }
          }
       }
+   return index;
    }
 }
 ```
 
 ***Output:***
 ```text
-   2
-   0
+   9 is present at index no: 2
+   Element is not present
 ```
 #### Applications of Binary Search
 
