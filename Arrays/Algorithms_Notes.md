@@ -286,6 +286,9 @@ Many beginners do these mistakes and think why Binary Search is not working avoi
 - Updating start and end incorrectly
 
 
+---
+
+
 ## 2. Sorting Algorithms
 
 Sorting algorithms are used to sort an array or ArrayList in ascending or descending order. Here we will take look at some basic but useful sorting algorithms
