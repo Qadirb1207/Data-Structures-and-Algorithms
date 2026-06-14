@@ -6,6 +6,9 @@
 
    b. [Binary Search](#Binary-Search-Algorithm)
 
+3. [Sorting Algorithms](#Sorting-Algorithms)
+
+   a. [Bubble Sort](#Bubble-Sort-Algorithm)
 ---
 
 
@@ -282,6 +285,15 @@ Many beginners do these mistakes and think why Binary Search is not working avoi
 - Using (start + end)/2 on a very large array (it can crash the program)
 - Updating start and end incorrectly
 
+
+## 2. Sorting Algorithms
+
+Sorting algorithms are used to sort an array or ArrayList in ascending or descending order. Here we will take look at some basic but useful sorting algorithms
+
+
+### Bubble Sort Algorithm
+
+Bubble Sort Algorithm is used to sort an array or ArrayList by iterative checking the adjacent elements and swapping them if they are wrong order (i.e if you are sorting in ascending order then the wrong order will be that the first element is greater than the second one and if you are sorting in descending order then the wrong order will be the first element is less than the second element).
 
 ---
 
