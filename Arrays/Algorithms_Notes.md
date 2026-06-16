@@ -296,7 +296,74 @@ Sorting algorithms are used to sort an array or ArrayList in ascending or descen
 
 ### Bubble Sort Algorithm
 
-Bubble Sort Algorithm is used to sort an array or ArrayList by iterative checking the adjacent elements and swapping them if they are wrong order (i.e if you are sorting in ascending order then the wrong order will be that the first element is greater than the second one and if you are sorting in descending order then the wrong order will be the first element is less than the second element).
+Bubble Sort Algorithm is used to sort an array or ArrayList by iterative checking the adjacent elements and swapping them if they are in the wrong order (i.e if you are sorting in ascending order then the wrong order will be that the first element is greater than the second one and if you are sorting in descending order then the wrong order will be the first element is less than the second element). Think of it like elements "bubbling" to their correct positions. In every single pass through the array, the largest unsorted elements behaves like a heavy bubble, winning every comparison and moving to its correct final position at the end of the list.  This pass-by-pass comparison repeats until the entire array is sorted. 
+
+
+#### Steps for Bubble Sort Algorithm
+
+To sort an array using Bubble Sort the following steps are followed: 
+
+- Take an unsorted array or list (let's call it `arr`).
+- Repeat the following steps `arr.length-1` times
+- Initialize a boolean `flag` such as `isSwapped` to `false`.
+- Run the inner loop `arr.length-i-1` times (here `i` is the outer loop's variable).
+- Compare two adjacent elements if they are in the wrong order swap them else leave them as it is.
+- Change the `flag isSwapped` from `false` to `true`.
+- After the inner loop, check if the `flag` is still `false`, if it is the end the loop, means no swapping occured and array is sorted.
+  
+
+#### Pseudocode for Bubble Sort Algorithm
+
+Here is the pseudocode for the Bubble Sort Algorithm:
+
+```text
+//given an array like this
+arr = [12, 10, 7, 15, 9];
+
+for i from 0 to arr.length-1:
+   isSwapped = false;
+   for j from 0 to arr.length-i-1:
+      if(arr[j] > arr[j+1]):
+         temp = arr[j]
+         arr[j] = arr[j+1]
+         arr[j+1] = temp
+         isSwapped = true
+      end if
+   end for //inner for
+//if no two elements are swapped by inner loop, then break
+   if isSwapped == false
+      break
+   end if
+end for //outer for
+end the procedure
+```
+
+
+#### Time Complexity 
+
+**Best Case Time Complexity:**
+
+The best case time complexity of Bubble Sort is `O(n)`. If given array that is already sorted then the Bubble Sort will run only once and after the first 
+pass the boolean flag will remain false and the outer loop will break. 
+
+**Worst Case Time Complexity:**
+
+The worst case time complexity of Bubble Sort is `O(n²)`. If the given array is sorted in descending order and it is given to the Bubble Sort algorithm
+the it will be the worst case, and then time complexity of Bubble Sort will be `O(n²)`.
+
+
+#### Space Complexity
+
+The space complexity of the Bubble Sort Algorithm is `O(1)`.
+
+
+#### Stable and Unstable Sorting Algorithms
+
+**Stable Sorting Algorithm:** 
+   An algorithm is said to be stable sorting algorithm if it preserves the original relative order of elements that have equal values (or keys). Bubble Sort 
+comes in this category.
+
+**Unstable Sorting Algorithm**
 
 ---
 
