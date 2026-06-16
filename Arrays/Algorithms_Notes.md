@@ -1,14 +1,9 @@
 # Outline
 1. [Introduction](#Algorithm)
-2. [Searching Algorithms](#Searching-Algorithms)
+2. [Linear Search](#Linear-Search-Algorithm)
+3. [Binary Search](#Binary-Search-Algorithm)
+4. [Bubble Sort](#Bubble-Sort-Algorithm)
    
-   a. [Linear Search](#Linear-Search-Algorithm)
-
-   b. [Binary Search](#Binary-Search-Algorithm)
-
-3. [Sorting Algorithms](#Sorting-Algorithms)
-
-   a. [Bubble Sort](#Bubble-Sort-Algorithm)
 ---
 
 
