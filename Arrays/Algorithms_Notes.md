@@ -359,11 +359,21 @@ The space complexity of the Bubble Sort Algorithm is `O(1)`.
 
 #### Stable and Unstable Sorting Algorithms
 
+
 **Stable Sorting Algorithm:** 
    An algorithm is said to be stable sorting algorithm if it preserves the original relative order of elements that have equal values (or keys). Bubble Sort 
-comes in this category.
+is inherently stable because of its specific swap condition. Consider the standard implementation logic:
 
-**Unstable Sorting Algorithm**
+```text
+//swap condition
+if(arr[j] > arr[j+1])
+   swap(arr[j], arr[j+1]);
+```
+
+The algorithm only swaps elements if the left element is strictly greater than the right element(`arr[j] > arr[j+1]`), as the equal elements fails this condition so they will be never swapped hence their original positions will be preserved.
+
+**Unstable Sorting Algorithm:**
+   An algorithm is said to be unstable sorting algorithm if it doesn't preserve the original relative order of elements that have equal values. Algorithms such as Selection Sort come in this category.
 
 ---
 
