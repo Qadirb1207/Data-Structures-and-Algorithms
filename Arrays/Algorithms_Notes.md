@@ -424,7 +424,7 @@ The smallest element in the unsorted part is `18`, putting it at its right index
    [7, 9, 15, 18, 21]
 ```
 
-*Boom!!!! The array is now sorted, This was Selection Sort, Let's have a look at its steps.*
+*Boom!!!! The array is now sorted. This was Selection Sort, Let's have a look at its steps.*
 
 #### Steps of Selection Sort
 
