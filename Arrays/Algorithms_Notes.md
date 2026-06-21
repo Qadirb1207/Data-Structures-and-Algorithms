@@ -3,6 +3,7 @@
 2. [Linear Search](#Linear-Search-Algorithm)
 3. [Binary Search](#Binary-Search-Algorithm)
 4. [Bubble Sort](#Bubble-Sort-Algorithm)
+5. [Selection Sort](#Selection-Sort-Algorithm)
    
 ---
 
@@ -369,6 +370,88 @@ The algorithm only swaps elements if the left element is strictly greater than t
 
 **Unstable Sorting Algorithm:**
    An algorithm is said to be unstable sorting algorithm if it doesn't preserve the original relative order of elements that have equal values. Algorithms such as Selection Sort come in this category.
+
+
+### Selection Sort Algorithm
+
+Selection Sort is a simple comparison-based sorting algorithm that repeatedly finds the smallest elements from the unsorted part of the array
+and places it at its correct position in the sorted part (often through swapping).
+
+The algorithm divides the array into two parts:
+1. Sorted Part (left side)
+2. Unsorted Part (right side)
+
+In each pass, the minimum element from the unsorted part is selected and swapped with the first element of the unsorted part.
+
+#### Working of Selection Sort
+
+Given an array:
+
+```text
+   [21, 18, 9, 7, 15]
+```
+
+**Pass 1**
+
+At the start the whole array is unsorted part, after the first pass the very first element will be sorted and that part will be considered as sorted part.
+The smallest element is `7`. After this pass the array becomes:
+
+```text
+   [7, 18, 9, 21, 15]
+```
+
+**Pass 2**
+
+Now the array's left side is only one element which is `7`, and it's the sorted part, on the right side, the array is unsorted, now from the unsorted part the smallest element is `9`. After this pass the array becomes:
+
+```text
+   [7, 9, 18, 21, 15]
+```
+
+**Pass 3**
+
+The smallest element in the unsorted part is `15`, putting it at its right position array becomes:
+
+```text
+   [7, 9, 15, 21, 18]
+```
+
+**Pass 4**
+
+The smallest element in the unsorted part is `18`, putting it at its right index the array becomes:
+
+```text
+   [7, 9, 15, 18, 21]
+```
+
+*Boom!!!! The array is now sorted, This was Selection Sort, Let's have a look at its steps.*
+
+#### Steps of Selection Sort
+
+For sorting any array using Selection Sort, follow these steps
+1. Start from the first index of the given array.
+2. Assume the first current element index is the minimum element index.
+3. Traverse the remaining unsorted part of the array to find the actual minimum element.
+4. Update the minimum element index whenever the minimum element is found.
+5. After the completing the search, swap the minimum element with the first element in the unsorted part.
+6. Move one position for the remaining unsorted elements.
+7. Continue until the entire array is sorted.
+
+These were the steps now let's have a look at the pseudocode 
+
+#### Pseudocode for Selection Sort
+Here is the pseudocode
+
+```text
+   for each position i from 0 to n-2:
+      minIndex = i
+
+         for each position from i+1 to n-1:
+            if(arr[j] < arr[minIndex])
+               minIndex = j
+   swap(arr[i], arr[minIndex]
+```
+
 
 ---
 
