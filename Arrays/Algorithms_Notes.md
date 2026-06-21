@@ -402,7 +402,7 @@ The smallest element is `7`. After this pass the array becomes:
 
 **Pass 2**
 
-Now the array's left side is only one element which is `7`, and it's the sorted part, on the right side, the array is unsorted, now from the unsorted part the smallest element is `9`. After this pass the array becomes:
+Now the array's left side is only one element which is `7`, and it's the sorted part. On the right side, the array is unsorted. Now, in the unsorted part, the smallest element is `9`. After this pass the array becomes:
 
 ```text
    [7, 9, 18, 21, 15]
