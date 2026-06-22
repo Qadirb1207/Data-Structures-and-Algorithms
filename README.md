@@ -200,8 +200,8 @@ I aim to:
 - [x] Arrays
 - [x] ArrayLists
 - [x] Time & Space Complexity
-- [ ] Searching
-- [ ] Sorting
+- [x] Searching
+- [x] Sorting
 - [ ] Strings
 - [ ] Recursion
 - [ ] Linked Lists
