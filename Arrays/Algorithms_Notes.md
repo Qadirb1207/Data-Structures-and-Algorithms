@@ -453,6 +453,41 @@ Here is the pseudocode
 ```
 
 
+#### Time Complexity
+
+**Best Case Time Complexity**
+
+Even if the array is sorted, Selection Sort still scans the remaining unsorted elements to find the minimum element. Hence the Best Case Time Complexity of 
+Selectin Sort is 
+
+```text
+   O(n²)
+```
+
+**Worst Case Time Complexity**
+
+When array is sorted is in reverse order, the algorithm still performs the same number of comparisons. Hence, the Worst Case Time Complexity of Selection
+Sort is
+
+```text
+   O(n²)
+```
+
+**Why are both Best and Worst Case Time Complexity same?**
+
+The reason is number of comparisons as we have seen in the working of Selection Sort in the first pass there are only `arr.length-1` comparisons
+and these reduce by one after each pass like in the second pass they will be `arr.length-2`, in the third one they will be `arr.length-3`, etcetera.
+So total number of comparisons is: 
+```text
+   (n-1)+(n-2)+(n-3)+(n-4)+....+3+2+1
+   In total there are n-1 terms in the above series, now adding all these we get
+   (n-1)(n-1+1)/2
+   (n)(n-1)/2
+   this will be O(n²) after computing
+```
+
+
+
 ---
 
 ## Author Details
