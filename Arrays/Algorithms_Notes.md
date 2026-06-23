@@ -486,6 +486,25 @@ So total number of comparisons is:
    this will be O(n²) after computing
 ```
 
+#### Space Complexity
+
+Selection Sort uses only a few extra variables:
+
+- `minIndex`
+- Loop counters
+- Temporary variable for swapping
+
+Therefore:
+
+```text
+Space complexity is : O(1)
+```
+
+This means Selection Sort is an in-place sorting which doesn't require extra memory proportional to input size.
+
+Unlike Bubble Sort, Selection Sort performs fewer swaps. It makes at most `(n-1)` swaps, which can make it useful when swapping elements is expensive, although
+its overall time complexity remains ***O(n²)***.
+
 
 
 ---
