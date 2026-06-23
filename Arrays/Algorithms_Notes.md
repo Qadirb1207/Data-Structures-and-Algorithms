@@ -4,6 +4,7 @@
 3. [Binary Search](#Binary-Search-Algorithm)
 4. [Bubble Sort](#Bubble-Sort-Algorithm)
 5. [Selection Sort](#Selection-Sort-Algorithm)
+6. [Insertion Sort](#Insertion-Sort-Algorithm)
    
 ---
 
@@ -504,6 +505,9 @@ This means Selection Sort is an in-place sorting which doesn't require extra mem
 
 Unlike Bubble Sort, Selection Sort performs fewer swaps. It makes at most `(n-1)` swaps, which can make it useful when swapping elements is expensive, although
 its overall time complexity remains ***O(n²)***.
+
+
+### Insertion Sort Algorithm
 
 
 
