@@ -512,6 +512,7 @@ its overall time complexity remains ***O(n²)***.
 Insertion Sort is a simple comparison-based sorting algorithm that builds the sorted array one element at a time. It works similarly how we arrange playing cards in our hand. At each step one element is picked from the unsorted part and inserted into its correct position in the sorted part.
 Initially, the first element is considered sorted and the remaining element form the unsorted part.
 
+
 #### Working Principle
 
 Given an array 
@@ -555,14 +556,93 @@ In this pass, there is only element in the unsorted part and it will be placed a
    [1, 2, 4, 6, 9]
 ```
 
-*Boom!!!! The array is now sorted, Now let have a look at the steps of this algorithms!!!!!*
+*Boom!!!! The array is now sorted, Now let's have a look at the steps of this algorithms!!!!!*
+
 
 #### Steps of Insertion Sort
 
 In order to sort any unsorted using Insertion Sort the following steps are performed, the steps are:
 
 - Assume the first element is already sorted.
-- Start from the second element
+- Start from the second element.
+- Store the current element in a temporary variable (`key`).
+- Compare the `key` with elements in the sorted part on its left.
+- Shift larger elements one position to right.
+- Insert the key at its correct position.
+- Repeat the process for all remaining elements.
+
+*These were the steps for Insertion Sort Algorithm, Now let's see its pseudocode*
+
+
+#### Pseudocode for Insertion Sort
+Here is the pseudocode for Insertion Sort:
+
+```text
+InsertionSort(arr):
+for(i = 0 to n-1)
+   key = arr[i]
+
+   for(j=i+1 to 0)
+      if(arr[j] > key)
+         int temp = arr[j]
+         arr[j] = key
+         key = temp
+      else
+         break
+```
+
+This is the pseudocode for Insertion Sort.
+
+
+#### Time Complexity
+
+**Best Case**
+
+When array is already sorted the time complexity of Insertion Sort is:
+
+```text
+O(n)
+```
+Reason: Only one comparison is needed for each element and no shifting occurs.
+
+**Worst Case**
+
+When the array is sorted in descending order and Insertion Sort is used to sort it in ascending order its time complexity is:
+
+```text
+O(n²)
+```
+
+
+#### Space Complexity
+
+Insertion Sort uses only a few extra variables (`key` and loop counters). Hence, its space complexity is:
+
+```text
+O(1)
+```
+
+#### Stability
+
+Insertion Sort is a stable sorting algorithm as it preserves relative order of the equal elements.
+
+for example:
+
+```text
+   (5, A) (3, B) (5, C)
+```
+
+After sorting 
+
+```text
+   (3, B) (5, A) (5, C)
+```
+
+The two `5`s remain in the same relative order. This is called Stability.
+
+
+Unlike Selection Sort, Insertion Sort can take advantage of sorted or nearly sorted array, giving it a Best Case Time Complexity of O(n). This makes it one of 
+the fastest simple sorting algorithms for small or partially sorted datasets.
 
 
 
