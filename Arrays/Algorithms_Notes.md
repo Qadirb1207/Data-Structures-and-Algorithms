@@ -644,6 +644,68 @@ The two `5`s remain in the same relative order. This is called Stability.
 Unlike Selection Sort, Insertion Sort can take advantage of sorted or nearly sorted array, giving it a Best Case Time Complexity of O(n). This makes it one of 
 the fastest simple sorting algorithms for small or partially sorted datasets.
 
+---
+
+### Cyclic Sort Algorithm
+
+Cyclic Sort is a sorting algorithm used when the array contains numbers in a fixed range, usually from 1 to N. It places each element at its correct index by 
+repeatedly swapping elements until every number is in its proper position.
+
+#### Working of Cyclic Sort
+
+Given an array
+
+```text
+[3, 5, 1, 4, 2]
+```
+
+Correct positions of each element are:
+
+```text
+1 -> index 0
+2 -> index 1
+3 -> index 2
+4 -> index 3
+5 -> index 4
+```
+
+After placing each number at its correct index:
+
+```
+[1, 2, 3, 4, 5]
+```
+
+
+#### Steps for Cyclic Sort
+
+In order to sort any array whose elements are in the given range, using Cyclic Sort perform the following given steps:
+
+- Start from the index `0`.
+- Find the correct position of the current element.
+- If the element is not at its correct index, swap it with the element at its correct index.
+- If the element is already at its correct index, move to the next index
+- Repeat until the entire array is processed.
+
+
+#### Pseudocode for Cyclic Sort
+
+Here is the pseudocode for Cyclic Sort
+```text
+CyclicSort(arr):
+i = 0
+while(i < n)
+   correct = arr[i] - 1
+   if(arr[i] != correct)
+      swap(arr[i], arr[correct]
+   else
+      i++
+```
+
+
+#### Time Complexity
+
+**Best Case**
+
 
 
 ---
