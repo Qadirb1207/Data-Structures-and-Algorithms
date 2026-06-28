@@ -5,7 +5,7 @@
 
 # String
 A String is a sequence of characters used to store and manipulate text.
-In Java, Strings are objects of the `Strings` class.
+In Java, Strings are objects of the `String` class.
 
 *Example:*
 ```java
@@ -30,6 +30,7 @@ String str2 = "Hello";
 ```
 Here both `str1` and `str2` refer to the same object in the String Pool. The purposes of String Pool are:
 
+It
 - Saves memory.
 - Avoids creating duplicate string objects.
 - Improves performance.
@@ -60,7 +61,7 @@ name = "Iqra"
 
 The original string "Abrar" is not modified. Instead a new String "Iqra" is created.
 The main reason for which strings are immutable is that if you are using Java in creating your application, and you're storing first name in database 
-which is a String, and there are 10 users having first name as "Iqra", if suppose one user change her name from "Iqra" to "Noorani", now if the String were
+which is a String, and there are 10 users having first name as "Iqra", suppose if one user change her name from "Iqra" to "Noorani", now if the String were
 not immutable then all users name would have changed to "Noorani" from "Iqra", now thanks to Java since the Strings are immutable, so other users' name is not 
 changed. 
 
