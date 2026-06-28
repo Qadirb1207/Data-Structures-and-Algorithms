@@ -202,7 +202,7 @@ I aim to:
 - [x] Time & Space Complexity
 - [x] Searching
 - [x] Sorting
-- [ ] Strings
+- [x] Strings
 - [ ] Recursion
 - [ ] Linked Lists
 - [ ] Stacks
