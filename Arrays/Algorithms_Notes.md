@@ -430,13 +430,13 @@ The smallest element in the unsorted part is `18`, putting it at its right index
 #### Steps of Selection Sort
 
 For sorting any array using Selection Sort, follow these steps
-1. Start from the first index of the given array.
-2. Assume the first current element index is the minimum element index.
-3. Traverse the remaining unsorted part of the array to find the actual minimum element.
-4. Update the minimum element index whenever the minimum element is found.
-5. After the completing the search, swap the minimum element with the first element in the unsorted part.
-6. Move one position for the remaining unsorted elements.
-7. Continue until the entire array is sorted.
+- Start from the first index of the given array.
+- Assume the first current element index is the minimum element index.
+- Traverse the remaining unsorted part of the array to find the actual minimum element.
+- Update the minimum element index whenever the minimum element is found.
+- After the completing the search, swap the minimum element with the first element in the unsorted part.
+- Move one position for the remaining unsorted elements.
+- Continue until the entire array is sorted.
 
 These were the steps now let's have a look at the pseudocode 
 
@@ -508,6 +508,61 @@ its overall time complexity remains ***O(n²)***.
 
 
 ### Insertion Sort Algorithm
+
+Insertion Sort is a simple comparison-based sorting algorithm that builds the sorted array one element at a time. It works similarly how we arrange playing cards in our hand. At each step one element is picked from the unsorted part and inserted into its correct position in the sorted part.
+Initially, the first element is considered sorted and the remaining element form the unsorted part.
+
+#### Working Principle
+
+Given an array 
+
+```text
+   [6, 4, 9, 2, 1]
+```
+
+**Pass 1**
+
+In the given unsorted array lets consider the first element as the sorted part of the array i.e `[6]`. Now one element from the unsorted part on the right is taken and kept in the sorted array at its correct position so the sorted part remains sorted. After putting `4` at its correct position in the sorted part i.e `[6]`, the array becomes:
+
+```text
+   [4, 6, 9, 2, 1]
+```
+
+**Pass 2**
+
+In this pass the sorted array expands to two elements, now the sorted part is `[4, 6]`, and the part one its right is unsorted. Now one element from that part w
+will be taken and placed at its correct position in the sorted part of the array. `9` will be placed in its correct position in the array in ***Pass 1***. 
+Since the correct position for `9` is the same where it is now, so there will be no changes to the array:
+
+
+```text
+   [4, 6, 9, 2, 1]
+```
+
+**Pass 3**
+
+In this pass, one element from the unsorted part i.e `2` will be placed in its correct position in the sorted array, now after this pass the array becomes:
+
+```text
+   [2, 4, 6, 9, 1]
+```
+
+**Pass 4**
+
+In this pass, there is only element in the unsorted part and it will be placed at its right place in the sorted array, after this pass the array becomes:
+
+```text
+   [1, 2, 4, 6, 9]
+```
+
+*Boom!!!! The array is now sorted, Now let have a look at the steps of this algorithms!!!!!*
+
+#### Steps of Insertion Sort
+
+In order to sort any unsorted using Insertion Sort the following steps are performed, the steps are:
+
+- Assume the first element is already sorted.
+- Start from the second element
 
 
 
