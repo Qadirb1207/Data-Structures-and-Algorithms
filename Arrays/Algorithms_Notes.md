@@ -704,8 +704,30 @@ while(i < n)
 
 #### Time Complexity
 
-**Best Case**
+Best Case and Worst Case Time Complexities of Cyclic Sort is o(n).
 
+
+#### Space Complexity
+
+Space Complexity of Cyclic Sort is O(1).
+
+
+#### Where to Use Cyclic Sort
+
+Use Cyclic Sort when:
+
+- Thr array contains numbers in the range 1 to N.
+- The array contains numbers in the range 0 to N.
+- You need to find
+     - Missing numbers in an array
+     - Duplicate numbers in an array
+     - Corrupted pairs (one missing and one duplicate) in an array
+     - First missing positive in an array
+
+
+**Important Note:**
+
+Cyclic Sort is not a general-purpose sorting algorithm like Bubble Sort, or Insertion Sort. It only works efficiently when the numbers belong to a known range.
 
 
 ---
