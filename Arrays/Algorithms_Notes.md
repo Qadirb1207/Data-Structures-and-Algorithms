@@ -5,6 +5,8 @@
 4. [Bubble Sort](#Bubble-Sort-Algorithm)
 5. [Selection Sort](#Selection-Sort-Algorithm)
 6. [Insertion Sort](#Insertion-Sort-Algorithm)
+7. [Cyclic Sort](#Cyclic-Sort-Algorithm)
+8. [Author Details & Contact Info](#Author-Details)
    
 ---
 
@@ -290,6 +292,7 @@ Many beginners do these mistakes and think why Binary Search is not working avoi
 
 Sorting algorithms are used to sort an array or ArrayList in ascending or descending order. Here we will take look at some basic but useful sorting algorithms
 
+---
 
 ### Bubble Sort Algorithm
 
@@ -506,6 +509,7 @@ This means Selection Sort is an in-place sorting which doesn't require extra mem
 Unlike Bubble Sort, Selection Sort performs fewer swaps. It makes at most `(n-1)` swaps, which can make it useful when swapping elements is expensive, although
 its overall time complexity remains ***O(n²)***.
 
+---
 
 ### Insertion Sort Algorithm
 
@@ -731,6 +735,7 @@ Cyclic Sort is not a general-purpose sorting algorithm like Bubble Sort, or Inse
 
 
 ---
+
 
 ## Author Details
 
