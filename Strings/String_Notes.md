@@ -211,3 +211,29 @@ public class OperatorOverloadingDemo{
    + Operators with Strings
    12+14=1214
 ```
+
+## Some Common String Methods
+
+Here are some commonly used built-in String methods in Java.
+
+**1. `length()`**
+
+This is one of the most commonly used method in String traversals in Java. It gives the length of Strings.
+
+*Example:*
+
+```java
+public class StringLengthDemo{
+   public static void main(String[] args){
+      String str = "Hello World";
+      int length = str.length();
+      System.out.println("length of the String is: "+length);
+   }
+}
+```
+
+*Output:*
+```text
+length of the String is: 11
+```
+
