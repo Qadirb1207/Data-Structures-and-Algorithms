@@ -9,6 +9,9 @@
 
    d. [String Formatting](#Placeholders)
 
+   e. [Operators on Strings](#Operators-on-Strings)
+
+   f. [Some Common Methods](#Some-Common-String-Methods)
 
 
 # String
