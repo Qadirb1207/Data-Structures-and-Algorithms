@@ -375,7 +375,9 @@ Java
 
 **8. `contains(String str)`**
 
-This method is used to check whether a combination of letters exists in a string or not. It returns `true` if the string contains and `false` otherwise.
+This method is used to check whether a specific combination of letters exists in a string or not. It returns `true` if the string contains and `false` otherwise.
+
+_Example:_
 
 ```java
 public class ContainsDemo{
@@ -391,3 +393,60 @@ _Output:_
 true
 ```
 
+**9. `replace(String original, String modified)`**
+
+This replaces the original string with the modified one. 
+
+_Example:_
+
+```java
+public class ReplaceDemo{
+   public static void main(String[] args){
+      String str = "I Love Database";
+      str = str.replace("Love", "hate");
+      System.out.println(str);
+   }
+}
+```
+
+_Output:_
+```text
+I hate Database
+```
+
+**10. `equals(String str)`**
+
+This compare the value of the string in the argument and on which it is called and returns `true` if they both are equal and `false` otherwise.
+
+_Example:_
+
+```java
+public class EqualsDemo{
+   public static void main(String[] args){
+      String str1 = "Love";
+      String str2 = "Love";
+
+      System.out.println(str1.equals(str2));
+   }
+}
+```
+
+_Output:_
+```text
+true
+```
+
+**An specialized Version Of equals:** If two strings are given like this `"Hello"` and `"Hello"`, this method `.equals()` return true, if one string is 
+`"hello"` the method `.equals()` return false. However, there is an specialized version of equals which ignores case, which is like `.equalsIgnoreCase()`. You 
+can try it on your own.
+
+---
+
+# Author Details
+**Name:** 
+
+**Contact Email:** [qadirb3492@gmail.com](#qadirb3492@gmail.com)
+
+**LinkedIn Profile:** [Qadir Bakhsh]()
+
+**GitHub Profile:** [Qadir on GitHub](https://www.github.com/Qadirb1207)
