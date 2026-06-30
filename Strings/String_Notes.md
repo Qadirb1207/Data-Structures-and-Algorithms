@@ -216,6 +216,7 @@ public class OperatorOverloadingDemo{
 
 Here are some commonly used built-in String methods in Java.
 
+
 **1. `length()`**
 
 This is one of the most commonly used method in String traversals in Java. It gives the length of Strings.
@@ -238,6 +239,7 @@ length of the String is: 11
 ```
 ***Note:*** This also counts spaces ` `.
 
+
 **2. `charAt(int index)`**
 
 This is also one of the most used methods in String traversal by its indices. This returns a character at the given index. Like arrays, indices in Strings also
@@ -249,7 +251,7 @@ start from `0`, and go till `length of string-1`.
 public class CharAtDemo{
    public static void main(String[] args){
       String name = "Qadir";
-      System.out.println("Character at index 3 in name is: "name.charAt(3));
+      System.out.println("Character at index 3 in name is: "+name.charAt(3));
    }
 }
 ```
@@ -257,4 +259,47 @@ public class CharAtDemo{
 _Output:_
 ```text
 Character at index 3 in name is: i
+```
+
+
+**3. `toLowerCase()`**
+
+This changes the case of a strings from upper to lower and if a string is already in lower case this method will do nothing.
+
+*Example:*
+
+```java
+public class LowerCaseDemo{
+   public static void main(String[] args){
+      String name = "ABRAR";
+      String name2 = "Qadir";
+      System.out.println(name.toLowerCase()+" and "+name2.toLowerCase()+" are close friends.");
+   }
+}
+```
+
+_Output:_
+```text
+   abrar and qadir are close friends.
+```
+
+**4. `toUpperCase()`**
+
+This changes case of the Strings from lower to upper, if a string is already in upper this will do nothing.
+
+*Example:*
+
+```java
+public class UpperCaseDemo{
+   public static void main(String[] args){
+      String name = "ABRAR";
+      String name2 = "Qadir";
+      System.out.println(name.toUpperCase()+" and "+name2.toUpperCase()+" are close friends.");
+   }
+}
+```
+
+_Output:_
+```text
+   ABRAR and QADIR are close friends.
 ```
