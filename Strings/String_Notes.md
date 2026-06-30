@@ -13,6 +13,10 @@
 
    f. [Some Common Methods](#Some-Common-String-Methods)
 
+2. [StringBuilder](#StringBuilder)
+3. [Author Details](#Author-Details)
+
+---
 
 # String
 A String is a sequence of characters used to store and manipulate text.
@@ -450,3 +454,11 @@ can try it on your own.
 **LinkedIn Profile:** [Qadir Bakhsh on LinkedIn](https://www.linkedin.com/in/qadir-bakhsh)
 
 **GitHub Profile:** [Qadir on GitHub](https://www.github.com/Qadirb1207)
+
+
+---
+
+
+**THANKS FOR READING!! DON'T FORGET TO FOLLOW ME!** 
+
+
