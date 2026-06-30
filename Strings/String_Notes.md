@@ -236,4 +236,25 @@ public class StringLengthDemo{
 ```text
 length of the String is: 11
 ```
+***Note:*** This also counts spaces ` `.
 
+**2. `charAt(int index)`**
+
+This is also one of the most used methods in String traversal by its indices. This returns a character at the given index. Like arrays, indices in Strings also
+start from `0`, and go till `length of string-1`.
+
+*Example:*
+
+```java
+public class CharAtDemo{
+   public static void main(String[] args){
+      String name = "Qadir";
+      System.out.println("Character at index 3 in name is: "name.charAt(3));
+   }
+}
+```
+
+_Output:_
+```text
+Character at index 3 in name is: i
+```
