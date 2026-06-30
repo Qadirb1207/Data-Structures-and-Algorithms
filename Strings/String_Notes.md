@@ -332,3 +332,39 @@ public class TrimDemo{
 ```
 
 ***Note:*** Here you can see the `trim()` method removed the leading and trailing spaces but it didn't remove the middle space.
+
+**6. substring(beginIndex)**
+
+This method returns a substring from the specified index till end (if end is not specified).
+
+```java
+public class SubstringDemo{
+   public static void main(String[] args){
+      String str = "I Love Java";
+      System.out.println(str.substring(6));
+   }
+}
+```
+
+*Output:*
+```text
+   Java
+```
+
+**7. substring(beginIndex, endIndex)**
+
+This method returns characters of string from `beginIndex` to `endIndex-1`.
+
+```java
+public class SubstringDemo2{
+   public static void main(String[] args){
+      String str = "Java Programming";
+      System.out.println(str.substring(0,4));
+   }
+}
+```
+
+_Output_
+```text
+   Java
+```
