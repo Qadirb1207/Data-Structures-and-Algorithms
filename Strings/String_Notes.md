@@ -1,5 +1,13 @@
 # Outline
-1. [Introduction]()
+1. [Introduction](#String)
+
+   a. [String Storage](#String-Storage)
+
+   b. [String Immutability](#String-Immutability)
+
+   c. [String Comparisons](#String-Comparisons)
+
+   
 
 
 
