@@ -30,7 +30,7 @@ String can be stored in two different areas of memory which are:
 
 **String Pool**
 
-A special memory area inside the heap memory that stores string laterals.
+A special memory area inside the heap memory that stores string literals.
 
 ```java
 String str1 = "Hello";
@@ -264,7 +264,7 @@ Character at index 3 in name is: i
 
 **3. `toLowerCase()`**
 
-This changes the case of a strings from upper to lower and if a string is already in lower case this method will do nothing.
+This method changes the case of a strings from upper to lower and if a string is already in lower case this method will do nothing.
 
 *Example:*
 
@@ -285,7 +285,7 @@ _Output:_
 
 **4. `toUpperCase()`**
 
-This changes case of the Strings from lower to upper, if a string is already in upper this will do nothing.
+This method changes case of the Strings from lower to upper, if a string is already in upper this will do nothing.
 
 *Example:*
 
@@ -303,3 +303,29 @@ _Output:_
 ```text
    ABRAR and QADIR are close friends.
 ```
+
+**5. `trim()`**
+
+This method removes all the leading and tailing spaces from a String, but this does not remove the middle spaces.
+
+*Example:*
+
+```java
+public class TrimDemo{
+   public static void main(String[] args){
+      String str = "       Hello World      ";
+      System.out.println("With spaces :\n"+str);
+      System.out.println("Without spaces :\n"+str.trim());
+   }
+}
+```
+
+*Output:*
+```text
+   With spaces:
+          Hello World
+   Without spaces:
+   Hello World
+```
+
+***Note:*** Here you can see the `trim()` method removed the leading and trailing spaces but it didn't remove the middle space.
