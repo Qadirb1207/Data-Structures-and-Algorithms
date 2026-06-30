@@ -443,10 +443,10 @@ can try it on your own.
 ---
 
 # Author Details
-**Name:** 
+**Name:** 𝐐𝐚𝐝𝐢𝐫 𝐁𝐚𝐤𝐡𝐬𝐡
 
 **Contact Email:** [qadirb3492@gmail.com](#qadirb3492@gmail.com)
 
-**LinkedIn Profile:** [Qadir Bakhsh]()
+**LinkedIn Profile:** [Qadir Bakhsh on LinkedIn](https://www.linkedin.com/in/qadir-bakhsh)
 
 **GitHub Profile:** [Qadir on GitHub](https://www.github.com/Qadirb1207)
