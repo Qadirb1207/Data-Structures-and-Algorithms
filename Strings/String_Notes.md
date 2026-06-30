@@ -444,6 +444,8 @@ true
 `"hello"` the method `.equals()` return false. However, there is an specialized version of equals which ignores case, which is like `.equalsIgnoreCase()`. You 
 can try it on your own.
 
+# StringBuilder
+
 ---
 
 # Author Details
