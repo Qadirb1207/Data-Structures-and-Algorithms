@@ -7,7 +7,7 @@
 
    c. [String Comparisons](#String-Comparisons)
 
-   
+   d. [String Formatting](#Placeholders)
 
 
 
@@ -112,3 +112,39 @@ System.out.println(name1.equals(name2));//true because values are same
 - `==` compares references
 - `.equals()` compares values
 
+
+## Placeholders
+
+Placeholders are special symbols used with `printf()` instead of `println()` to format Strings.
+Some common String placeholders are given in the following table:
+
+
+| Placeholder | Data Type | Description | Example |
+|-------------|-----------|-------------|---------|
+| `%s` | String | Prints a string | `"Hello"` |
+| `%d` | Integer | Prints an integer value | `25` |
+| `%f` | Floating-point | Prints a floating-point number | `3.14` |
+| `%c` | Character | Prints a single character | `'A'` |
+| `%b` | Boolean | Prints a boolean value | `true` |
+| `%n` | New Line | Moves the cursor to the next line | — |
+
+*Example:*
+
+```java
+public class PlaceHolders{
+   public static void main(String[] args){
+      String name = "Abrar";
+      int age = 19;
+      boolean isMarried = false;
+
+      System.out.printf("Name: %s%nAge: %d%nMarital Status: %b%n", name, age, isMarried);
+   }
+}
+```
+
+*Output:*
+```text
+   Name: Abrar
+   Age: 19
+   Marital Status: false
+```
