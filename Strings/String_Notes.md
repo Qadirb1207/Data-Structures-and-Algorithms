@@ -333,9 +333,11 @@ public class TrimDemo{
 
 ***Note:*** Here you can see the `trim()` method removed the leading and trailing spaces but it didn't remove the middle space.
 
-**6. substring(beginIndex)**
+**6. `substring(beginIndex)`**
 
 This method returns a substring from the specified index till end (if end is not specified).
+
+_Example:_
 
 ```java
 public class SubstringDemo{
@@ -348,12 +350,14 @@ public class SubstringDemo{
 
 *Output:*
 ```text
-   Java
+ Java
 ```
 
-**7. substring(beginIndex, endIndex)**
+**7. `substring(beginIndex, endIndex)`**
 
 This method returns characters of string from `beginIndex` to `endIndex-1`.
+
+_Example:_
 
 ```java
 public class SubstringDemo2{
@@ -366,5 +370,24 @@ public class SubstringDemo2{
 
 _Output_
 ```text
-   Java
+Java
 ```
+
+**8. `contains(String str)`**
+
+This method is used to check whether a combination of letters exists in a string or not. It returns `true` if the string contains and `false` otherwise.
+
+```java
+public class ContainsDemo{
+   public static void main(String[] args){
+      String str = "I am writing these DSA Java Notes on 30 June 2026 at 9:12 PM";
+      System.out.println(str.contains("Java"));
+   }
+}
+```
+
+_Output:_
+```text
+true
+```
+
