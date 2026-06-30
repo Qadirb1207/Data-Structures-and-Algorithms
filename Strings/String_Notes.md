@@ -148,3 +148,66 @@ public class PlaceHolders{
    Age: 19
    Marital Status: false
 ```
+
+## Operators On Strings
+
+Following operators can be applied to Strings:
+
+**Concatenation(`+`)**
+
+Addition of two strings together to form a new String is called `Concatenation`.
+In Java, `+` operators is used to concatenate two Strings.
+
+*Example:*
+
+```java
+public class StringConcatenation{
+   public static void main(String[] args){
+      String firstName = "Abrar";
+      String lastName = "Ahmed";
+      String fullName = firstName + lastName;
+
+      System.out.println("First Name: "+firstName+"\nLast Name: "+lastName+"\nFull Name: "+fullName);
+   }
+}
+```
+
+*Output:*
+```text
+   First Name: Abrar
+   Last Name: Ahmed
+   Full Name: Abrar Ahmed
+```
+
+**Operator Overloading**
+
+In Java, `+` operator is overloaded for Strings. For example if you do something like this `12+14` it will give you `26` because you are adding two
+integers, but if you do something like this `"12"+"14"` it will not give you "26", instead it will give you "1214". For verification, you can run the following program:
+
+*Example:*
+```java
+public class OperatorOverloadingDemo{
+   public static void main(String[] args){
+      int num1 = 12;
+      int num2 = 14;
+      System.out.println("+ Operators with integers");
+      System.out.println(num1+" + "+ num2+" = "+(num1+num2));
+   
+      System.out.println();
+
+      System.out.println("+ Operators with Strings");
+      String str1 = "12";
+      String str2 = "14";
+      System.out.println(str1 + " + " + str2 + " = "+(str1+str2));
+   }
+}
+```
+
+*Output:*
+```text
+   + Operators with integers
+   12+14=26
+
+   + Operators with Strings
+   12+14=1214
+```
