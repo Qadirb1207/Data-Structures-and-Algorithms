@@ -530,7 +530,7 @@ This method removes characters in an specified range.
 public class DeletingCharacters{
    public static void main(String[] args){
       StringBuilder builder = new StringBuilder("Hello");
-      builder.delete(2, 4);
+      builder.delete(2, 5);
       System.out.println(builder);
    }
 }
@@ -632,7 +632,7 @@ This method replaces the character at a particular index.
 public class SetCharAtDemo{
   public static void main(String[] args){
       StringBuilder builder = new StringBuilder("Abrar");
-      setCharAt(0, '4');
+      builder.setCharAt(0, '4');
       System.out.println(builder);
    }
 }
