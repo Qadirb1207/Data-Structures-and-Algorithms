@@ -446,6 +446,45 @@ can try it on your own.
 
 # StringBuilder
 
+StringBuilder is a class in Java to create and modify strings efficiently. Unlike Strings, StringBuilder is mutable, meaning its contents can be changed without
+creating new objects.
+
+## Why use StringBuilder
+
+When multiple modifications are performed on a String, many new objects are created because Strings immutable. StringBuilder avoids this problem by modifying
+the same object.
+
+## Creating a StringBuilder
+
+In Java, StringBuilder is created like this:
+
+```java
+StringBuilder builder = new StringBuilder();
+```
+
+### Common Methods
+
+**1. `append()`**
+
+This method is used for adding data to the end of the String.
+
+```java
+public class AddingCharacters{
+   public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Hello");
+      builder.append(" World");
+
+      System.out.println(builder);
+      
+   }
+}
+```
+
+*Output:*
+```text
+Hello World
+```
+
 ---
 
 # Author Details
