@@ -14,7 +14,18 @@
    f. [Some Common Methods](#Some-Common-String-Methods)
 
 2. [StringBuilder](#StringBuilder)
-3. [Author Details](#Author-Details)
+
+   a. [Why StringBuilder?](#Why-use-StringBuilder)
+
+   b. [Creating StringBuilder](Creating-a-StringBuilder)
+
+   c. [Common Methods](#Common-Methods)
+
+   d. [Time Complexity](#Time-Complexity)
+
+   e. [Key Point](#Key-Point)
+   
+4. [Author Details](#Author-Details)
 
 ---
 
@@ -631,6 +642,55 @@ public class SetCharAtDemo{
 ```text
 4brar
 ```
+
+**10. `toString()`**
+
+This method returns a String class object with the same contents.
+
+*Example:*
+
+```java
+public class ToStringDemo{
+  public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Abrar");
+      
+      System.out.println(builder.toString());
+   }
+}
+```
+
+*Output:*
+```text
+Abrar
+```
+
+## Time Complexity
+
+| Method | Time Complexity |
+|--------|-----------------|
+| `append()` | **O(1)** *(Amortized)* |
+| `charAt()` | **O(1)** |
+| `setCharAt()` | **O(1)** |
+| `insert()` | **O(n)** |
+| `delete()` | **O(n)** |
+| `deleteCharAt()` | **O(n)** |
+| `reverse()` | **O(n)** |
+| `length()` | **O(1)** |
+| `toString()` | **O(n)** |
+
+
+## Advantages
+
+- `StringBuilder` is mutable (modifiable)
+- Faster than String for frequent modifications
+- Memory efficient.
+- Reduces creation of unnecessary objects.
+
+## Key Point
+
+Use `String` when the text rarely changes.
+
+Use `StringBuilder` when frequent modifications like insert, append, delete are required.
 
 ---
 
