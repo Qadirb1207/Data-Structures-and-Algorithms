@@ -451,7 +451,7 @@ creating new objects.
 
 ## Why use StringBuilder
 
-When multiple modifications are performed on a String, many new objects are created because Strings immutable. StringBuilder avoids this problem by modifying
+When multiple modifications are performed on a String, many new objects are created because Strings are immutable. StringBuilder avoids this problem by modifying
 the same object.
 
 ## Creating a StringBuilder
@@ -468,6 +468,8 @@ StringBuilder builder = new StringBuilder();
 
 This method is used for adding data to the end of the String.
 
+*Example:*
+
 ```java
 public class AddingCharacters{
    public static void main(String[] args){
@@ -481,8 +483,153 @@ public class AddingCharacters{
 ```
 
 *Output:*
+
 ```text
 Hello World
+```
+
+**2. `insert()`**
+
+This method inserts data at a particular index.
+
+*Example:*
+
+```java
+public class InsertingACharacterAtAParticularIndex{
+   public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Hello");
+      builder.insert(5, " World");
+      System.out.println(builder);
+   }
+}
+```
+
+*Output:*
+```text
+Hello World
+```
+
+**3. `delete()`**
+
+This method removes characters in an specified range.
+
+*Example:*
+
+```java
+public class DeletingCharacters{
+   public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Hello");
+      builder.delete(2, 4);
+      System.out.println(builder);
+   }
+}
+```
+
+
+*Output:*
+```text
+He
+```
+
+**5. `deleteCharAt()`**
+
+This method removes a character at a particular index.
+
+*Example:*
+
+```java
+public class DeletingSpecificCharacter{
+   public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Hello");
+      builder.deleteCharAt(2);
+      System.out.println(builder);
+   }
+}
+```
+
+*Output:*
+```text
+Helo
+```
+
+**6. `reverse()`**
+
+This method reverses the string.
+
+*Example:*
+
+```java
+public class ReversingAString{
+   public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Abrar");
+      builder.reverse();
+      System.out.println(builder);
+   } 
+}
+```
+
+*Output:*
+```text
+rarbA
+```
+
+**7. `length()`**
+
+This returns the number of characters in a string.
+
+*Example:*
+
+```java
+public class LengthOfAString{
+   public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Abrar");
+      
+      System.out.println("Length of the string is: "+builder.length());
+   } 
+}
+```
+
+*Output:*
+```text
+Length of the string is: 5
+```
+
+**8. `charAt()`**
+
+This returns the character at the particular index.
+
+```java
+public class CharAtDemo{
+   public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Abrar");
+      
+      System.out.println("Second character is: "+builder.charAt(1));
+   }
+}
+```
+
+*Output:*
+```text
+Second character is: b
+```
+
+**9. `setCharAt()`**
+
+This method replaces the character at a particular index.
+
+```java
+public class SetCharAtDemo{
+  public static void main(String[] args){
+      StringBuilder builder = new StringBuilder("Abrar");
+      setCharAt(0, '4');
+      System.out.println(builder);
+   }
+}
+```
+
+*Output:*
+```text
+4brar
 ```
 
 ---
