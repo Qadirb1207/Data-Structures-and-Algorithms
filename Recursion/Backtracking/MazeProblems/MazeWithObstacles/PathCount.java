@@ -1,6 +1,6 @@
 package MazeProblems;
 
-public class PathCountInAMazeWithObstacles{
+public class PathCount{
   public static void main(String[] args){
   boolean[][] board = {
                                             {true, true, false},
