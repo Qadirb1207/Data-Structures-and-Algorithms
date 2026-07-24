@@ -1,6 +1,6 @@
 package MazeProblems;
 
-public class AllPathsThroughBacktracking{
+public class AllPaths{
   public static void main(String[] args){
    boolean[][] board = {
                                             {true, true, true},
