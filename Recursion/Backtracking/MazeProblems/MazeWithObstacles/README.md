@@ -1,3 +1,3 @@
 # Maze With Obstacles
 
-Here you will find the program on Maze with obstacles using Recursion only.
+Here you will find the programs on Maze with obstacles solved using Recursion only.
