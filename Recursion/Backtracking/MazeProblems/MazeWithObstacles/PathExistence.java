@@ -7,7 +7,26 @@ public class PathExistence{
                                             {false, false, true},
                                             {true, true, true}
                                         };
-      System.out.println(doesPathExist("", board, 0,0));
+     for(int i = 0; i < board.length; i++){
+      for(int j = 0; j < board[0].length; j++){
+       if(i == 0 && j == 0){
+         System.out.print("A  ");
+          continue;
+       }
+       if(!board[i][j]){
+         System.out.print("X  ");
+       }else{
+         if(i == board.length-1 && j == board[j].length-1){
+           System.out.print("B  ");
+           break;
+         }else{
+          System.out.print(".  ");
+        }   
+      }  
+    }
+     System.out.println();
+  }
+    System.out.println("Is there any path from A to B ? : "+doesExist("", board, 0,0));
   }
   
   public static boolean doesPathExist(String path, boolean[][] board, int r, int c){
