@@ -1,6 +1,6 @@
 package MazeProblems;
 
-public class MazeWithObstacles{
+public class FindingTotalPaths{
   public static void main(String[] args){
     boolean[][] board = {
                                             {true, true, false},
