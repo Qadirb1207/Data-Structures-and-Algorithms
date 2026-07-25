@@ -1,7 +1,7 @@
 # Outline
 
 1. [Recursion Introduction](#Recursion)
-2. [Why recursion?](#Why-do-we-use-recursion-?)
+2. [Why recursion?](#Why-do-we-use-recursion)
 3. [Components of a Recursive Function](#Components-of-a-Recursive-Function)
 
 
