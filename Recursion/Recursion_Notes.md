@@ -51,3 +51,15 @@ if(num == 0 || num == 1){
   return 1;
 }
 ```
+
+**2. Recursive Call**
+
+The recursive call solves the smaller versions of the same problem.
+
+**_Example:_**
+
+```java
+fun(num-1)
+```
+
+Each recursive call should move the problem closer to the base case.
