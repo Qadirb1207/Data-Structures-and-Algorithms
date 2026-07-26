@@ -37,3 +37,17 @@ Recursion is useful because it:
 
 # Components of a Recursive Function
 
+Every recursive function has two essential parts:
+
+**1. Base Case**
+
+The **Base Case** is a simple  `if-else` statement that makes the recursive calls stop.
+Without a base case the function will keep calling itself.
+
+**_Example:_**
+
+```java
+if(num == 0 || num == 1){
+  return 1;
+}
+```
