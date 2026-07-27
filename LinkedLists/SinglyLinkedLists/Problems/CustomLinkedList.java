@@ -1,4 +1,4 @@
-package SinglyLinkedLists;
+package Problems;
 
 public class CustomLinkedList{
   private Node head;
