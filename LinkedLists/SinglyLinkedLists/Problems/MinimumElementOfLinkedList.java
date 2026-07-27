@@ -1,4 +1,4 @@
-package SinglyLinkedLists;
+package Problems;
 
 class LinkedList{
   private Node head;
