@@ -3,6 +3,7 @@
 1. [Recursion Introduction](#Recursion)
 2. [Why recursion?](#Why-do-we-use-recursion)
 3. [Components of a Recursive Function](#Components-of-a-Recursive-Function)
+4. [How Recursion Works?](#How-Recursion-Works)
 
 
 ---
@@ -63,3 +64,72 @@ fun(num-1)
 ```
 
 Each recursive call should move the problem closer to the base case.
+
+---
+
+# How Recursion Works?
+
+Suppose we have created a function like this:
+
+```java
+fun(5)
+```
+
+With base case:
+
+```java
+if(num == 1){
+  return;
+}
+```
+
+The execution happens like this
+
+```text
+fun(5)
+  ↓
+fun(4)
+  ↓
+fun(3)
+  ↓
+fun(2)
+  ↓
+fun(1)
+```
+
+When the base case is reached the functions finish one by one in reverse order.
+
+```text
+fun(1)
+  ↑
+fun(2)
+  ↑
+fun(3)
+  ↑
+fun(4)
+  ↑
+fun(5)
+```
+
+---
+
+# Function Calls and Call Stack
+
+Whenever a function is called, it is placed on **_Call Stack_**.
+If the function has not finished executing, it remains on the stack.
+When a function's execution completes, it is removed from the stack.
+
+**Analogy**
+
+This of a stack of plates:
+
+- The New plate is always placed on the top.
+- The very first kept plate is always in bottom.
+- The first removed plate is always the one on the top.
+
+Similarly:
+
+- The function call, that has started executing, is placed at first in the stack (always the bottom one).
+- When the base case is reached and the control is reached on the line containing `return` statement, the current executing function is removed from the stack and the call has returned from where it was called.
+
+This completely follows the **LIFO (Last In, First Out)** principle.
