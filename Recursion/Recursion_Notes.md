@@ -4,7 +4,7 @@
 2. [Why recursion?](#Why-do-we-use-recursion)
 3. [Components of a Recursive Function](#Components-of-a-Recursive-Function)
 4. [How Recursion Works?](#How-Recursion-Works)
-5. [Function Calls and Call Stack](Function-Calls-and-Call-Stack)
+5. [Function Calls and Call Stack](#Function-Calls-and-Call-Stack)
 
 
 ---
