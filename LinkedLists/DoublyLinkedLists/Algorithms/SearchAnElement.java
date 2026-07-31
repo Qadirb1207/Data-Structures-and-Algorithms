@@ -52,6 +52,24 @@ class DoublyLinkedList{
     return found;
   }
   
+  public int find(int value){
+    int index = -1; 
+    boolean found = false;
+    Node temp = head;
+    while(temp != null){
+      ++index;
+      if(temp.value == value){
+        found = true;
+        break;
+      }
+      temp = temp.next;
+    }
+    if(found){
+      return index;
+    }
+    return -1;
+  }
+  
   private class Node{
     private int value;
     private Node next;
@@ -86,10 +104,10 @@ public class SearchAnElement{
     System.out.println(list);
     System.out.print("Enter number to search in the list = ");
     int num = sc.nextInt();
-    boolean ans = list.search(num);//searching the number
+    int index = list.find(num);//searching the number
     //printing the answer
-    if(ans){
-      System.out.println(num+" is present in the list");
+    if(index > -1){
+      System.out.println(num+" is present in the list at index: "+index);
     }else{
       System.out.println(num+" is not present in the list");
     }
