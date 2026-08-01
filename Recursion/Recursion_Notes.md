@@ -5,6 +5,7 @@
 3. [Components of a Recursive Function](#Components-of-a-Recursive-Function)
 4. [How Recursion Works?](#How-Recursion-Works)
 5. [Function Calls and Call Stack](#Function-Calls-and-Call-Stack)
+6. [Stack Overflow Error](#Stack-Overflow)
 
 
 ---
@@ -134,3 +135,19 @@ Similarly:
 - When the base case is reached and the control is reached on the line containing `return` statement, the current executing function is removed from the stack and the call has returned from where it was called.
 
 This completely follows the **LIFO (Last In, First Out)** principle.
+
+---
+
+# Stack Overflow
+
+If recursion never reaches it base case, function calls continue forever.
+As more function calls are added, the call stack keeps growing until the program runs 
+out of stack memory. 
+
+This results in: 
+
+```java
+java.lang.StackOverflowError
+```
+
+
