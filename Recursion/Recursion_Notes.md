@@ -150,4 +150,81 @@ This results in:
 java.lang.StackOverflowError
 ```
 
+# Visualizing Recursion
 
+Understanding recursion becomes much easier when you draw recursive calls.
+
+For example:
+
+```text
+fun(3)
+
+|
+├── fun(2)
+│
+└── fun(1)
+```
+
+For Problems like Fibonacci, this becomes a recursive tree.
+Drawing recursion trees helps visualize:
+
+- Function calls
+- Order of execution
+- Return values
+- Repeated work
+
+---
+
+# Recurrence Relation
+
+A recurrence relation is a mathematical expression that defines a problem in terms of smaller instances of itself.
+
+Example (Fibonacci):
+
+```text
+Fib(N) = Fib(N-1)+Fib(N+1)
+```
+
+It describes how the current answer depends on smaller answers.
+
+---
+
+# Types of Recurrence Relations
+
+There are two types of recurrence relations
+
+## 1. Linear Recurrence
+
+The problem reduces by a constant amount.
+
+For example:
+
+Factorial
+```text
+factorial(n) = factorial(n)*factorial(n-1)
+```
+
+Fibonacci:
+```text
+Fib(N) = Fib(N-1)+Fib(N+1)
+```
+
+## 2. Divide and Conquer Recurrence
+
+The problem size is reduced by a factor.
+
+For example:
+
+```text
+F(N) = O(1) + F(N/2)
+```
+
+Examples:
+
+- Binary Search
+- Merge Sort
+- Quick Sort
+
+---
+
+# How to Think About Recursive Problems
