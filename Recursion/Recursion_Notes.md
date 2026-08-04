@@ -6,6 +6,10 @@
 4. [How Recursion Works?](#How-Recursion-Works)
 5. [Function Calls and Call Stack](#Function-Calls-and-Call-Stack)
 6. [Stack Overflow Error](#Stack-Overflow)
+7. [Visualizing Recursion](#Visualizing-Recursion)
+8. [Recurrence Relation](#Recurrence-Relation)
+9. [Types of Recurrence Relations](#Types-of-Recurrence-Relations)
+10. [Thinking Process for Recursion](#How-to-Think-About-Recursive-Problems)
 
 
 ---
