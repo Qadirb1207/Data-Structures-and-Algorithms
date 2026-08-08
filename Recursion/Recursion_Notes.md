@@ -290,4 +290,19 @@ Track how values are returned while the stack unwinds.
 - Recurrence relations defines the problems Mathematically.
 - Think recursively by breaking one bigger problem into smaller problems until reaching a known answer.
 
+---
 
+# Author Details
+
+**Name:**  𝐐𝐚𝐝𝐢𝐫 𝐁𝐚𝐤𝐡𝐬𝐡
+
+**Contact Email:**  [qadirb3492@gmail.com](#qadirb3492@gmail.com)
+
+**LinkedIn Profile:**  [Qadir Bakhsh on LinkedIn](https://www.linkedin.com/in/qadir-bakhsh)
+
+**GitHub Profile:** [Qadir on GitHub](https://github.com/Qadirb1207/)
+
+---
+
+
+**THANKS FOR READING!! DON'T FORGET TO FOLLOW ME! AND DON'T FORGET TO GIVE THE REPO A STAR!** 
