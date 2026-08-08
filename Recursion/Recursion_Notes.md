@@ -232,3 +232,59 @@ Examples:
 ---
 
 # How to Think About Recursive Problems
+
+Whenever you encounter a recursion problem, follow these steps:
+
+**Step 1**
+
+Identify whether the problem can be broken down into smaller versions of itself.
+
+
+**Step 2**
+
+Write the recursion recursion (if needed).
+
+
+**Step 3**
+
+Determine the base case (MOST IMPORTANT).
+
+
+**Step 4**
+
+Draw the recursion tree.
+
+
+**Step 5**
+
+Observe the flow of function calls into the call stack.
+
+
+**Step 6**
+
+Track how values are returned while the stack unwinds.
+
+---
+
+# Tips for Mastering Recursion
+
+- Always identify the base case first.
+- Make sure every recursive call moves closer to the base case.
+- Draw the recursion tree using pen and paper.
+- Practice tracing function calls manually.
+- Use a debugger to observe the call stack.
+- Remember that recursion has extra space overhead.
+
+---
+
+# Key Takeaways 
+
+- Recursion is a function calling itself.
+- Every Recursive function requires a base case and a recursive call.
+- Function calls are managed using the call stack.
+- The call stack follows **LIFO (Last In, First Out)**.
+- Missing a base case leads to `StackOverflowError`.
+- Recurrence relations defines the problems Mathematically.
+- Think recursively by breaking one bigger problem into smaller problems until reaching a known answer.
+
+
