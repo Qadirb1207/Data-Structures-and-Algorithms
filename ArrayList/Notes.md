@@ -1241,7 +1241,7 @@ A nested ArrayList elements can be accessed by their indices like this:
 
 ```java
 import java.util.ArrayList;
-public class AccessingElementsToANestedArrayList{
+public class AccessingElementsOfANestedArrayList{
   public static void main(String[] args){
     //manually setting values of rows and cols
     int rows = 3;
@@ -1286,7 +1286,7 @@ Elements of a nested ArrayList can be printed using `nested for` loops like this
 
 ```java
 import java.util.ArrayList;
-public class AccessingElementsToANestedArrayList{
+public class AccessingElementsOfANestedArrayList{
   public static void main(String[] args){
     //manually setting values of rows and cols
     int rows = 3;
@@ -1334,7 +1334,7 @@ Elements of a nested ArrayList can be printed using `nested for-each` loops, lik
 
 ```java
 import java.util.ArrayList;
-public class AccessingElementsToANestedArrayList{
+public class AccessingElementsOfANestedArrayList{
   public static void main(String[] args){
     //manually setting values of rows and cols
     int rows = 3;
