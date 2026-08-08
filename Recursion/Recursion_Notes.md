@@ -10,6 +10,9 @@
 8. [Recurrence Relation](#Recurrence-Relation)
 9. [Types of Recurrence Relations](#Types-of-Recurrence-Relations)
 10. [Thinking Process for Recursion](#How-to-Think-About-Recursive-Problems)
+11. [Some Tips](#Tips-for-Mastering-Recursion)
+12. [Key Takeaways](#Key-Takeaways)
+13. [Author Details](#Author-Details)
 
 
 ---
