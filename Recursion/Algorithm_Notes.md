@@ -13,7 +13,7 @@ a sorted order.
 
 The main idea is:
 
-|**Divide → Sort → Merge**
+| **Divide → Sort → Merge**
 
 Merge Sort keeps dividing the array until each part contains only one element. A single element is already sorted, so the smaller arrays are then
 merged to produce the final sorted array.
