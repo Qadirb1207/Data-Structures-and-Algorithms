@@ -18,7 +18,83 @@ The main idea is:
 Merge Sort keeps dividing the array until each part contains only one element. A single element is already sorted, so the smaller arrays are then
 merged to produce the final sorted array.
 
+
+## Working
+
+Suppose we have:
+
+```text
+[8, 3, 5, 4, 7, 6, 1, 2]
+```
+
+**1. Divide**
+
+The array is repeatedly divided into two halves:
+
+```text
+[8, 3, 5, 4]    [7, 6, 1, 2]
+
+[8, 3] [5, 4]   [7, 6] [1, 2]
+
+[8] [3] [5] [4] [7] [6] [1] [2]
+```
+
+Now every part contains only one element.
+
+**2. Merge**
+
+The smaller arrays are merged while keeping them sorted.
+
+```text
+[8]+[3] → [3, 8]
+
+[5]+[4] → [4, 5]
+
+[3, 8] + [4, 5] → [3, 4, 5, 8]
+```
+
+Similarly:
+
+```text
+[7]+[6] → [6, 7]
+
+[1]+[2] → [1, 2]
+
+[6, 7]+[1, 2] → [1, 2, 6, 7]
+```
+
+Finally:
+
+```text
+[3, 4, 5, 8] + [1, 2, 6, 7]  →  [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+Array is sorted!!!
+
+**Analogy**
+
+Imagine a teacher giving a large group of students to several smaller groups.
+
+First, the large group is divided into smaller groups until everyone is alone.
+Then teacher starts combining the groups in sorted order until one completely organized group is formed.
+
+
+## Steps
+
+1. Find the middle of the array.
+2. Divide the array into two halves.
+3. Recursively divide the left half.
+4. Recursively divide the right half.
+5. Continue dividing until each part contains only one element.
+6. Merge the smaller arrays in sorted order.
+7. Continue merging until the complete array is sorted.
+
+
+
 ---
+
+
+
 
 # Quick Sort Algorithm
 
