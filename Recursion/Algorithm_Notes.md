@@ -90,6 +90,26 @@ Then teacher starts combining the groups in sorted order until one completely or
 7. Continue merging until the complete array is sorted.
 
 
+## Pseudocode for Merge Sort
+
+Here is the pseudocode for Merge Sort
+
+```text
+MergeSort(array):
+
+    if size of array = 1
+        return array
+
+    middle = size of array / 2
+
+    left = MergeSort(first half of array)
+    right = MergeSort(second half of array)
+
+    return Merge(left, right)
+```
+
+**_Note_:-** To take the first and second halves of the array use the Java's built in method `Arrays.copyOfRange(arr, from, to)`. It doesn't include upper bound
+(i.e `from`, `to` means `>= from < to`). It is present in Java's `Arrays` class present `java.util` package, so first you will have to import `java.util.Arrays` in order to use this method.
 
 ---
 
