@@ -111,6 +111,47 @@ MergeSort(array):
 **_Note_:-** To take the first and second halves of the array use the Java's built in method `Arrays.copyOfRange(arr, from, to)`. It doesn't include upper bound
 (i.e `from`, `to` means `>= from < to`). It is present in Java's `Arrays` class present `java.util` package, so first you will have to import `java.util.Arrays` in order to use this method.
 
+
+## Complexity
+
+**Time Complexity**
+
+
+| Case         | Time Complexity |
+| ------------ | --------------- |
+| Best Case    | **O(n log n)**  |
+| Average Case | **O(n log n)**  |
+| Worst Case   | **O(n log n)**  |
+
+The array is divided into approximately `O(log n)` level and each level requires `O(n)` work for merging. 
+Therefore:
+
+```text
+O(n) × O(log n) = O(n log n)
+```
+
+
+**Space Complexity**
+
+The space complexity of Merge Sort is:
+
+```text
+O(n)
+```
+
+Merge Sort requires one extra temporary array for merging process.
+
+
+## Why use Merge Sort
+
+Merge Sort is useful when:
+
+- You need guaranteed **`O(log n)`** sorting performance.
+- You are working with large datasets.
+- Stability is important.
+- You are working with [Linked Lists](https://github.com/Qadirb1207/Data-Structures-and-Algorithms/blob/main/LinkedLists/LinkedLists_Notes.md).
+- You need a reliable worst case performance.
+
 ---
 
 
