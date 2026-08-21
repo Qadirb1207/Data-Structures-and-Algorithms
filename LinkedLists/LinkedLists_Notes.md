@@ -1,6 +1,6 @@
 # Outline
 1. [Introduction](#LinkedLists)
-2. [Why LinkedLists](Why-do-we-actually-use-Linked-List)
+2. [Why LinkedLists](#Why-do-we-actually-use-Linked-List)
 3. 
 
 ---
@@ -43,4 +43,4 @@ A linked list says:
 
 This relationship between nodes forms the linked list.
 
-Linked lists can also be used as the underlying structure for other data structures such as **[Stacks]()** and **[Queues]()**.
+Linked lists can also be used as the underlying structure for other data structures such as **[Stacks](https://github.com/Qadirb1207/Data-Structures-and-Algorithms/blob/main/Stacks/Stack_Notes.md)** and **[Queues]()**.
