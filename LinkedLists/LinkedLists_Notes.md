@@ -109,7 +109,9 @@ This is why a basic linked list doesn't provide the direct random access using i
 Each element in a linked list is stored in a node/link. 
 
 The node/link contains two things:
+
 **1. Data**
+
 **2. Reference to the next node**
 
 ```text
