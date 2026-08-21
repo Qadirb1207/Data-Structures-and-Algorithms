@@ -153,7 +153,7 @@ public class Node{
 ```
 is called a self-referential class.
 
-This means that the class contains a field whose data type is the same as the class itself. As here `next` is of the same type as of `Node` class.
+This means that the class contains a field whose data type is the same as the class itself. As here `next` is of the same type as of `Node` class itself.
 
 ```text
   Link
