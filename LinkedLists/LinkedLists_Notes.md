@@ -20,7 +20,7 @@ A linked list accessed through a reference to its first node. The first node is 
 
 ## Why do we actually use Linked List?
 
-[Arrays]() have some limitations: 
+[Arrays](https://github.com/Qadirb1207/Data-Structures-and-Algorithms/blob/main/Arrays/Array_Notes.md) have some limitations: 
 
 - In an **unordered or unsorted array**, searching is slow.
 - In an **ordered or sorted array**, insertion is slow.
