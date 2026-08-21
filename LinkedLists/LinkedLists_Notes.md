@@ -138,7 +138,7 @@ public class Node{
 - `data` stores the data.
 - `next` stores the reference to the next `Link`/`Node`.
 
-Multiple nodes connected through their `next` references form a linked list.
+Multiple nodes connected together through their `next` references form a linked list.
 
 
 ## Self-referential Class
