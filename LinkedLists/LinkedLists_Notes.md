@@ -2,6 +2,8 @@
 1. [Introduction](#LinkedLists)
 2. [Why LinkedLists](#Why-do-we-actually-use-Linked-List)
 3. [Array vs Linked List: Position vs Relationship](#Array-vs-Linked-List-Position-vs-Relationship)
+4. [Node](#Node-or-Link)
+5. [Self-Referential Class](#Self-referential-class)
 
 ---
 
@@ -100,3 +102,68 @@ Person A knows Person B → Person B knows Person C → Person C knows Person D.
 To reach a particular person, you follow the chain relationships.
 
 This is why a basic linked list doesn't provide the direct random access using indices.
+
+
+## Node or Link
+
+Each element in a linked list is stored in a node/link. 
+
+The node/link contains two things:
+**1. Data**
+**2. Reference to the next node**
+
+```text
+┌──────────┬──────────┐
+│   Data   │   Next   │
+└──────────┴──────────┘
+```
+For example:
+
+```java
+public class Node{
+  private int data;
+  private Node next;
+
+  public Node(int n){
+    this.data = n;
+    this.next = null;
+  }
+}
+```
+
+ Here:
+ 
+- `data` stores the data.
+- `next` stores the reference to the next `Link`/`Node`.
+
+Multiple nodes connected through their `next` references form a linked list.
+
+
+## Self-referential Class
+
+A class such as this: 
+
+```java
+public class Node{
+  int data;
+  Node next;
+}
+```
+is called a self-referential class.
+
+This means that the class contains a field that whose data type is the same as the class itself. As here `next` is of the same type as of `Node` class.
+
+```text
+  Link
+   |
+   ├── data
+   |
+   └── next ────→ another Link
+```
+
+However, `next` doesn't contain another complete `Node` object inside it.
+It only stores a reference to another `Node` object.
+This distinction is extremely important.
+
+
+  
