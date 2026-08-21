@@ -49,7 +49,7 @@ Linked lists can also be used as the underlying structure for other data structu
 
 ## Array vs Linked List: Position vs Relationship
 
-This is one of the most important idea to understand.
+This is one of the most important ideas to understand.
 
 ****Array: Position-based access****
 
@@ -83,7 +83,7 @@ Like this:
 list[3]
 ```
 
-In order to access `15` you must go through all the previous nodes
+In order to access `19` you must go through all the previous nodes
 
 12 → 15 → 16 → 19
 
