@@ -168,4 +168,52 @@ It only stores a reference to another `Node` object.
 This distinction is extremely important.
 
 
+## References in a Linked List
+
+Consider:
+
+```java
+Node next;
+```
+
+This doesn't mean: 
+
+  "A complete `Node` object exists inside every node."
+
+Instead, it means:
+
+  "`next` can refer to another Node object."
+
+For example:
+
+```java
+Node next = new Node();
+```
+
+Conceptually:
+
+```text
+next ─────→ Node object
+```
+
+The variable `next` holds a reference to the object.
+
+Similarly: 
+
+```text
+first
+  ↓
+[Data | next] ─────→ [Data | next] ─────→ null
+```
+
+The actual nodes exists as separate object, while references connect them together.
+
+Primitive values and object references behave differently:
+
+For Example:
+
+```java
+int x = 10;
+```
+
   
