@@ -4,6 +4,7 @@
 3. [Array vs Linked List: Position vs Relationship](#Array-vs-Linked-List-Position-vs-Relationship)
 4. [Node](#Node-or-Link)
 5. [Self-Referential Class](#Self-referential-class)
+6. [References in a Linked List](#References-in-a-Linked-List)
 
 ---
 
