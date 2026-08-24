@@ -299,3 +299,77 @@ The list is empty
 
 If `first` refers to a node, the list contains at least one element.
 
+
+## Inserting at the Beginning
+
+The simplest insertion operation on a linked list is inserting a new node at the beginning.
+
+Suppose we have:
+
+```text
+first
+  ↓
+[12] → [28] → null
+```
+We want to insert `19`. For insertion at the beginning we will follow the following steps:
+
+**Step 1: Create a New Node:**
+
+```text
+newLink
+
+[10 | null]
+```
+
+**Step 2: Connect the New Node to Old First Node**
+
+```text
+newLink.next = first
+```
+
+Now:
+
+```text
+newLink
+   ↓
+[10] → [12] → [28] → null
+        ↑
+        first
+```
+
+**Step 3: Update `first`**
+
+```java
+first = newLink;
+```
+
+Now:
+
+```text
+first
+   ↓
+[10] → [12] → [28] → null
+```
+
+**Algorithm**
+
+Here is the simple three step algorithm for inserting a new node at the beginning of a Linked List.
+
+```text
+1. Create a new node
+
+2. newNode.next = first
+
+3. first = newNode
+```
+
+**Important Concept**
+
+The order of reference updates matters. You should first connect the new node to the existing link
+and then update the `first`. You cannot interchange these steps, if you do so it can result in bad 
+results. The reference manipulation is the core idea behind the linked list operations.
+
+
+## Delete the First Node
+
+Deleting the first node is the opposite of inserting at the beginning.
