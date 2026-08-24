@@ -217,4 +217,83 @@ For Example:
 int x = 10;
 ```
 
-  
+`x` stores the original value (i.e 10).
+
+But 
+
+```java
+Node current = someNode
+```
+`current` refers to the same Node object as `someNode`; it doesn't create a new `Node` Object. A new object is created using `new` keyword.
+
+
+## The Structure of a Linked List
+
+A basic Linked List can be represented as:
+
+```text
+first
+  ↓
+[10 | •] → [20 | •] → [30 | •] → null
+```
+There are two important references here:
+
+#### `first`
+
+The linked list stores the reference to the first node. For example:
+
+```java
+private Node first;
+```
+
+The Linked List does not need to store references to every node.
+
+It can find the remaining node by following:
+
+```text
+first → next → next → next
+```
+
+#### `next`
+
+Each node contains the reference to the next node.The last points to 
+
+```java
+null
+```
+
+This decides that: **There is no next node. The list has ended.**
+
+
+## Empty Linked List
+
+When a linked list contains no nodes: 
+
+```text
+first → null
+```
+
+In java:
+
+```java
+first = null;
+```
+
+Therefore checking whether a list is empty is simple:
+
+```java
+boolean isEmpty(){
+  return first == null;
+}
+```
+
+**Key Idea:-**
+
+```text
+first == null
+      ↓
+The list is empty
+```
+
+If `first` refers to a node, the list contains at least one element.
+
