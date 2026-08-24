@@ -5,6 +5,8 @@
 4. [Node](#Node-or-Link)
 5. [Self-Referential Class](#Self-referential-class)
 6. [References in a Linked List](#References-in-a-Linked-List)
+7. [The Structure of a Linked List](#The-Structure-of-a-Linked-List)
+8. [Empty Linked List](#Empty-Linked-List)
 
 ---
 
