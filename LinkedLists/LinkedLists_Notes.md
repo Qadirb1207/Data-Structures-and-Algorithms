@@ -7,6 +7,8 @@
 6. [References in a Linked List](#References-in-a-Linked-List)
 7. [The Structure of a Linked List](#The-Structure-of-a-Linked-List)
 8. [Empty Linked List](#Empty-Linked-List)
+9. [Inserting a New Node at Beginning](#Inserting-at-the-Beginning)
+10. [Deleting the First Node](#Deleting-the-First-Node)
 
 ---
 
@@ -311,7 +313,7 @@ first
   ↓
 [12] → [28] → null
 ```
-We want to insert `19`. For insertion at the beginning we will follow the following steps:
+We want to insert `10`. For insertion at the beginning we will follow the following steps:
 
 **Step 1: Create a New Node:**
 
