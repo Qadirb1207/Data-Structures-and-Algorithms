@@ -493,3 +493,55 @@ public void display(){
   }
 }
 ```
+
+
+## The Complete Mental Model
+
+A simple singly linked list can be understood using three ideas:
+
+**1. Nodes store data:**
+
+A Node is a class having two attributes original `data` and `reference` to the next data item.
+
+Example:
+```text
+[data | next]
+```
+
+**2. `next` connects one node to another**
+
+```text
+Node A → Node B → Node C
+```
+
+**3. `first` gives us access to the entire list**
+
+```text
+first
+  ↓
+Node A → Node B → Node C
+```
+
+From `first`, we can reach every node by following the chain.
+
+
+## Operation Covered in This Section
+
+These are the basic operations on the a simple singly linked list. For more operations go to the source code by clicking [here](https://github.com/Qadirb1207/Data-Structures-and-Algorithms/tree/main/LinkedLists/SinglyLinkedLists).
+
+
+| Operation          | Main Idea                                          |
+| ------------------ | -------------------------------------------------- |
+| `isEmpty()`        | Check whether `first == null`                      |
+| Insert First       | Connect new node to old first, then update `first` |
+| Delete First       | Move `first` to `first.next`                       |
+| Traverse / Display | Start at `first` and repeatedly follow `next`      |
+
+
+## Final Summary
+
+A **Linked List** stores data inside separate nodes that are connected using references. Each node contains data and a reference to the next node,
+while the linked list maintains a reference called `first` to access the beginning of the chain. Unlike arrays, linked list elements are accessed through
+their relationships rather than directly through their indices. Operations like inserting, deleting, and traversing are performed by carefully changing 
+following references. For this first version of the simple linked list, the most important skill is understanding how `first`, `current`, and `next` move
+through and manipulate the chain.
