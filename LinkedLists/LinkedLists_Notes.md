@@ -8,7 +8,7 @@
 7. [The Structure of a Linked List](#The-Structure-of-a-Linked-List)
 8. [Empty Linked List](#Empty-Linked-List)
 9. [Inserting a New Node at Beginning](#Inserting-at-the-Beginning)
-10. [Deleting the First Node](#Deleting-the-First-Node)
+10. [Deleting the First Node](#Delete-the-First-Node)
 
 ---
 
@@ -375,3 +375,119 @@ results. The reference manipulation is the core idea behind the linked list oper
 ## Delete the First Node
 
 Deleting the first node is the opposite of inserting at the beginning.
+
+Suppose we have:
+```text
+first
+  ↓
+[10] → [20] → [30] → null
+```
+
+We want to delete `10`.
+
+The next node after the first node is:
+```text
+first.next
+```
+
+So we update
+```java
+first = first.next;
+```
+
+Now:
+```text
+first
+  ↓
+[20] → [30] → null
+```
+
+The old node is no longer the part of the linkedlist.
+
+
+## Returning the Deleted Node
+
+If we want to keep the node temporarily: 
+```java
+public Node deleteFirstNode(){
+  Node temp = first;
+  first = first.next;
+
+  return temp;
+}
+```
+
+**Algorithm**
+```text
+1. First store the node in a temporary reference variable of type Node
+2. Move the first to the node next to it.
+3. Return the temporary variable you created in step 1.
+```
+
+After node is disconnected, Java's garbage collector can eventually remove it from memory if no reference points to it anymore.
+
+Before deleting, we should make sure the list is not empty.
+
+## Traversing a Linked List
+
+**Traversal** means visiting the nodes of a linked list one by one.
+
+Since there is no direct access, we start from the first node and repeated follow the `next`.
+
+Suppose we have: 
+
+```text
+first
+   ↓
+[10] → [12] → [28] → null
+```
+We use a temporary reference called `current`:
+
+```java
+Node current = first;
+```
+
+Initially:
+```text
+current
+   ↓
+[10] → [12] → [28] → null
+```
+
+After:
+
+```java
+current = current.next;
+```
+
+```text
+      current
+        ↓
+[10] → [12] → [28] → null
+  ↑
+first
+```
+
+**Traversal Algorithm**
+
+```text
+current = first
+
+while current is not null
+
+  process current
+
+  current = current.next
+```  
+
+For displaying the list:
+
+```java
+public void display(){
+  Node n = head;
+  while(n != null){
+    System.out.println(n.value);
+    n = n.next;
+  }
+}
+```
