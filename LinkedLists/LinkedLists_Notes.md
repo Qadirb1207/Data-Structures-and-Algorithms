@@ -11,6 +11,9 @@
 10. [Deleting the First Node](#Delete-the-First-Node)
 11. [Returning the Deleted Node](#Returning-the-Deleted-Node)
 12. [Traversing a Linked List](#Traversing-a-Linked-List)
+13. [The Complete Mental Model](#The-Complete-Mental-Model)
+14. [Operations Covered in This Section](#Operations-Covered-in-This-Section)
+15. [Final Summary](#Final-Summary)
 
 ---
 
@@ -525,7 +528,7 @@ Node A → Node B → Node C
 From `first`, we can reach every node by following the chain.
 
 
-## Operation Covered in This Section
+## Operations Covered in This Section
 
 These are the basic operations on the a simple singly linked list. For more operations go to the source code by clicking [here](https://github.com/Qadirb1207/Data-Structures-and-Algorithms/tree/main/LinkedLists/SinglyLinkedLists).
 
