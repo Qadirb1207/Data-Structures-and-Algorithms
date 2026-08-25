@@ -9,6 +9,8 @@
 8. [Empty Linked List](#Empty-Linked-List)
 9. [Inserting a New Node at Beginning](#Inserting-at-the-Beginning)
 10. [Deleting the First Node](#Delete-the-First-Node)
+11. [Returning the Deleted Node]()
+12. [Traversing a Linked List](#Traversing-a-Linked-List)
 
 ---
 
