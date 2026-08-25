@@ -14,6 +14,7 @@
 13. [The Complete Mental Model](#The-Complete-Mental-Model)
 14. [Operations Covered in This Section](#Operations-Covered-in-This-Section)
 15. [Final Summary](#Final-Summary)
+16. [Author Details](#Author-Details)
 
 ---
 
@@ -548,3 +549,22 @@ while the linked list maintains a reference called `first` to access the beginni
 their relationships rather than directly through their indices. Operations like inserting, deleting, and traversing are performed by carefully changing 
 following references. For this first version of the simple linked list, the most important skill is understanding how `first`, `current`, and `next` move
 through and manipulate the chain.
+
+
+---
+
+# Author Details
+
+**Name:**  𝐐𝐚𝐝𝐢𝐫 𝐁𝐚𝐤𝐡𝐬𝐡
+
+**Contact Email:**  [qadirb3492@gmail.com](#qadirb3492@gmail.com)
+
+**LinkedIn Profile:**  [Qadir Bakhsh on LinkedIn](https://www.linkedin.com/in/qadir-bakhsh)
+
+**GitHub Profile:** [Qadir on GitHub](https://github.com/Qadirb1207/)
+
+---
+
+
+
+**THANKS FOR READING!! DON'T FORGET TO FOLLOW ME! AND DON'T FORGET TO GIVE THE REPO A STAR!** 
