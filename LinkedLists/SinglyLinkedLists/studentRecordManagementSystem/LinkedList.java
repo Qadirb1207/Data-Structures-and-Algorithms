@@ -1,3 +1,25 @@
+/**
+                    STUDENT INFO
+  Name:- QADIR BAKHSH
+  CMS ID:- 053-25-0023
+                               CLASS DESCRIPTION
+                               
+  This is the main Linked list class which contains all the methods for student record the methods include:
+  1. addStudentFront():- This method adds the student at the front of the list. If the student added is the first one both the head and the tail points to it. 
+  2. addStudentBack():- This method adds the student at the back of the list. IF the student added is the first one, both the head and the tail points to it
+  
+  3. deleteStudentFront();- This method deletes the very first student in the list. If the student deleted is the only student in the list both the head and tail are made null. If the student deleted is not the first then the head moves the student next to the one deleted.
+  4. deleteStudentBack():- This method deletes the very last student in the list. If the student is the only student in the list both the head and tail are made null, if  not the tail is moved to the student back to the one deleted. for example students are with these ids 101, 103, 108 is the last student is deleted i.e 108 then the tail pointer points to 103 while the head remains the same.
+  
+  5. searchStudent():- This method searches the student through his ID, and prints the details of the student found otherwise prints "Sorry! Student does not exist". 
+  6. displayStudents():- This method displays all the students currently present in the record.
+  
+  7.updateStudent():- This method updates the student's information by finding him through his ID.
+  8. deleteStudent():- This method deletes the student by finding him through his id.
+  
+  9. addStudentBefore():- This method adds a particular student before a student with the given id, assuming that the student before whom we are adding the student exists in the list.
+  10. addStudentAfter():- This method adds a particular student after a student with the given id, assuming that the student after whom we are adding the student exists in the list.
+*/
 package studentRecordManagementSystem;
 
 public class LinkedList{
@@ -52,7 +74,7 @@ public class LinkedList{
   public void deleteStudentBack(){
     Node n = head;
     int index = -1;
-    while(n != tail){
+    while(n != null){
       ++index;
       n = n.next;
     }
@@ -108,22 +130,27 @@ public class LinkedList{
 
   public void deleteStudent(int stdId){
     Node n = head;
+    int index = -1;
     while(n != null){
-      if(n.getStudent().getStudentId() == stdId){
-        if(n != head && n != tail){
-          n.next = n.next.next;
-          --size;
-        }else if(n == head){
-          deleteStudentFront();
-        }else{
-          deleteStudentBack();
-        }
-        return;
-      }
+      ++index;
       n = n.next;
     }
-    
-    System.out.println("No Student with ID: "+stdId+" found");
+    if(index == -1){
+      deleteStudentFront();
+      --size;
+      return;
+    }else if(index == size-1){
+      deleteStudentBack();
+      --size;
+      return;
+    }else{
+      Node node = head;
+      for(int i = 0; i < index-1; i++){
+        node = node.next;
+      }
+      node.next = node.next.next;
+      --size;
+    }
   }
   
   public void addStudentAfter(int id, Student std){

@@ -1,3 +1,15 @@
+/**
+                                STUDENT INFO
+      Name:- QADIR BAKHSH
+      CMS ID:- 053-25-0023
+      
+                              CLASS DESCRIPTION
+                              
+      This is the Student class, having attributes like id, name, dept, semester, and cgpa. It has a getter for id and setters for all the fields except id, because we have assumed that if  once the id is provided it cannot be changed again. It also has a method named as displayInfo() for printing the student info in a well formatted manner. 
+
+
+*/
+
 package studentRecordManagementSystem;
 
 public class Student{
