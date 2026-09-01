@@ -61,7 +61,7 @@ git clone https://github.com/Qadirb1207/Data-Structures-and-Algorithms
 Then go to the files:
 
 ```text
- Linked Lists/
+ LinkedLists/
     └── SinglyLinkedList/
 ```
 
