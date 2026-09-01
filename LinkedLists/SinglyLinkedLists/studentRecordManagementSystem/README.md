@@ -52,7 +52,7 @@ To run this project locally into your PC or Laptop. First, `git` should be insta
 sudo apt update && sudo apt install git
 ```
 
-To run this project clone the whole repository by running this (**_Note:-_** After installing `git`):
+To run this project, first clone the whole repository by running this (**_Note:-_** After installing `git`):
 
 ```git
 git clone https://github.com/Qadirb1207/Data-Structures-and-Algorithms
