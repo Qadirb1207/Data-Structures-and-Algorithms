@@ -65,7 +65,7 @@ Then go to the files:
     └── SinglyLinkedList/
 ```
 
-Then open it in the terminal and run the following two commands(**_Note:-_** For these commands you should insall JDK in your system first).
+Then open it in the terminal and run the following two commands (**_Note:-_** For these commands you should insall JDK in your system first).
 
 First run:
 
