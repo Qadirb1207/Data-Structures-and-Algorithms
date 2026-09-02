@@ -189,7 +189,16 @@ public class LinkedList {
 
     //method for finding the most expensive product
     public Product findMostExpensiveProduct(){
-        
+        Node node = head;
+        Product expensiveProduct = node.getProduct();
+        double price = node.getProduct().getPrice()*node.getProduct().getQuantity();
+
+        while(node != null){
+            if((node.getProduct().getPrice()*node.getProduct().getQuantity()) > price){
+                expensiveProduct = node.getProduct();
+            }
+        }
+        return expensiveProduct;
     }
 
     //method for calculating cost of a particular product 
