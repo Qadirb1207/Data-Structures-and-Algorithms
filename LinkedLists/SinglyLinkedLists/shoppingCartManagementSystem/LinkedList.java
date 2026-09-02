@@ -3,12 +3,22 @@ public class LinkedList {
     private Node tail;
     private int size;
 
+
+    //default constructor
+    public LinkedList(){
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
     //method for adding product at beginning
     public void addProductFront(Product pr){
         Node node = new Node(pr);
         if(head != null){
             node.next = head;
             head = node;
+            if(tail == null){
+                tail = head;
+            }
         }else{
             head = node;
             tail = node;
@@ -21,6 +31,7 @@ public class LinkedList {
         Node node = new Node(pr);
         if(tail != null){
             tail.next = node;
+            tail = node;
         }else{
             tail = node;
             head = node;
@@ -47,6 +58,10 @@ public class LinkedList {
                 tail = null;
             }
             --size;
+            return;
+        }
+        if(index > size){
+            System.out.println("The product not found!!");
             return;
         }
         Node n = head;
@@ -111,7 +126,9 @@ public class LinkedList {
     public void displayCart(){
         Node n = head;
         while(n != null){
+            System.out.println("_____________________\n");
             System.out.println(n.getProduct());
+            System.out.println("_____________________\n");
             n = n.next;
         }
     }
@@ -161,7 +178,7 @@ public class LinkedList {
     }
 
     //method for decreasing quantity
-    public void descreaseQuantity(int pId, int amount){
+    public void decreaseQuantity(int pId, int amount){
         Node n = head;
         int index = 0;
         while(n != null){
