@@ -64,7 +64,6 @@ public class ShoppingCart {
                     int deletingId = sc.nextInt();
 
                     myCart.removeProduct(deletingId);
-                    System.out.println("Product Removed Successfully!!");
                     break;
                 case 4:
                     System.out.print("Enter the ID of the Product you want to search = ");
@@ -118,7 +117,6 @@ public class ShoppingCart {
                     int amt = sc.nextInt();
 
                     myCart.increaseQuantity(increasingId, amt);
-                    System.out.println("Product price increased successfully!!");
                     break;
 
                 case 12:
@@ -128,7 +126,6 @@ public class ShoppingCart {
                     int decreasingAmt = sc.nextInt();
 
                     myCart.decreaseQuantity(decreasingId, decreasingAmt);
-                    System.out.println("Product price decreased successfully!!");
                     break;
 
                 case 13:
@@ -145,5 +142,8 @@ public class ShoppingCart {
             }
             
         }while(choice != -1);
+
+        System.out.println("Thanks for Using Our Services!!!!!");
+        sc.close();
     }
 }

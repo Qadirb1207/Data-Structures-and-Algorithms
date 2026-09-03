@@ -41,35 +41,39 @@ public class LinkedList {
 
     //method for removing product
     public void removeProduct(int productId){
-        Node node = head;
-        int index = -1;
-        while (node != null) {
-            if(node.getProduct().getProductId() != productId){
-                ++index;
-            }else{
-                break;
+        Product pr = searchProduct(productId);
+        if(pr != null){
+            Node node = head;
+            int index = -1;
+            while (node != null) {
+                if(node.getProduct().getProductId() != productId){
+                    ++index;
+                }else{
+                    break;
+                }
+                node = node.next;
             }
-            node = node.next;
-        }
 
-        if(index == -1){
-            head = head.next;
-            if(head == null){
-                tail = null;
+            if(index == -1){
+                head = head.next;
+                if(head == null){
+                    tail = null;
+                }
+                --size;
+                System.out.println("Product Removed Successfully!!");
+                return;
             }
+
+            Node n = head;
+            for(int i = 0; i < index; i++){
+                n = n.next;
+            }
+            n.next = n.next.next;
             --size;
-            return;
+            System.out.println("Product Removed Successfully!!");
+        }else{
+            System.out.println("No Such Product is Available!!");
         }
-        if(index > size){
-            System.out.println("The product not found!!");
-            return;
-        }
-        Node n = head;
-        for(int i = 0; i < index; i++){
-            n = n.next;
-        }
-        n.next = n.next.next;
-        --size;
     }
 
     //method for searching a product
@@ -170,11 +174,16 @@ public class LinkedList {
             n = n.next;
         }
 
+        if(index == 0){
+            System.out.println("No products available in the cart!");
+            return;
+        }
         Node node = head;
         for(int i = 0; i < index; i++){
             node = node.next;
         }
         node.getProduct().setQuantity(node.getProduct().getQuantity()+amount);
+        System.out.println("Product price increased successfully!!");
     }
 
     //method for decreasing quantity
@@ -190,6 +199,11 @@ public class LinkedList {
             n = n.next;
         }
 
+        if(index == 0){
+            System.out.println("No products available in the cart!");
+            return;
+        }
+
         Node node = head;
         for(int i = 0; i < index; ++i){
             node = node.next;
@@ -200,27 +214,35 @@ public class LinkedList {
             return;
         }else{
             node.getProduct().setQuantity(newQuantity);
+            System.out.println("Product price decreased successfully!!");
         }
 
     }
 
     //method for finding the most expensive product
     public Product findMostExpensiveProduct(){
-        Node node = head;
-        Product expensiveProduct = node.getProduct();
-        double price = node.getProduct().getPrice()*node.getProduct().getQuantity();
+        if(head != null){
+            Node node = head;
+            Product expensiveProduct = node.getProduct();
+            double price = node.getProduct().getPrice()*node.getProduct().getQuantity();
 
-        while(node != null){
-            if((node.getProduct().getPrice()*node.getProduct().getQuantity()) > price){
-                expensiveProduct = node.getProduct();
+            while(node != null){
+                if((node.getProduct().getPrice()*node.getProduct().getQuantity()) > price){
+                    expensiveProduct = node.getProduct();
+                }
             }
+            return expensiveProduct;
+        }else{
+            return null;
         }
-        return expensiveProduct;
     }
 
     //method for calculating cost of a particular product 
     public double calculateProductCost(int productId){
         Product product = searchProduct(productId);
+        if(product == null){
+            return 0.0;
+        }
         return product.getPrice()*product.getQuantity();
     }
 
