@@ -2,6 +2,9 @@
 
 This is a simple Student Record Management System creating using singly Linked List with `head` and `tail` pointers.
 
+
+## Main Features 
+
 This simple project includes the following features:
 
 - Adding Student at the Beginning
