@@ -85,7 +85,6 @@ public class ShoppingCart {
                     int updatedQuantity = sc.nextInt();
 
                     myCart.updateQuantity(updatingId, updatedQuantity);
-                    System.out.println("Quantity updated successfully!");
                     break;
 
                 case 6:

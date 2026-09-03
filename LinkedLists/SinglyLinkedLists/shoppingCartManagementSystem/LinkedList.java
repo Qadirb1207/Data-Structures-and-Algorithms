@@ -95,23 +95,28 @@ public class LinkedList {
             return;
         }
 
-        Node node = head;
-        int index = 0;
-        while (node != null) {
-            if(node.getProduct().getProductId() != productId){
-                ++index;
-            }else{
-                break;
+        Product pr = searchProduct(productId);
+        if(pr != null){
+            Node node = head;
+            int index = 0;
+            while (node != null) {
+                if(node.getProduct().getProductId() != productId){
+                    ++index;
+                }else{
+                    break;
+                }
+                node = node.next;
             }
-            node = node.next;
-        }
 
-        Node n = head;
-        for(int i = 0; i < index; i++){
-            n = n.next;
+            Node n = head;
+            for(int i = 0; i < index; i++){
+                n = n.next;
+            }
+            n.getProduct().setQuantity(quantity);
+           System.out.println("Quantity updated Successfully!!!");
+        }else{
+            System.out.println("No such product is availabe here!!");
         }
-        n.getProduct().setQuantity(quantity);
-        System.out.println("Quantity updated!!!");
     }
 
     //method for calculating total price of all products
