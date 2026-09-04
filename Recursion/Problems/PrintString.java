@@ -1,4 +1,4 @@
-package Recursion;
+package Problems;
 
 public class PrintString{
   public static void main(String[] args){

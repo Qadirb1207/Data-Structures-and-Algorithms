@@ -31,6 +31,11 @@ class MyLinkedList{
     return list.toString();
   }
   
+
+  public int getSize(){
+    return this.size;
+  }
+
   public int maxElement(){
     int max = head.value;
     Node temp = head;
@@ -49,11 +54,6 @@ class MyLinkedList{
     
     public Node(int value){
       this.value = value;
-    }
-    
-    public Node(int value, Node next){
-      this.value = value;
-      this.next = next;
     }
   }
 }

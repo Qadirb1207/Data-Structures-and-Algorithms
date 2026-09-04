@@ -1,4 +1,4 @@
-package MazeProblems;
+package MazeWithObstacles;
 
 public class PrintingPathsWithKMoves{
   public static void main(String[] args){

@@ -1,4 +1,4 @@
-package ArrayProblems;
+package Algorithms.Searching.LinearSearch;
 
 public class LinearSearch{
   public static void main(String[] args){

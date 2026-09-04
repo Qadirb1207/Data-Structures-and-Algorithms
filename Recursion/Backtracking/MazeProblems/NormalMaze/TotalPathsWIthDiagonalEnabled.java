@@ -1,4 +1,4 @@
-package MazeProblems;
+package NormalMaze;
 
 import java.util.ArrayList;
 public class TotalPathsWIthDiagonalEnabled{

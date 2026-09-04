@@ -1,4 +1,4 @@
-package ArrayProblems;
+package Algorithms.Searching.LinearSearch;
 
 import java.util.ArrayList;
 public class FindAllIndicesOfAnElement{

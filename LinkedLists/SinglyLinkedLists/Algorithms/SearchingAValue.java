@@ -1,4 +1,4 @@
-package SinglyLinkedLists.Algorithms;
+package Algorithms;
 
 import java.util.*;
 
@@ -50,10 +50,10 @@ class LinkedList{
       this.value = value;
     }
     
-    public Node(int value, Node next){
-      this.value = value;
-      this.next = next;
-    }
+  }
+
+  public int getSize(){
+    return this.size;
   }
 }
 
@@ -77,5 +77,6 @@ public class SearchingAValue{
     }else{
       System.out.println("Element not found!!!🥲");
     }
+    sc.close();
   }
 }

@@ -1,11 +1,11 @@
-package Algorithms;
+package BubbleSort;
 
 import java.util.Arrays;
 public class DescendingSorting{
   public static void main(String[] args){
     int[] arr = {5, 3, 9, 1, 2, 3, 6, 0};
     System.out.println("Original array : "+Arrays.toString(arr));
-    descendingSort(arr, 0, arr.length-1, false);
+    descendingSort(arr, 0, arr.length-1);
     System.out.println("After sorting: "+Arrays.toString(arr));
     System.out.println("Total Swaps = "+TotalSwaps.totalSwaps(arr, 0, arr.length-1, 0));
   }

@@ -18,9 +18,9 @@ public class SnakeCaseToCamelCase{
   
   public static String changeCase(String str) throws Exception{
     if(str == null){
-      throw new Algorithms.NullStringException("String is Null");
+      throw new Problems.NullStringException("String is Null");
     }else if(str.trim().isEmpty()){
-      throw new Algorithms.EmptyStringException("String is Empty");
+      throw new Problems.EmptyStringException("String is Empty");
     }else {
         if(str.contains("_")){
           StringBuilder camelCase = new StringBuilder();

@@ -1,4 +1,4 @@
-package Algorithms;
+package BubbleSort;
 
 import java.util.Arrays;
 public class TotalSwaps{

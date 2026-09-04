@@ -1,4 +1,4 @@
-package Algorithms;
+package Problems;
 
 import java.util.Scanner;
 public class CharacterFrequency{
@@ -16,9 +16,9 @@ public class CharacterFrequency{
   
   public static void charFreq(String str) throws Exception{
     if(str == null){
-      throw new Algorithms.NullStringException("String Is Null!!!!!!!!!");
+      throw new Problems.NullStringException("String Is Null!!!!!!!!!");
     }else if(str.trim().length() == 0){
-      throw new Algorithms.EmptyStringException("String is Empty!!!!!");
+      throw new Problems.EmptyStringException("String is Empty!!!!!");
     }else{
       boolean[] visitedArr = new boolean[str.length()];
       for(int i = 0; i < str.length()-1; i++){

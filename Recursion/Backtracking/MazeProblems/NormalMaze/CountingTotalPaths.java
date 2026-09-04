@@ -1,4 +1,4 @@
-package MazeProblems;
+package NormalMaze;
 
 public class CountingTotalPaths{
   public static void main(String[] args){

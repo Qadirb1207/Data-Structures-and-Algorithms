@@ -1,4 +1,4 @@
-package MazeProblems;
+package NormalMaze;
 
 public class PrintingTotalPaths{
   public static void main(String[] args){

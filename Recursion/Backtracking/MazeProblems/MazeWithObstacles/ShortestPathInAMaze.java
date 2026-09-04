@@ -1,4 +1,4 @@
-package MazeProblems;
+package MazeWithObstacles;
 
 import java.util.ArrayList;
 public class ShortestPathInAMaze{

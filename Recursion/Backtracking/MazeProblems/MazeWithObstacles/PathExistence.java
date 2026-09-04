@@ -1,4 +1,4 @@
-package MazeProblems;
+package MazeWithObstacles;
 
 public class PathExistence{
   public static void main(String[] args){
@@ -26,7 +26,7 @@ public class PathExistence{
     }
      System.out.println();
   }
-    System.out.println("Is there any path from A to B ? : "+doesExist("", board, 0,0));
+    System.out.println("Is there any path from A to B ? : "+doesPathExist("", board, 0,0));
   }
   
   public static boolean doesPathExist(String path, boolean[][] board, int r, int c){

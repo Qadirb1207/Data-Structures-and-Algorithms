@@ -1,4 +1,4 @@
-package MazeProblems;
+package MazeWithObstacles;
 
 public class FindingTotalPaths{
   public static void main(String[] args){

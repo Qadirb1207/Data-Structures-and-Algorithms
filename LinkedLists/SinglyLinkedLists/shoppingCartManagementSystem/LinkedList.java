@@ -11,8 +11,8 @@ public class LinkedList {
         this.size = 0;
     }
     //method for adding product at beginning
-    public void addProductFront(Product pr){
-        Node node = new Node(pr);
+    public void addProductFront(Product product){
+        Node node = new Node(product);
         if(head != null){
             node.next = head;
             head = node;

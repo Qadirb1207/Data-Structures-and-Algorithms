@@ -47,11 +47,10 @@ class MyLinkedList{
     public Node(int val){
       this.value = val;
     }
-    
-    public Node(int val, Node n){
-      this.value = val;
-      this.next = n;
-    }
+  }
+
+  public int getSize(){
+    return this.size;
   }
 }
 

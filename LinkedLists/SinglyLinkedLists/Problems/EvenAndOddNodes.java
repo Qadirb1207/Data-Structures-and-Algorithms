@@ -52,6 +52,10 @@ class LinkedList{
     }
     return odds;
   }
+
+  public int getSize(){
+    return this.size;
+  }
   
   private class Node{
     private int value;
@@ -59,11 +63,6 @@ class LinkedList{
     
     public Node(int val){
       this.value = val;
-    }
-    
-    public Node(int value, Node n){
-      this.value = value;
-      this.next = n;
     }
   }
 }

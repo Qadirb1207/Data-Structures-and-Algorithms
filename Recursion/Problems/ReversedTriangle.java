@@ -1,4 +1,4 @@
-package Patterns;
+package Problems;
 
 import java.util.Scanner;
 public class ReversedTriangle{

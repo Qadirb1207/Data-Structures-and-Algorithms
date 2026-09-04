@@ -16,9 +16,9 @@ public class LongestWordInASentence{
   
   public static String longest(String sentence) throws Exception{
     if(sentence == null){
-      throw new Algorithms.NullStringException("NullStringException: Sentence is Null!!!!!!!!!!!!");
+      throw new Problems.NullStringException("NullStringException: Sentence is Null!!!!!!!!!!!!");
     }else if(sentence.trim().isEmpty()){
-      throw new Algorithms.EmptyStringException("EmptyStringException: Sentence Is Empty!!!!!!!!!!!!!");
+      throw new Problems.EmptyStringException("EmptyStringException: Sentence Is Empty!!!!!!!!!!!!!");
     }else{
       String[] wordArr = sentence.split(" ");
       if(wordArr.length == 1){

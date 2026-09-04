@@ -1,4 +1,4 @@
-package Algorithms;
+package BubbleSort;
 
 public class BubbleSortOptimization{
   public static void main(String[] args){

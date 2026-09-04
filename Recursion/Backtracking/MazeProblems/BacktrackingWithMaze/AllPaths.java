@@ -1,4 +1,4 @@
-package MazeProblems;
+package BacktrackingWithMaze;
 
 public class AllPaths{
   public static void main(String[] args){

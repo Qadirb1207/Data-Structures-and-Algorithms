@@ -2,6 +2,9 @@ package Algorithms;
 
 import java.util.Scanner;
 
+import Problems.EmptyStringException;
+import Problems.NullStringException;
+
 public class RunLengthEncoding{
   public static void main(String[] args){
     Scanner sc = new Scanner(System.in);

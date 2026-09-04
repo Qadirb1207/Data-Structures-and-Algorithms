@@ -87,11 +87,6 @@ class LinkedList{
     public Node(int value){
       this.value = value;
     }
-    
-    public Node(int value, Node n){
-      this.value = value;
-      this.next = n;
-    }
   }
   
   private int presentAt(int value){
