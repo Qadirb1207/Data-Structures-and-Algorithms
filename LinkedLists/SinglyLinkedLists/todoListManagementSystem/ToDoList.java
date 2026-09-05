@@ -88,6 +88,7 @@ public class ToDoList {
                     break;
                 
                 case 8:
+                    System.out.println("The size of your To Do list is: "+taskManager.size());
                     break;
 
                 case 9:
