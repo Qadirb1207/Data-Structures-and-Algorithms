@@ -50,7 +50,7 @@ public class ToDoList {
                     String taskDescription = sc.nextLine();
 
                     Task newTask = new Task(taskId, taskTitle, taskDescription);
-                    taskManager.addTaskFront(newTask);
+                    taskManager.addTaskBack(newTask);
                     break;
             
                 case 3:
@@ -92,6 +92,10 @@ public class ToDoList {
                     break;
 
                 case 9:
+                    System.out.print("Enter the ID of the task you want to mark as pending = ");
+                    int pendingId = sc.nextInt();
+
+                    taskManager.markPending(pendingId);
                     break;
 
                 case 10:

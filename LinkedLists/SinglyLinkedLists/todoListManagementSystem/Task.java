@@ -15,6 +15,7 @@ public class Task {
     }
 
 
+    //method for marking the task as compeleted
     public void markAsCompleted(){
         if(this.status != "Completed!"){
             this.status = "Completed!";
@@ -24,16 +25,30 @@ public class Task {
         }
     }
 
+    //method for marking a task as pending
+    public void markAsPending(){
+        if(this.status != "Pending"){
+            this.status = "Pending";
+            System.out.println("Marked As Pending!");
+        }else{
+            System.out.println("The Task is already Pending!!");
+        }
+    }
+
+    //method for getting task id
     public int getTaskId(){
         return this.taskId;
     }
 
+    //method for getting status
     public boolean getStatus(){
         if(status == "Pending"){
             return true;
         }
         return false;
     }
+
+    //method for marking a task pending
 
     @Override
     public String toString(){

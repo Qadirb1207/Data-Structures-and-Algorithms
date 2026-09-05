@@ -113,7 +113,8 @@ public class TaskManager {
         }
         while(current != null){
             if(current.getTask().getStatus()){
-                System.out.println(current.getTask());
+                System.out.println("_______________");
+                System.out.println(current.getTask()+"\n");
             }
             current = current.next;
         }
@@ -121,6 +122,16 @@ public class TaskManager {
     //method for getting size
     public int size(){
         return this.size;
+    }
+
+    //method for marking a task as pending 
+    public void markPending(int taskId){
+        Task task = searchTask(taskId);
+        if(task != null){
+            task.markAsPending();
+        }else{
+            System.out.println("No Task with ID: "+taskId+" Exists!");
+        }
     }
     //NODE CLASS
     private static class Node{
