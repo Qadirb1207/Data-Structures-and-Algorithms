@@ -129,7 +129,7 @@ public class TaskManager {
             System.out.println("No Tasks Available in the list");
             return;
         }
-        
+
         while(current != null){
             if(!current.getTask().getStatus()){
                 System.out.println("_______________");
@@ -151,6 +151,38 @@ public class TaskManager {
         }else{
             System.out.println("No Task with ID: "+taskId+" Exists!");
         }
+    }
+
+    //method for counting total pending tasks
+    public int countPendingTasks(){
+        int pendingTasks = 0;
+        Node current = head;
+        if(current == null){
+            return pendingTasks;
+        }
+        while(current != null){
+            if(current.getTask().getStatus()){
+                ++pendingTasks;
+            }
+            current = current.next;
+        }
+        return pendingTasks;
+    }
+
+    //method for counting total completed tasks
+    public int countCompletedTasks(){
+        int completedTasks = 0;
+        Node current = head;
+        if(current == null){
+            return completedTasks;
+        }
+        while(current != null){
+            if(!current.getTask().getStatus()){
+                ++completedTasks;
+            }
+            current = current.next;
+        }
+        return completedTasks;
     }
     //NODE CLASS
     private static class Node{

@@ -103,9 +103,11 @@ public class ToDoList {
                     break;
 
                 case 11:
+                    System.out.println("Total Pending Tasks are: "+taskManager.countPendingTasks());
                     break;
 
                 case 12:
+                    System.out.println("Total Completed Tasks are: "+taskManager.countCompletedTasks());
                     break;
                 
                 default:
