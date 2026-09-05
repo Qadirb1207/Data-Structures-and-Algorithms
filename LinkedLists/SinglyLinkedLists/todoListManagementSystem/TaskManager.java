@@ -58,6 +58,27 @@ public class TaskManager {
         }
     }
 
+    //method for removing task
+    public void removeTask(int taskId){
+        Node node = head;
+        if(node.getTask().getTaskId() == taskId){
+            head = head.next;
+            --size;
+            System.out.println("Task Removed Successfully!");
+            return;
+        }
+
+        while(node.next != null && node.next.getTask().getTaskId() != taskId){
+            node = node.next;
+        }
+        if(node.next == null){
+            System.out.println("NO Such Task Exists!!");
+            return;
+        }
+        node.next = node.next.next;
+        --size;
+        System.out.println("Task Removed Successfully!");
+    }
     //method for getting size
     public int size(){
         return this.size;

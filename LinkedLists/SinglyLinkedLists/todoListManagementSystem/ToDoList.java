@@ -54,6 +54,10 @@ public class ToDoList {
                     break;
             
                 case 3:
+                    System.out.print("Enter the Task ID you want to remove = ");
+                    int removedId = sc.nextInt();
+
+                    taskManager.removeTask(removedId);
                     break;
 
                 case 4:
