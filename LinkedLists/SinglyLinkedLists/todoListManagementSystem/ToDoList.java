@@ -61,6 +61,15 @@ public class ToDoList {
                     break;
 
                 case 4:
+                    System.out.print("Enter the Task ID you want to search = ");
+                    int searchingId = sc.nextInt();
+
+                    Task searchedTask = taskManager.searchTask(searchingId);
+                    if(searchedTask == null){
+                        System.out.println("No Task with ID: "+searchingId+" Exists");
+                    }else{
+                        System.out.println("Task with ID: "+searchingId+" is: \n"+searchedTask);
+                    }
                     break;
                 
                 case 5:

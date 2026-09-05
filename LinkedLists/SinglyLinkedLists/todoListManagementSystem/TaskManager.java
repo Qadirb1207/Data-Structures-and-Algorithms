@@ -79,6 +79,18 @@ public class TaskManager {
         --size;
         System.out.println("Task Removed Successfully!");
     }
+
+    //method for searching the task (BY ID)
+    public Task searchTask(int taskId){
+        Node node = head;
+        while(node != null){
+            if(node.getTask().getTaskId() == taskId){
+                return node.getTask();
+            }
+            node = node.next;
+        }
+        return null;
+    }
     //method for getting size
     public int size(){
         return this.size;
