@@ -99,6 +99,7 @@ public class ToDoList {
                     break;
 
                 case 10:
+                    taskManager.displayCompletedTasks();
                     break;
 
                 case 11:

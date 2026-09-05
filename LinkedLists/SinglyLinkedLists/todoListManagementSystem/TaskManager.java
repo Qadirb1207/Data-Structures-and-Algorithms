@@ -119,6 +119,25 @@ public class TaskManager {
             current = current.next;
         }
     }
+
+    //method for displaying completed tasks
+    public void displayCompletedTasks(){
+        Node current = head;
+        if(current != null){
+            System.out.println("You have completed these tasks: ");
+        }else{
+            System.out.println("No Tasks Available in the list");
+            return;
+        }
+        
+        while(current != null){
+            if(!current.getTask().getStatus()){
+                System.out.println("_______________");
+                System.out.println(current.getTask()+"\n");
+            }
+            current = current.next;
+        }
+    }
     //method for getting size
     public int size(){
         return this.size;
