@@ -11,6 +11,12 @@ class DoublyLinkedList{
     this.size = 0;
   }
   
+  //method for getting size
+  public int getSize(){
+    return this.size;
+  }
+
+
   public void add(int value){
     Node node = new Node(value);
     node.next = head;
@@ -77,12 +83,8 @@ class DoublyLinkedList{
     
     public Node(int value){
       this.value = value;
-    }
-    
-    public Node(int value, Node n, Node p){
-      this.value = value;
-      this.next = n;
-      this.prev = p;
+      this.next = null;
+      this.prev = null;
     }
   }
 }
