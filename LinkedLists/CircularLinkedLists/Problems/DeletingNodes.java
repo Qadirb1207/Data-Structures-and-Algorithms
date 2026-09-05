@@ -32,7 +32,11 @@ class CircularLinkedList{
     --size;
   }
   
- 
+ //method for getting size
+ public int getSize(){
+  return this.size;
+ }
+
   public String toString(){
     StringBuilder list = new StringBuilder();
     Node node = head;
@@ -55,11 +59,6 @@ class CircularLinkedList{
     
     public Node(int value){
       this.value = value;
-    }
-    
-    public Node(int value, Node next){
-      this.value = value;
-      this.next = next;
     }
   }
 }
