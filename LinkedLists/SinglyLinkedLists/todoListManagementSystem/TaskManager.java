@@ -101,6 +101,23 @@ public class TaskManager {
             System.out.println("No Task with ID: "+taskId+" Exists");
         }
     }
+
+    //method for displaying pending tasks
+    public void displayPendingTasks(){
+        Node current = head;
+        if(current != null){
+            System.out.println("These are your Pending Tasks!!: \n");
+        }else{
+            System.out.println("There is no Task in the list");
+            return;
+        }
+        while(current != null){
+            if(current.getTask().getStatus()){
+                System.out.println(current.getTask());
+            }
+            current = current.next;
+        }
+    }
     //method for getting size
     public int size(){
         return this.size;

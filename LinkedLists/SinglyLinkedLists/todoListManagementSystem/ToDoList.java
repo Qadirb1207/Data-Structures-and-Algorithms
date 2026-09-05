@@ -80,6 +80,7 @@ public class ToDoList {
                     break;
                 
                 case 6:
+                    taskManager.displayPendingTasks();
                     break;
                 
                 case 7:

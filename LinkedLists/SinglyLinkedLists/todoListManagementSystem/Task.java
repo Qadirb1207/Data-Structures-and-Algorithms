@@ -28,6 +28,13 @@ public class Task {
         return this.taskId;
     }
 
+    public boolean getStatus(){
+        if(status == "Pending"){
+            return true;
+        }
+        return false;
+    }
+
     @Override
     public String toString(){
         String info = " Task ID: "+this.taskId+"\n Title: "+this.title+
