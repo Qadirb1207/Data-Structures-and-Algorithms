@@ -16,7 +16,7 @@ public class Task {
 
 
     public void markAsCompleted(){
-        if(this.status != "Completed"){
+        if(this.status != "Completed!"){
             this.status = "Completed!";
             System.out.println("Marked Completed!");
         }else{

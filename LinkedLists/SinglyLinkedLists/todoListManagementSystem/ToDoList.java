@@ -73,6 +73,10 @@ public class ToDoList {
                     break;
                 
                 case 5:
+                    System.out.print("Enter the ID of the task you want to mark as completed = ");
+                    int completedId = sc.nextInt();
+
+                    taskManager.markCompleted(completedId);
                     break;
                 
                 case 6:

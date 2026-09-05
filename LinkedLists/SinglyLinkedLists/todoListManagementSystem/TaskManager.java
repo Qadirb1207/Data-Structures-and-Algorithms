@@ -91,6 +91,16 @@ public class TaskManager {
         }
         return null;
     }
+
+    //method for making a task mark as completed
+    public void markCompleted(int taskId){
+        Task task = searchTask(taskId);
+        if(task != null){
+            task.markAsCompleted();
+        }else{
+            System.out.println("No Task with ID: "+taskId+" Exists");
+        }
+    }
     //method for getting size
     public int size(){
         return this.size;
