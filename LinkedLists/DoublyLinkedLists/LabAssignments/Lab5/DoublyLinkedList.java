@@ -62,10 +62,59 @@ public class DoublyLinkedList {
     }
 
     //method for deleting a particular node
-    public void deletingNode(int data){
-        
+    public void deleteNode(int data){
+        Node node = head;
+        Node n = null;
+        while(node != null){
+            if(node.data == data){
+                n = node;
+                break;
+            }
+            node = node.next;
+        }
+        if(n == null){
+            System.out.println("No such data exits");
+            return;
+        }
+        if(n == head){
+            deleteFirst();
+            return;
+        }
+        if(n == tail){
+            deleteBack();
+            return;
+        }
+        n.prev.next = null;
+        n.prev = null;
     }
 
+    //method for adding data before a particular node
+    public void addAfter(int targetData, int data){
+        Node newNode = new Node(data);
+        Node n = null;
+        Node node = head;
+        while(node != null){
+            if(node.data == targetData){
+                n = node;
+                break;
+            }
+            node = node.next;
+        }
+        if(n == null){
+            System.out.println("No node with data: "+targetData+" exists");
+            return;
+        }
+
+        if(n == tail){
+            addBack(data);
+            return;
+        }
+
+        newNode.next = n.next;
+        n.next.prev = newNode;
+        n.next = newNode;
+        newNode.prev = n;
+    }
     //method for displaying forward
     public void displayForward(){
         Node node = head;

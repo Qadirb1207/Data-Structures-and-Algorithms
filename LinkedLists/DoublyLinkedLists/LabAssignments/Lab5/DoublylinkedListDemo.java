@@ -9,16 +9,10 @@ public class DoublylinkedListDemo {
         myList.addBack(-19);
         
         myList.displayForward();
-
-        myList.deleteFirst();
-
-        myList.displayForward();
-
-        myList.deleteBack();
-        myList.displayForward();
-
         myList.searchNode(-10);
-        
+
+        myList.addAfter(-19, 10);
+        myList.displayForward();
 
     }
 }
