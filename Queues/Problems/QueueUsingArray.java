@@ -1,97 +1,81 @@
 package Queues.Problems;
 
 class Queue{
-    private int[] data;
+    private int[] arr;
+    private int front;
+    private int rear;
     private int size;
-    private int currentSize;
-    private static final int totalDefaultSize = 10;
+    private int capacity;
 
-    public Queue(){
-        this(totalDefaultSize);
-    }
-
-    public Queue(int size){
-        if(size > 0){
-            this.size = size;
-            this.data = new int[size];
-            this.currentSize = 0;
+    public Queue(int capacity){
+        if(capacity > 0){
+            this.arr = new int[capacity];
+            this.front = 0;
+            this.rear = 0;
+            this.size = 0;
+            this.capacity = capacity;
         }else{
-            System.out.println("Invalid Size! Size cannot be negative!!");
+            System.out.println("Invalid capacity!!");
         }
     }
 
-    //method for enqueuing 
     public void enqueue(int num){
         if(isFull()){
-            System.out.println("Cannot add more elements! Queue is Full");
+            System.out.println("Queue is Full");
             return;
         }
-        if(currentSize == 0){
-            data[0] = num;
-            ++currentSize;
-            return;
-        }
-        int[] newArr = new int[data.length+1];
-        for(int i = 0; i < data.length; i++){
-            newArr[i] = data[i];
-        }
-
-        for(int i = newArr.length-1; i > 0; --i){
-            newArr[i] = newArr[i-1];
-        }
-        newArr[0] = num;
-        this.data = newArr;
-        ++currentSize;
+            arr[rear] = num;
+            rear = (rear+1)%capacity;
+            ++size;
     }
 
-    //method for dequeuing 
-    public void dequeue(){
+    public int dequeue(){
         if(isEmpty()){
-            System.out.println("The Queue is Empty!");
-            return;
+            System.out.println("Queue is empty!!!");
+            return Integer.MIN_VALUE;
         }
-
-        int[] newArr = new int[data.length-1];
-        for(int i = 0; i < newArr.length; ++i){
-            newArr[i] = data[i];
-        }
-        this.data = newArr;
-        --currentSize;
+        int value = arr[front];
+        front = (front+1)%capacity;
+        return value;
     }
 
-    //method for checking whether the queue is full or not
-    public boolean isFull(){
-        return this.currentSize > size-1;
+    private boolean isEmpty() {
+        return size == 0;
     }
 
-    //method for checking whether the queue is empty or not
-    public boolean isEmpty(){
-        return currentSize == 0;
+    private boolean isFull() {
+        return size == capacity;
+    }
+    
+    public int peek(){
+        return this.arr[front];
     }
 
-    //method for displaying elements
     public void displayQueue(){
-        for(int i = 0; i < currentSize; i++){
-            System.out.print(data[i]+"  ");
+        for(int i = front; i < size; i++){
+            System.out.print(arr[i]+"\t");
         }
         System.out.println();
     }
 }
-public class QueueUsingArray {
+
+public class QueueUsingArray{
     public static void main(String[] args){
-        Queue myQueue = new Queue(4);
+        Queue queue = new Queue(5);
+        queue.enqueue(12);
+        queue.enqueue(13);
+        queue.enqueue(14);
+        queue.enqueue(16);
+        queue.enqueue(17);
+        queue.enqueue(19);
 
-        myQueue.enqueue(12);
-        myQueue.enqueue(18);
-        myQueue.enqueue(10);
-        myQueue.enqueue(30);
-        myQueue.enqueue(17);
-        myQueue.enqueue(24);
-        myQueue.enqueue(19);
+        queue.displayQueue();
 
-        myQueue.displayQueue();
-        
-        myQueue.dequeue();
-        myQueue.displayQueue();
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+
+        queue.displayQueue();
     }
 }
