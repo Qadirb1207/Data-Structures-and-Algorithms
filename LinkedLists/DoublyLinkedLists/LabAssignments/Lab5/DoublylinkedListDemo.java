@@ -11,7 +11,7 @@ public class DoublylinkedListDemo {
         myList.displayForward();
         myList.searchNode(-10);
 
-        myList.addAfter(-19, 10);
+        myList.addBefore(9, 10);
         myList.displayForward();
 
     }

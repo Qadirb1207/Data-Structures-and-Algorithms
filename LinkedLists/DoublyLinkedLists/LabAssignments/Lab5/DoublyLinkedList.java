@@ -126,6 +126,44 @@ public class DoublyLinkedList {
         System.out.println("-> NULL");
     }
 
+    //method for displaying backward
+    public void displayBackward(){
+        Node node = tail;
+        System.out.print("NULL <- ");
+        while(node != null){
+            System.out.print(node.data+" <-> ");
+            node = node.prev;
+        }
+        System.out.println("-> NULL");
+    }
+
+    //method for adding a node before a particular node
+    public void addBefore(int targetData, int data){
+        Node newNode = new Node(data);
+        Node node = head;
+        if(node.data == targetData){
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+            return;
+        }
+
+        if(tail.data == targetData){
+            addBack(data);
+            return;
+        }
+        while(node.next != null && node.next.data != targetData){
+            node = node.next;
+        }
+        if(node.next != null){
+            newNode.next = node.next;
+            node.next.prev = newNode;
+            newNode.prev = node;
+            node.next = newNode;
+        }else{
+            System.out.println("There is no such node with data: "+targetData);
+        }
+    }
 
     private class Node{
         private int data;
