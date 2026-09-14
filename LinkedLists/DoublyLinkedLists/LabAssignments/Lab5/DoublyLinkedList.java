@@ -117,23 +117,39 @@ public class DoublyLinkedList {
     //method for displaying forward
     public void displayForward(){
         Node node = head;
-        System.out.print("NULL <- ");
-        while(node != null){
+        if(node.prev != tail){
+            System.out.print("NULL <- ");
+            while(node != null){
+                System.out.print(node.data+" <-> ");
+                node = node.next;
+            }
+            System.out.println("-> NULL");
+        }else{
             System.out.print(node.data+" <-> ");
-            node = node.next;
+            while(node.next != head){
+                System.out.print(node.next.data+" <-> ");
+                node = node.next;
+            }
         }
-        System.out.println("-> NULL");
     }
 
     //method for displaying backward
     public void displayBackward(){
         Node node = tail;
-        System.out.print("NULL <- ");
-        while(node != null){
+        if(node.next != head){
+            System.out.print("NULL  <- ");
+            while(node != null){
+                System.out.print(node.data+" <-> ");
+                node = node.prev;
+            }
+            System.out.println("-> NULL");
+        }else{
             System.out.print(node.data+" <-> ");
-            node = node.prev;
+            while(node.prev != tail){
+               System.out.print(node.prev.data+" <-> "); 
+               node = node.prev;
+            }
         }
-        System.out.println("-> NULL");
     }
 
     //method for adding a node before a particular node
@@ -174,6 +190,15 @@ public class DoublyLinkedList {
         }
     }
 
+    //method for making the doubly linkedlist a cicular
+    public void makeCircular(){
+        if(head != null && tail != null){
+            tail.next = head;
+            head.prev = tail;
+        }else{
+            System.out.println("Cannot make the list circular!!");
+        }
+    }
     private class Node{
         private int data;
         private Node next;

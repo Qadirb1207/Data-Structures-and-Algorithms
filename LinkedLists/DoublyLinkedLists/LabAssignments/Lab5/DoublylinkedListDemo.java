@@ -17,5 +17,9 @@ public class DoublylinkedListDemo {
         myList.updateNode(-19, 25);
         myList.displayBackward();
 
+        myList.makeCircular();
+        myList.displayForward();
+        myList.displayBackward();
+
     }
 }
