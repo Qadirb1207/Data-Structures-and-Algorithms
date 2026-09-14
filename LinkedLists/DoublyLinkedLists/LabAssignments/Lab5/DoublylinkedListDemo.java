@@ -14,5 +14,8 @@ public class DoublylinkedListDemo {
         myList.addBefore(9, 10);
         myList.displayForward();
 
+        myList.updateNode(-19, 25);
+        myList.displayBackward();
+
     }
 }

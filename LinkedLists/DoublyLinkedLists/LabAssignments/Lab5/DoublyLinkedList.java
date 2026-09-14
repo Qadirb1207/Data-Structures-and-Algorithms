@@ -49,16 +49,15 @@ public class DoublyLinkedList {
     }
 
     //method for searching data
-    public void searchNode(int data){
+    public Node searchNode(int data){
         Node node = head;
         while(node != null){
             if(node.data == data){
-                System.out.println("Data found");
-                return;
+                return node;
             }
             node = node.next;
         }
-        System.out.println("Data Not Found");
+        return null;
     }
 
     //method for deleting a particular node
@@ -162,6 +161,16 @@ public class DoublyLinkedList {
             node.next = newNode;
         }else{
             System.out.println("There is no such node with data: "+targetData);
+        }
+    }
+
+    //method for updating a node
+    public void updateNode(int oldData, int newData){
+        Node node = searchNode(oldData);
+        if(node != null){
+            node.data = newData;
+        }else{
+            System.out.println("There is no node with data: "+oldData);
         }
     }
 
