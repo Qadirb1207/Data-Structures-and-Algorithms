@@ -57,7 +57,11 @@ which are:
 ### ToDoList Class
 
 This is the main class having the `main` method which shows the main menu of the 
-[To-Do List Management System](#To-Do-List-management-system).
+[To-Do List Management System](#To-Do-List-management-system). 
+
+The main menu of the project is this:
+
+![This is the image of the main menu of the project](image.png)
 
 
 ## How to run
