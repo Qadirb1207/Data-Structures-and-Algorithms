@@ -77,9 +77,8 @@ git clone https://github.com/Qadirb1207/Data-Structures-and-Algorithms.git/
 Then go to the files:
 
 ```text
-LinkedLists/
-    └── SinglyLinkedList/
-        └── shoppingCartManagementSystem
+Projects/
+        └── shoppingCartManagementSystem/
 ```
 
 Then open it in the terminal and run the following two commands 
