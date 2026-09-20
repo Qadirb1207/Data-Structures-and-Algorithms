@@ -1,3 +1,5 @@
+package LabAssignments.Lab6;
+
 class Stack{
     private int[] arr;
     private int index;
@@ -45,7 +47,7 @@ class Stack{
         if(isEmpty()){
             throw new Exception("Stack is Empty!!");
         }
-        for(int i = 0; i <= index; ++i){
+        for(int i = index; i >= 0; --i){
             System.out.print(arr[i]+" ");
         }
 
