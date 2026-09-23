@@ -50,7 +50,7 @@ java Applications.BrowserHistoryManagementSystem.BrowserHistoryApp
 ```
 
 You will see the following interface:
-![alt text](<Screenshot from 2026-09-23 16-29-20.png>)
+![alt text](<BrowserHistory.png>)
 
 
 **NOTE:-** If you found any error! Please contact me on [LinkedIn](https://www.linkedin.com/in/qadir-bakhsh).
