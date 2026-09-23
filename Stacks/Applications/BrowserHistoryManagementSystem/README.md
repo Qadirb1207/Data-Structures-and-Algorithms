@@ -50,6 +50,9 @@ java Applications.BrowserHistoryManagementSystem.BrowserHistoryApp
 ```
 
 You will see the following interface:
+
+
+
 ![alt text](<BrowserHistory.png>)
 
 
