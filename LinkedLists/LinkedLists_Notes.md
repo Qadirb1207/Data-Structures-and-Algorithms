@@ -442,7 +442,7 @@ Before deleting, we should make sure the list is not empty.
 
 **Traversal** means visiting the nodes of a linked list one by one.
 
-Since there is no direct access, we start from the first node and repeated follow the `next`.
+Since there is no direct access, we start from the first node and repeatedly follow the `next`.
 
 Suppose we have: 
 
