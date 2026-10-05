@@ -561,7 +561,7 @@ through and manipulate the chain.
 
 **LinkedIn Profile:**  [Qadir Bakhsh on LinkedIn](https://www.linkedin.com/in/qadir-bakhsh)
 
-**GitHub Profile:** [Qadir on GitHub](https://github.com/Qadirb1207/)
+**GitHub Profile:** [Qadir on GitHub](https://github.com/Qadirb1207)
 
 ---
 
