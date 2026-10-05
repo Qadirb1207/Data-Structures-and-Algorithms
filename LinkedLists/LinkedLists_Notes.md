@@ -416,18 +416,22 @@ The old node is no longer the part of the linkedlist.
 If we want to keep the node temporarily: 
 ```java
 public Node deleteFirstNode(){
-  Node temp = first;
-  first = first.next;
-
-  return temp;
+   if(first != null){//check for the empty list  
+    Node temp = first;
+    first = first.next;
+    return temp;
+   }
+  System.out.println("List is Empty!!!");
+  return -1;
 }
 ```
 
 **Algorithm**
 ```text
-1. First store the node in a temporary reference variable of type Node
-2. Move the first to the node next to it.
-3. Return the temporary variable you created in step 1.
+1. First check whether there exists something in the list (i.e List is not emtpy!!);
+2. First store the node in a temporary reference variable of type Node
+3. Move the first to the node next to it.
+4. Return the temporary variable you created in step 1.
 ```
 
 After node is disconnected, Java's garbage collector can eventually remove it from memory if no reference points to it anymore.
