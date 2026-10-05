@@ -421,15 +421,15 @@ public Node deleteFirstNode(){
     first = first.next;
     return temp;
    }
-  System.out.println("List is Empty!!!");
-  return -1;
+   System.out.println("List is Empty!!!");
+   return -1;
 }
 ```
 
 **Algorithm**
 ```text
 1. First check whether there exists something in the list (i.e List is not emtpy!!);
-2. First store the node in a temporary reference variable of type Node
+2. If the list is not empty then store the node in a temporary reference variable of type Node
 3. Move the first to the node next to it.
 4. Return the temporary variable you created in step 1.
 ```
