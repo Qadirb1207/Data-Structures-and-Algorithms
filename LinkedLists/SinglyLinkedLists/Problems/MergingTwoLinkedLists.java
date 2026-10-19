@@ -1,6 +1,6 @@
 package Problems;
 
-public class MergingTwoLinkedLists extends LinkedList{
+public class MergingTwoLinkedLists {
     private static LinkedList listMerger(LinkedList l1, LinkedList l2){
         Node curr1 = l1.head;
         Node curr2 = l2.head;
