@@ -21,11 +21,10 @@ public class FindingNthNode {
         Node slow = list.head;
         Node fast = list.head;
         for(int i = 0; i < n; i++){
-            fast = fast.next;
-
             if(fast == null){
                 return null;
             }
+            fast = fast.next;
         }
 
         while(fast != null){
