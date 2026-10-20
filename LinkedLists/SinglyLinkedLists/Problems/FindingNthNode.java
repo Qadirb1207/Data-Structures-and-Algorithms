@@ -13,7 +13,7 @@ public class FindingNthNode {
             System.out.println("List is empty!! Cannot find any node");
             return null;
         }
-        
+
         if(n <= 0){
             System.out.println("Invalid number of node!!");
             return null;
@@ -22,6 +22,10 @@ public class FindingNthNode {
         Node fast = list.head;
         for(int i = 0; i < n; i++){
             fast = fast.next;
+
+            if(fast == null){
+                return null;
+            }
         }
 
         while(fast != null){
