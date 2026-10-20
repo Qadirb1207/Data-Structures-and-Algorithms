@@ -9,6 +9,11 @@ public class FindingNthNode {
     
      */
     private static Node nthNode(LinkedList list, int n){
+        if(list.isEmpty()){
+            System.out.println("List is empty!! Cannot find any node");
+            return null;
+        }
+        
         if(n <= 0){
             System.out.println("Invalid number of node!!");
             return null;
