@@ -2,6 +2,10 @@ package Problems;
 
 public class ReversingADoublyLinkedList {
     private static void reverseList(DoublyLinkedList list){
+        if(list.isEmpty()){
+            System.out.println("Empty List cannot Reverse it!!");
+            return;
+        }
         Node prev = null;
         Node next = null;
         Node curr = list.head;
