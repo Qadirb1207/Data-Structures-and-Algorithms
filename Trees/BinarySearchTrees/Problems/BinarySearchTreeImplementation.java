@@ -27,11 +27,19 @@ class BinarySearchTree{
     }
 
     public int findMin(){
-        return findMin(root);
+        Node min = findMin(root);
+        return min.data;
     }
 
     public int findMax(){
-        return findMax(root);
+        Node max = findMax(root);
+        return max.data;
+    }
+
+    public void delete(int value){
+        root = delete(root, value);
+        --size;
+        System.out.println(value+" deleted Successfully!!");
     }
 
     public void preorder(){
@@ -47,16 +55,41 @@ class BinarySearchTree{
     }
 
 
-    private int findMin(Node n){
+    private Node delete(Node node, int value){
+        if(node == null){
+            return null;
+        }
+        if(value > node.data){
+            node.right =  delete(node.right, value);
+        }
+        if(value < node.data){
+            node.left = delete(node.left, value);;
+        }else {
+            if(node.left == null){
+                return node.right;
+            }else if(node.right == null){
+                return node.left;
+            }
+
+            Node successor = findMin(node.right);
+            node.data = successor.data;
+
+            delete(node.right, successor.data);
+        }
+        return node;
+        
+            
+}
+    private Node findMin(Node n){
         if(n.left == null){
-            return n.data;
+            return n;
         }
         return findMin(n.left);
     }
 
-    private int findMax(Node node){
+    private Node findMax(Node node){
         if(node.right == null){
-            return node.data;
+            return node;
         }
         return findMax(node.right);
     }
@@ -127,6 +160,11 @@ public class BinarySearchTreeImplementation {
 
         System.out.println("Minimum is: "+bst.findMin());
         System.out.println("Maximum is: "+bst.findMax());
+
+        bst.delete(5);
+        bst.preorder();
+        System.out.println();
+
     
     }
 }
