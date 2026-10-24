@@ -26,16 +26,12 @@ class BinarySearchTree{
         ++size;
     }
 
-    private Node insertRecursively(Node node, int value) {
-        if(node == null){
-            return new Node(value);
-        }
-        if(value > node.data){
-            node.right = insertRecursively(node.right,value);
-        }else if(value < node.data){
-            node.left = insertRecursively(node.left, value);
-        }
-        return node;
+    public int findMin(){
+        return findMin(root);
+    }
+
+    public int findMax(){
+        return findMax(root);
     }
 
     public void preorder(){
@@ -49,6 +45,34 @@ class BinarySearchTree{
     public void postorder(){
         print3(root);
     }
+
+
+    private int findMin(Node n){
+        if(n.left == null){
+            return n.data;
+        }
+        return findMin(n.left);
+    }
+
+    private int findMax(Node node){
+        if(node.right == null){
+            return node.data;
+        }
+        return findMax(node.right);
+    }
+
+    private Node insertRecursively(Node node, int value) {
+        if(node == null){
+            return new Node(value);
+        }
+        if(value > node.data){
+            node.right = insertRecursively(node.right,value);
+        }else if(value < node.data){
+            node.left = insertRecursively(node.left, value);
+        }
+        return node;
+    }
+
     private void print1(Node node){
         if(node == null){
             return;
@@ -100,6 +124,9 @@ public class BinarySearchTreeImplementation {
         System.out.println("Post order Traversal:");
         bst.postorder();
         System.out.println();
+
+        System.out.println("Minimum is: "+bst.findMin());
+        System.out.println("Maximum is: "+bst.findMax());
     
     }
 }
