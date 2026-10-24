@@ -42,6 +42,13 @@ class BinarySearchTree{
         System.out.println(value+" deleted Successfully!!");
     }
 
+    public boolean search(int value){
+        Node node = search(root, value);
+        if(node == null){
+            return false;
+        }
+        return true;
+    }
     public void preorder(){
         print1(root);
     }
@@ -55,6 +62,19 @@ class BinarySearchTree{
     }
 
 
+    private Node search(Node node, int value){
+        if(node == null){
+            return null;
+        }
+        if(value == node.data){
+            return node;
+        }
+
+        if(value > node.data){
+            return search(node.right, value);
+        }
+        return search(node.left, value);
+    }
     private Node delete(Node node, int value){
         if(node == null){
             return null;
@@ -164,6 +184,9 @@ public class BinarySearchTreeImplementation {
         bst.delete(5);
         bst.preorder();
         System.out.println();
+
+        int value = 92;
+        System.out.println("Does "+ value+" exists in the tree?="+ bst.search(value));
 
     
     }
