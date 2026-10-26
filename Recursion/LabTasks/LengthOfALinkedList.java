@@ -73,6 +73,13 @@ class LinkedList{
         System.out.println("NULL");
     }
 
+    public void display(Node node){
+        while(node != null){
+            System.out.print(node.data+" -> ");
+            node = node.next;
+        }
+        System.out.println("NULL");
+    }
 
     public void reverseLinkedList(Node head2) {
     }
