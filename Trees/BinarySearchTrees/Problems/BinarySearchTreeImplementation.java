@@ -26,6 +26,37 @@ class BinarySearchTree{
         ++size;
     }
 
+    public void updateValue(int oldValue, int newValue){
+        Node node = search(root, oldValue);
+        if(node != null){
+            node.data = newValue;
+            manageTree(node);
+            System.out.println("Value update successfully!!");
+            
+        }else{
+            System.out.println(oldValue+" does not exists!");
+        }
+        
+    }
+    //the updated value may violate the BST property so we should manage the Tree to remain BST
+    private void manageTree(Node node) {
+        if(node.left == null && node.right == null){
+            return;
+        }
+        if(node.left != null && node.data < node.left.data){
+            int temp = node.data;
+            node.data = node.left.data;
+            node.left.data = temp;
+            manageTree(node.left);
+        }
+        if(node.right != null && node.data > node.right.data){
+            int temp = node.data;
+            node.data = node.right.data;
+            node.right.data = temp;
+            manageTree(node.right);
+        }
+    }
+
     public int findMin(){
         Node min = findMin(root);
         return min.data;
@@ -187,6 +218,9 @@ public class BinarySearchTreeImplementation {
 
         int value = 92;
         System.out.println("Does "+ value+" exists in the tree?="+ bst.search(value));
+
+        bst.updateValue(6, -10);
+        bst.preorder();
 
     
     }
