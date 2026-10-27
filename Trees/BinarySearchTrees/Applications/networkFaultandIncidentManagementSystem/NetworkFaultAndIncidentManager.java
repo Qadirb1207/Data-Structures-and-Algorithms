@@ -26,10 +26,32 @@ public class NetworkFaultAndIncidentManager {
         ++size;
     }
 
+    public void search(int incId){
+        Node node = search(root, incId);
+        if(node == null){
+            System.out.println("No Incident exists with ID: "+incId);
+            return;
+        }
+        System.out.println(node.incident);
+    }
     public void display(){
         print(root);
     }
 
+    private Node search(Node node, int incId){
+        if(node == null){
+            return null;
+        }
+
+        if(node.incident.getIncidentId() == incId){
+            return node;
+        }
+
+        if(node.incident.getIncidentId() > incId){
+            return search(node.left, incId);
+        }
+        return search(node.right, incId);
+    }
     private void print(Node node){
         if(node == null){
             return;

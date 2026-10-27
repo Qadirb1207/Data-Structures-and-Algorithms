@@ -13,33 +13,39 @@ public class Main {
             choice = sc.nextInt();
             switch(choice){
                 case 1: {
-                System.out.print("Enter your device ID: ");
-                int dId = 0;
+                
                 try{
-                     dId = sc.nextInt();
+                    System.out.print("Enter your device ID: ");
+                    int dId = sc.nextInt();
+                    System.out.print("Enter your incident Description = ");
+                    sc.nextLine();
+                    String des = sc.nextLine();
+                    System.out.print("Enter priority(HIGH/LOW) = ");
+                    String pr = sc.nextLine();
+                    if(!pr.equalsIgnoreCase("High") && !pr.equalsIgnoreCase("Low")){
+                        System.out.print("Invalid Priority\n Enter priority Again(HIGH/LOW) = ");
+                        pr = sc.nextLine();
+                    }
+                    Incident inc = new Incident(dId, des, pr);
+                        nfaim.insertIncident(inc);
                 }catch(Exception ex){
                     System.out.println(ex.getMessage());
-                    System.out.print("Enter your device ID: ");
-                    dId = sc.nextInt();
-                }
-                
-                System.out.print("Enter your incident Description = ");
-                sc.nextLine();
-                String des = sc.nextLine();
-                System.out.print("Enter priority(HIGH/LOW) = ");
-                String pr = sc.nextLine();
-                if(!pr.equalsIgnoreCase("High") || !pr.equalsIgnoreCase("High")){
-                    System.out.print("Invalid Priority\n Enter priority Again(HIGH/LOW) = ");
-                    pr = sc.nextLine();
-                }
-                Incident inc = new Incident(dId, des, pr);
-                nfaim.insertIncident(inc);
-                }
+                }               
+            }
                     break;
 
+                case 2: {
+                    System.out.print("Enter the Incident ID: ");
+                    int id = sc.nextInt();
+                    System.out.println();
+                    nfaim.search(id);
+                    System.out.println();
+                }
+                break;
                 case 5: {
                     nfaim.display();
                 }
+                break;
             }
         }while(choice != -1);
         sc.close();
