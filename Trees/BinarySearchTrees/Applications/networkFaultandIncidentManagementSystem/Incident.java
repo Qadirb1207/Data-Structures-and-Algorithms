@@ -7,7 +7,8 @@ public class Incident {
     private String priority;
     private String status;
 
-    public Incident(int deviceId, String pdes, String priority){
+    public Incident(int incidentId, int deviceId, String pdes, String priority){
+        this.incidentId = incidentId;
         this.deviceId = deviceId;
         this.problemDescription = pdes;
         this.priority = priority;
@@ -26,10 +27,6 @@ public class Incident {
 
     public int getIncidentId(){
         return this.incidentId;
-    }
-
-    public void setIncidentId(int id){
-        this.incidentId = id;
     }
 
     public String getStatus(){

@@ -21,7 +21,6 @@ public class NetworkFaultAndIncidentManager {
     }
 
     public void insertIncident(Incident inc){
-        inc.setIncidentId(size);
         root = insertRecursively(root, inc);
         ++size;
     }

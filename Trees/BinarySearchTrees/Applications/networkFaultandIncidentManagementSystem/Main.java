@@ -15,18 +15,24 @@ public class Main {
                 case 1: {
                 
                 try{
+                    System.out.print("Enter your Incident ID: ");
+                    int incId = sc.nextInt();
+
                     System.out.print("Enter your device ID: ");
                     int dId = sc.nextInt();
+
                     System.out.print("Enter your incident Description = ");
                     sc.nextLine();
                     String des = sc.nextLine();
+
                     System.out.print("Enter priority(HIGH/LOW) = ");
                     String pr = sc.nextLine();
+
                     if(!pr.equalsIgnoreCase("High") && !pr.equalsIgnoreCase("Low")){
                         System.out.print("Invalid Priority\n Enter priority Again(HIGH/LOW) = ");
                         pr = sc.nextLine();
                     }
-                    Incident inc = new Incident(dId, des, pr);
+                    Incident inc = new Incident(incId, dId, des, pr);
                         nfaim.insertIncident(inc);
                 }catch(Exception ex){
                     System.out.println(ex.getMessage());
