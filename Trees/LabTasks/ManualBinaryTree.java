@@ -72,6 +72,21 @@ public class ManualBinaryTree{
 		displayPostorder(node.right);
 		System.out.print(node.data+" -> ");
 	}
+
+	// ====== TASK 5 ========
+	public int countNodes(){
+		return countTotalNodes(root);
+	}
+
+	private int countTotalNodes(Node node){
+		if(node == null){
+			return 0;
+		}
+		int left = countTotalNodes(node.left)+1;
+		int right = countTotalNodes(node.right);
+
+		return left+right;
+	}
 	public static void main(String[] args){
 		ManualBinaryTree tree = new ManualBinaryTree();
 		tree.setLeft(tree.root, 10);
@@ -94,7 +109,7 @@ public class ManualBinaryTree{
 		tree.postorder();
 		System.out.println();
 
-		
+		System.out.println("Total Nodes: "+tree.countNodes());
 		
 	}
 }
