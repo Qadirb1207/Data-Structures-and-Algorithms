@@ -1,4 +1,5 @@
 package Trees.LabTasks;
+import java.util.Scanner;
 //======== TASK 1 ============
 public class ManualBinaryTree{
 	Node root;
@@ -99,6 +100,22 @@ public class ManualBinaryTree{
 		}
 		return Math.max(height(n.left), height(n.right))+1;
 	}
+
+	// ====== TASK 7 =========
+	public boolean search(int key){
+		return searchValue(root, key);
+	}
+	private boolean searchValue(Node n, int key){
+		if(n == null){
+			return false;
+		}
+		if(n.data == key){
+			return true;
+		}
+		boolean foundLeft = searchValue(n.left, key);
+		boolean foundRight = searchValue(n.right, key);
+		return foundLeft || foundRight;
+	}
 	public static void main(String[] args){
 		ManualBinaryTree tree = new ManualBinaryTree();
 		tree.setLeft(tree.root, 10);
@@ -123,6 +140,12 @@ public class ManualBinaryTree{
 
 		System.out.println("Total Nodes: "+tree.countNodes());
 		System.out.println("Height: "+tree.height());
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int key = sc.nextInt();
+		System.out.println(tree.search(key));
+		sc.close();
 		
 	}
 }
