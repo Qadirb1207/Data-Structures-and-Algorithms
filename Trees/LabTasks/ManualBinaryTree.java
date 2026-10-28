@@ -87,6 +87,18 @@ public class ManualBinaryTree{
 
 		return left+right;
 	}
+
+	//=========== Task 6 ===========
+	public int height(){
+		return height(root);
+	}
+
+	private int height(Node n){
+		if(n == null){
+			return 0;
+		}
+		return Math.max(height(n.left), height(n.right))+1;
+	}
 	public static void main(String[] args){
 		ManualBinaryTree tree = new ManualBinaryTree();
 		tree.setLeft(tree.root, 10);
@@ -110,6 +122,7 @@ public class ManualBinaryTree{
 		System.out.println();
 
 		System.out.println("Total Nodes: "+tree.countNodes());
+		System.out.println("Height: "+tree.height());
 		
 	}
 }
