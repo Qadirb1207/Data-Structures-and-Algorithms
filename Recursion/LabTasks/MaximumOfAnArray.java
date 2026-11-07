@@ -1,4 +1,4 @@
-package Recursion.LabTasks;
+package LabTasks;
 
 public class MaximumOfAnArray {
     private static int findMax(int[] arr, int index, int max){

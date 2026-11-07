@@ -1,4 +1,4 @@
-package Recursion.LabTasks;
+package LabTasks;
 
 class Queue{
     Node front;

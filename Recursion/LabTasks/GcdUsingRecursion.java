@@ -1,4 +1,4 @@
-package Recursion.LabTasks;
+package LabTasks;
 
 import java.util.Scanner;
 public class GcdUsingRecursion {

@@ -1,4 +1,4 @@
-package Recursion.LabTasks;
+package LabTasks;
 
 public class ReversingALinkedList {
     private static Node reverse(Node n){
