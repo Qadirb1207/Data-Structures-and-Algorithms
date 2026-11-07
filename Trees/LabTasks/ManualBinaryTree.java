@@ -1,4 +1,4 @@
-package Trees.BinaryTrees.LabTasks;
+package Trees.LabTasks;
 import java.util.Scanner;
 //======== TASK 1 ============
 public class ManualBinaryTree{

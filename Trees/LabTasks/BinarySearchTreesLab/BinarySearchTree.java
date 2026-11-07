@@ -1,4 +1,4 @@
-package Trees.BinaryTrees.LabTasks.BinarySearchTreesLab;
+package Trees.LabTasks.BinarySearchTreesLab;
 
 // ======= TASK 1 ===========
 public class BinarySearchTree {

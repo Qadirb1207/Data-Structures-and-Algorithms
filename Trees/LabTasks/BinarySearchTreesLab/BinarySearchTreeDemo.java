@@ -1,4 +1,4 @@
-package Trees.BinaryTrees.LabTasks.BinarySearchTreesLab;
+package Trees.LabTasks.BinarySearchTreesLab;
 
 public class BinarySearchTreeDemo {
     public static void main(String[] args){
