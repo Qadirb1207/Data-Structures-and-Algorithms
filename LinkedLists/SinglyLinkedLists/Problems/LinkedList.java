@@ -68,6 +68,15 @@ public class LinkedList{
 
     public void reverseLinkedList(Node head2) {
     }
+
+    public void reversePrint(Node head2) {
+        if(head2 == null){
+            return;
+        }
+        reversePrint(head2.next);
+        System.out.print(head2.data+" -> ");
+
+    }
     
 
 }
