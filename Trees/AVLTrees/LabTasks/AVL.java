@@ -94,8 +94,7 @@ public class AVL {
         c.right = node;
         node.left = t;
         //updating heights
-        //  node.height = Math.max(height(node.left), height(node.right))+1;
-        //  c.height = Math.max(height(c.left), height(c.right))+1;
+        
         updateHeight(node);
         updateHeight(c);
         return c;
@@ -117,11 +116,56 @@ public class AVL {
         node.right = t;
 
         //updating heights
-        // node.height = 1+Math.max(height(node.left), height(node.right));
-        // c.height = 1+Math.max(height(c.left), height(c.right));
+        
         updateHeight(node);
         updateHeight(c);
         return c;
     }
+
+    // =========== TASK 2 =============
+    public void inorder(){
+        displayInorder(root);
+        System.out.println();
+    }
+
+    private void displayInorder(Node node){
+        if(node == null){
+            return;
+        }
+        displayInorder(node.left);
+        System.out.print(node.data+", ");
+        displayInorder(node.right);
+    }
+
+    public void preorder(){
+        displayPreorder(root);
+        System.out.println();
+    }
+
+    private void displayPreorder(Node node){
+        if(node == null){
+            return;
+        }
+        System.out.print(node.data+", ");
+        displayInorder(node.left);
+        displayInorder(node.right);
+    }
+
+
+     public void postorder(){
+        displayPostorder(root);
+        System.out.println();
+    }
+
+    private void displayPostorder(Node node){
+        if(node == null){
+            return;
+        }
+        
+        displayInorder(node.left);
+        displayInorder(node.right);
+        System.out.print(node.data+", ");
+    }
+    
 
 }
